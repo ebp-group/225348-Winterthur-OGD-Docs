@@ -26,7 +26,7 @@
   "waitFor": "postCreateCommand", // otherwise automated jest tests fail
   "features": {
     "node": {
-      "version": "18"
+      "version": "20"
     },
     "github-cli": "latest"
   }
