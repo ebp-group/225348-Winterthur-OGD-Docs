@@ -12,6 +12,17 @@ Have **5 more minutes**? Take a look at **[versioning](/tutorial-extras/manage-d
 
 Anything **unclear** or **buggy** in this tutorial? [Please report it!](https://github.com/facebook/docusaurus/discussions/4610)
 
+
+Mermaid:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 ## What's next?
 
 - Read the [official documentation](https://docusaurus.io/)
