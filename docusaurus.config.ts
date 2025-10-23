@@ -27,7 +27,7 @@ const config: Config = {
 
   trailingSlash: false,
 
-  onBrokenLinks: "warn", // TODO: throw
+  onBrokenLinks: "throw",
   onBrokenAnchors: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: "Stadtverwaltung Winterthur",
-              href: "/docs/intro",
+              href: "https://stadt.winterthur.ch",
             },
             {
               label: "OGD der Stadt Winterthur",

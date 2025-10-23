@@ -119,7 +119,7 @@ const config: Config = {
           items: [
             {
               label: "Stadtverwaltung Winterthur",
-              href: "/docs/intro",
+              href: "https://stadt.winterthur.ch",
             },
             {
               label: "OGD der Stadt Winterthur",
