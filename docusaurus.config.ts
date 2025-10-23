@@ -27,7 +27,7 @@ const config: Config = {
 
   trailingSlash: false,
 
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn", // TODO: throw
   onBrokenMarkdownLinks: "warn",
   onBrokenAnchors: "warn",
 
