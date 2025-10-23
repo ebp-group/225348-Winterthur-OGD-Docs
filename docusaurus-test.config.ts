@@ -25,9 +25,11 @@ const config: Config = {
   organizationName: "ebp-group", // Usually your GitHub org/user name.
   projectName: "225348-Winterthur-OGD-Docs", // Usually your repo name.
 
+  trailingSlash: false,
+
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  onBrokenAnchors: "warn",
+  onBrokenMarkdownLinks: "throw",
+  onBrokenAnchors: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -140,7 +142,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Stadt Winterthur, Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Stadt Winterthur. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
