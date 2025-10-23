@@ -1,6 +1,10 @@
 ---
 sidebar_position: 1
+id: index
+slug: /
+title: "Open Data Dokumentation Winterthur"
 ---
+
 
 # Tutorial Intro
 
