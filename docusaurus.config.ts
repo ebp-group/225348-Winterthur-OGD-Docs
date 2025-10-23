@@ -28,7 +28,6 @@ const config: Config = {
   trailingSlash: false,
 
   onBrokenLinks: "warn", // TODO: throw
-  onBrokenMarkdownLinks: "warn",
   onBrokenAnchors: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -37,6 +36,13 @@ const config: Config = {
   i18n: {
     defaultLocale: "de",
     locales: ["de"],
+  },
+
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
   },
 
   presets: [

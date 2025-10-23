@@ -28,7 +28,6 @@ const config: Config = {
   trailingSlash: false,
 
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
   onBrokenAnchors: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
@@ -39,13 +38,20 @@ const config: Config = {
     locales: ["de"],
   },
 
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+  },
+
   presets: [
     [
       "classic",
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          routeBasePath: '/',
+          routeBasePath: "/",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
