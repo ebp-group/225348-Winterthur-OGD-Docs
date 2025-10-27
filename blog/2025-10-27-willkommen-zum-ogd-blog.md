@@ -13,7 +13,7 @@ Auch neue Datensätze oder Hilfsmittel werden hier vorgestellt. Neben dem Blog b
 
 :::tip
 
-Abonnieren Sie den OGD-Blog unter via [RSS-](/blog/rss.xml) oder [Atom-Feed](/blog/rss.xml)
+Abonnieren Sie den OGD-Blog unter via [RSS-](https://ebp-group.github.io/225348-Winterthur-OGD-Docs/blog/rss.xml) oder [Atom-Feed](https://ebp-group.github.io/225348-Winterthur-OGD-Docs/blog/atom.xml)
 
 :::
 
