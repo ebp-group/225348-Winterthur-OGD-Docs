@@ -1,19 +1,9 @@
-facebook:
-  label: Facebook
+new-data:
+  label: New Data
   permalink: /facebook
-  description: Facebook tag description
+  description: Tag for new data in the catalogue
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+update:
+  label: Update
+  permalink: /update
+  description: Tag for updates of data or software
