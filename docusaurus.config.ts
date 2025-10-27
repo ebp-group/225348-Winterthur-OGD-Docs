@@ -65,6 +65,10 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
+          blogSidebarTitle: "Blogarchiv",
+          blogSidebarCount: "ALL",
+          blogTitle: 'OGD-Blog',
+          blogDescription: 'OGD Blog der Stadt Winterthur',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
