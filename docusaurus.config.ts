@@ -71,8 +71,7 @@ const config: Config = {
           blogDescription: 'OGD Blog der Stadt Winterthur',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          //editUrl:
-          //  "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: "https://github.com/ebp-group/225348-Winterthur-OGD-Docs/edit/main/blog",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -101,15 +100,13 @@ const config: Config = {
         src: "img/logo.svg",
       },
       items: [
-        /*
-        {
+        /*{
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
-        },
-        */
-        //{ to: "/blog", label: "Blog", position: "left" },
+          label: "OGD-Doku",
+        },*/
+        { to: "/blog", label: "OGD-Blog", position: "left" },
         {
           href: "https://github.com/ebp-group/225348-Winterthur-OGD-Docs",
           label: "GitHub",
