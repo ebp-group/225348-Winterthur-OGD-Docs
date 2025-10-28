@@ -12,3 +12,8 @@ news:
   label: News
   permalink: /news
   description: Tag for news
+
+usecases:
+  label: Use Cases
+  permalink: /usecases
+  description: Tag for usecases
