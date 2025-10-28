@@ -2,7 +2,7 @@
 sidebar_position: 1
 id: index
 slug: /
-title: "Open Government Data Dokumentation Winterthur"
+title: "OGD Dokumentation"
 ---
 
 
