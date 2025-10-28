@@ -74,7 +74,7 @@ const config: Config = {
           blogDescription: 'OGD Blog der Stadt Winterthur',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/ebp-group/225348-Winterthur-OGD-Docs/edit/main/blog",
+          editUrl: "https://github.com/ebp-group/225348-Winterthur-OGD-Docs/edit/main",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
