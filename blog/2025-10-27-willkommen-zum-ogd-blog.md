@@ -1,7 +1,7 @@
 ---
 slug: willkommen-zum-ogd-blog
 title: Willkommen zum OGD-Blog
-authors: stefan.oderbolz
+authors: stefan-oderbolz
 tags: [news, update]
 ---
 
