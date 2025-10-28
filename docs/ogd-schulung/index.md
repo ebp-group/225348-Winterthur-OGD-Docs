@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Einführung in OGD
+# OGD-Handuch
 
 Dieses Handbuch hilft Personen und Organisationen dabei, Daten als Open Government Data (OGD) zu veröffentlichen.
 Es wird von der Open Government Data (OGD) bei der Fachstelle OGD für die Umsetzung des OGD-Konzepts betrieben.
@@ -66,5 +66,6 @@ Es ist dabei in der Verantwortung des jeweiligen Data Owners, den Sachverhalt tr
 [^1]: [Stadt Winterthur, Öffentlichkeitsprinzip](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1)
 [^2]: [Kanton Zürich: Gesetz über die Information und den Datenschutz (IDG)](http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)
 [^3]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
+
 
 
