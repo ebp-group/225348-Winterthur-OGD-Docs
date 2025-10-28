@@ -1,11 +1,3 @@
-stefan.oderbolz:
-  name: Stefan Oderbolz
-  title: Data Engineer @ EBP
-  image_url: https://github.com/metaodi.png
-  page: false
-  socials:
-    linkedin: stefan-oderbolz
-    github: metaodi
 fabian.bardos:
   name: Fabian Bardos
   title: Fachstelle OGD
@@ -14,3 +6,21 @@ fabian.bardos:
   socials:
     github: fbardos
     website: https://bardos.dev/
+
+uwe.thuemmel:
+  name: Uwe Thümmel
+  title: Fachstelle OGD
+  image_url: https://github.com/uwethuemmel.png
+  page: false
+  socials:
+    linkedin: uwethuemmel
+    github: uwethuemmel
+
+stefan.oderbolz:
+  name: Stefan Oderbolz
+  title: Data Engineer @ EBP
+  image_url: https://github.com/metaodi.png
+  page: false
+  socials:
+    linkedin: stefan-oderbolz
+    github: metaodi
