@@ -1,7 +1,6 @@
 stefan.oderbolz:
   name: Stefan Oderbolz
   title: Data Engineer @ EBP
-  url: https://www.linkedin.com/in/stefan-oderbolz
   image_url: https://github.com/metaodi.png
   page: false
   socials:
@@ -10,8 +9,8 @@ stefan.oderbolz:
 fabian.bardos:
   name: Fabian Bardos
   title: Fachstelle OGD
-  url: https://bardos.dev/
   image_url: https://bardos.dev/images/avatar.png
   page: false
   socials:
     github: fbardos
+    website: https://bardos.dev/
