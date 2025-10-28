@@ -40,14 +40,13 @@ const config: Config = {
 
   markdown: {
     mermaid: true,
+    remarkRehypeOptions: {
+      footnoteLabel: "Fussnoten",
+    },
     hooks: {
       onBrokenMarkdownLinks: "warn",
     },
   },
-
-  remarkRehypeOptions: {
-    footnoteLabel: "Fussnoten",
-  }
 
   themes: ["@docusaurus/theme-mermaid"],
 
