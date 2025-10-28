@@ -10,6 +10,6 @@ Dieses Handbuch hilft Personen und Organisationen dabei, Daten als Open Governme
 
 Das Handbuch gliedert sich in verschiedene Teile:
 
-0. OGD-Schulung - für Personen, die Open Government Data veröffentlichen möchten
-0. Datenschutz-Hilfsmittel - für Personen, die Hilfe bei der Einstufung von Daten bezüglich Datenschutz benötigen
+0. [OGD-Handbuch](/ogd-handbuch) - für Personen, die Open Government Data veröffentlichen möchten
+0. [Datenschutz-Hilfsmittel](/datenschutz-hilfsmittel) - für Personen, die Hilfe bei der Einstufung von Daten bezüglich Datenschutz benötigen
 0. [OGD-Blog](/blog) - aktuelle Neuigkeiten im Bezug auf Open Government Data in der Stadt Winterthur.
