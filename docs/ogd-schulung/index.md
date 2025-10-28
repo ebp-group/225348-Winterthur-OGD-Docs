@@ -25,19 +25,19 @@ Als Datenhoheit gilt die Kompetenz, Dritten den Zugang zu einem Datensatz zu erl
 Bevor ein Datensatz veröffentlicht wird, muss die zuständige Dienststelle – hier «Data Owner» genannt – abklären, ob eine Veröffentlichung zulässig ist.
 Diese Verantwortung kann nicht an andere Abteilungen oder Gremien delegiert werden. Die Datenhoheit bleibt auch im Falle einer Veröffentlichung als offene Verwaltungsdaten weiterhin beim Data Owner. 
 
-Die Bereitstellung offener Verwaltungsdaten in der Stadt Winterthur basiert auf dem im Kanton Zürich geltenden Öffentlichkeitsprinzip [^1], welches das Handeln der Behörden und Ämter für Aussenstehende nachvollziehbar und transparent gestalten will.
-Mit dem Gesetz über die Information und den Datenschutz (IDG) [^2] sind die staatlichen Stellen verpflichtet, von sich aus mit vorhandenen Informationen von allgemeinem Interesse an die Öffentlichkeit zu gelangen und eine aktive Informationspolitik zu betreiben.
+Die Bereitstellung offener Verwaltungsdaten in der Stadt Winterthur basiert auf dem im Kanton Zürich geltenden Öffentlichkeitsprinzip[^1], welches das Handeln der Behörden und Ämter für Aussenstehende nachvollziehbar und transparent gestalten will.
+Mit dem Gesetz über die Information und den Datenschutz (IDG)[^2] sind die staatlichen Stellen verpflichtet, von sich aus mit vorhandenen Informationen von allgemeinem Interesse an die Öffentlichkeit zu gelangen und eine aktive Informationspolitik zu betreiben.
 Ziel ist es, die freie Meinungsbildung und die Wahrnehmung der demokratischen Rechte zu fördern und die Kontrolle des staatlichen Handelns zu erleichtern. 
 
 Die Publikation von offenen Verwaltungsdaten der Stadt Winterthur wird grundsätzlich auf zwei Wegen initiiert: 
-- Aktive Veröffentlichung: Gestützt auf § 14 IDG [^2] («Veröffentlichung auf eigene Initiative der Behörde») veröffentlicht die Stadt Winterthur aktiv offene Verwaltungsdaten. 
-- Veröffentlichung auf Anfrage: Gestützt auf § 20 IDG [^2] prüft und beurteilt die Stadt darüber hinaus den Zugang zu Daten auf Anfrage. 
+- Aktive Veröffentlichung: Gestützt auf § 14 IDG[^2] («Veröffentlichung auf eigene Initiative der Behörde») veröffentlicht die Stadt Winterthur aktiv offene Verwaltungsdaten. 
+- Veröffentlichung auf Anfrage: Gestützt auf § 20 IDG[^2] prüft und beurteilt die Stadt darüber hinaus den Zugang zu Daten auf Anfrage. 
 
 
 # Zu veröffentlichende Daten und ihre Nutzungsbedingungen
 
 In der Stadt Winterthur sind diejenigen Daten offen, für die kein Schutzbedürfnis besteht. 
-Dabei hält sich die Stadt Winterthur an das Prinzip «Open by Default» und veröffentlicht offene Verwaltungsdaten aktiv, unter Berücksichtigung der OGD-Veröffentlichungsprinzipien [^3], zur freien Nutzung durch die Öffentlichkeit. 
+Dabei hält sich die Stadt Winterthur an das Prinzip «Open by Default» und veröffentlicht offene Verwaltungsdaten aktiv, unter Berücksichtigung der OGD-Veröffentlichungsprinzipien[^3], zur freien Nutzung durch die Öffentlichkeit. 
 
 Durch möglichst wenige, jedoch klar definierte Nutzungsbedingungen soll die Datennutzung vereinfacht werden. Offene Verwaltungsdaten der Stadt Winterthur können: 
 - vervielfältigt, verbreitet und weiter zugänglich gemacht, 
@@ -66,4 +66,5 @@ Es ist dabei in der Verantwortung des jeweiligen Data Owners, den Sachverhalt tr
 [^1]: [Stadt Winterthur, Öffentlichkeitsprinzip](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1)
 [^2]: [Kanton Zürich: Gesetz über die Information und den Datenschutz (IDG)](http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)
 [^3]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
+
 
