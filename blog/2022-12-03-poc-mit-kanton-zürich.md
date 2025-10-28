@@ -1,5 +1,5 @@
 ---
-slug: willkommen-zum-ogd-blog
+slug: poc-mit-kanton-zürich
 title: "OGD in der Stadt Winterthur: Neuer Proof of Concept mit dem Kanton Zürich"
 authors: fabian.bardos
 tags: [news, update]
