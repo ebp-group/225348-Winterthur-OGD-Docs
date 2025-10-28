@@ -45,6 +45,10 @@ const config: Config = {
     },
   },
 
+  remarkRehypeOptions: {
+    footnoteLabel: "Fussnoten",
+  }
+
   themes: ["@docusaurus/theme-mermaid"],
 
   presets: [
