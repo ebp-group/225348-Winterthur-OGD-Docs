@@ -30,9 +30,10 @@ Mit dem Gesetz über die Information und den Datenschutz (IDG) [^2] sind die sta
 Ziel ist es, die freie Meinungsbildung und die Wahrnehmung der demokratischen Rechte zu fördern und die Kontrolle des staatlichen Handelns zu erleichtern. 
 
 Die Publikation von offenen Verwaltungsdaten der Stadt Winterthur wird grundsätzlich auf zwei Wegen initiiert: 
-- Aktive Veröffentlichung: Gestützt auf § 14 IDG [4] («Veröffentlichung auf eigene Initiative der Behörde») veröffentlicht die Stadt Winterthur aktiv offene Verwaltungsdaten. 
-- Veröffentlichung auf Anfrage: Gestützt auf § 20 IDG [4] prüft und beurteilt die Stadt darüber hinaus den Zugang zu Daten auf Anfrage. 
+- Aktive Veröffentlichung: Gestützt auf § 14 IDG [^2] («Veröffentlichung auf eigene Initiative der Behörde») veröffentlicht die Stadt Winterthur aktiv offene Verwaltungsdaten. 
+- Veröffentlichung auf Anfrage: Gestützt auf § 20 IDG [^2] prüft und beurteilt die Stadt darüber hinaus den Zugang zu Daten auf Anfrage. 
 
 
-[^1]: Stadt Winterthur, Öffentlichkeitsprinzip, https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1
-[^2]: Kanton Zürich: Gesetz über die Information und den Datenschutz (IDG), http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4  
+[^1]: [Stadt Winterthur, Öffentlichkeitsprinzip](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1)
+[^2]: [Kanton Zürich: Gesetz über die Information und den Datenschutz (IDG)](http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)
+
