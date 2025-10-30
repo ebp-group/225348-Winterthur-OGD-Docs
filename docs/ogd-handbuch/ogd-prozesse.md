@@ -83,9 +83,9 @@ flowchart LR
   rN-- stellt ---ucQA
   rN-- gibt ---ucFB
 
-  ucDP-- verantwortet, betreibt --rF
-  ucMD-- pflegt, stellt bereit --rA
-  ucD-- bereitet auf, stellt bereit --rA
+  ucDP-- verantwortet, betreibt ---rF
+  ucMD-- pflegt, stellt bereit ---rA
+  ucD-- bereitet auf, stellt bereit ---rA
 
   rF-- berät, unterstützt ---rA
 
