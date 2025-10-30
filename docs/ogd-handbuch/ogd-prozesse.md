@@ -77,15 +77,19 @@ flowchart LR
     ucMD -.-> ucD
   end
   
-  rN-- erstellt ---ucApp
-  rN-- findet, sichtet ---ucMD
-  rN-- sichtet, bezieht, nutzt ---ucD
-  rN-- stellt ---ucQA
-  rN-- gibt ---ucFB
+  rn ~~~ ucDP
+  ucDP ~~~  rF
+  ucDP ~~~ rF
 
-  ucDP-- verantwortet, betreibt ---rF
-  ucMD-- pflegt, stellt bereit ---rA
-  ucD-- bereitet auf, stellt bereit ---rA
+  rN-- erstellt -->ucApp
+  rN-- findet, sichtet -->ucMD
+  rN-- sichtet, bezieht, nutzt -->ucD
+  rN-- stellt -->ucQA
+  rN-- gibt -->ucFB
+
+  rF-- verantwortet, betreibt -->ucDP
+  rA-- pflegt, stellt bereit -->ucMD
+  rA-- bereitet auf, stellt bereit -->ucD
 
   rF-- berät, unterstützt ---rA
 
