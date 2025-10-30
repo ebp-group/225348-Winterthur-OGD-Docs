@@ -57,3 +57,38 @@ werden:
 
 
 Im Folgenden werden detaillierte Teilprozesse beschrieben, die zur Veröffentlichung offener Verwaltungsdaten nötig sind.
+
+```mermaid
+flowchart LR
+  rN["👤 Endnutzer"]:::role
+  rF["👤 FS Daten"]:::role
+  rA["👤 OGD-Ansprechperson
+  (Data Owner)"]:::role
+
+  subgraph S["OGD-Angebot"]
+    direction TB
+    ucApp([Anwendungen])
+    ucDP([Datenportal])
+    ucMD([Metadata])
+    ucD([Data])
+    ucQA([Fragen, Anfragen zu Daten])
+    ucFB([Fehlermeldungen, Feedback])
+    ucDP -.-> ucMD
+    ucMD -.-> ucD
+  end
+  
+  rN-- erstellt ---ucApp
+  rN-- findet, sichtet ---ucMD
+  rN-- sichtet, bezieht, nutzt ---ucD
+  rN-- stellt ---ucQA
+  rN-- gibt ---ucFB
+
+  ucDP-- verantwortet, betreibt --rF
+  ucMD-- pflegt, stellt bereit --rA
+  ucD-- bereitet auf, stellt bereit --rA
+
+  rF-- berät, unterstützt ---rA
+
+  
+  classDef role stroke-width:0px;
+```
