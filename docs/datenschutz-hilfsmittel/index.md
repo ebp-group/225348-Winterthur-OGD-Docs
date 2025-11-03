@@ -15,5 +15,7 @@ TODOs:
 
 - [ ] Grundlagen erarbeiten
 - [ ] Beispiel für Re-Identifikation zeigen (siehe z.B. https://spatialists.ch/posts/2025/07/01-differential-privacy-being-wrong-on-purpose/index.html, https://programming-dp.com/)
-- [ ] Beispiel für Aggregation zeigen
-- [ ] Beispiel für Pseudonymisierung
+- [ ] Beispiel für Aggregation und andere Anonymisierungsmethoden zeigen
+- [ ] Beispiel für Pseudonymisierung (z.B. Hunderegister Stadt Zürich, https://data.stadt-zuerich.ch/dataset/sid_stapo_aktueller_hundebestand_monat_od1003)
+- [ ] Flowchart à la https://handbook.opendata.swiss/de/content/glossar/bibliothek/ogd-richtlinien.html, evtl. mit Absprungpunkten zu verschiedenen Unterkapiteln
+
