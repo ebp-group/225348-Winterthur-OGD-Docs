@@ -10,7 +10,7 @@ Dieses Hilfsmittel zeigt, wie mit schützenswerten Daten umgegangen wird und wel
 :::
 ```mermaid
 flowchart TD
-  A["Besteht eine **gesetzliche Grundlage** für die Publikation?<br/><a href='#grundlagen'>[→ Grundlagen]</a>"] -->|Ja| B["Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br/><a href='#was-ist-personenbezug'>[→ Personenbezug]</a>"]
+  A["Besteht eine **gesetzliche Grundlage** für die Publikation?<br/><a href='/grundlagen'>[→ Grundlagen]</a>"] -->|Ja| B["Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br/><a href='#was-ist-personenbezug'>[→ Personenbezug]</a>"]
   A -->|Nein| X1["Kein OGD. Prüfen: gesetzliche Grundlage schaffen oder Datensatz so transformieren, dass **kein Personenbezug** mehr besteht."]
 
   B -->|Nein| C["Sind die Daten **urheberrechtlich** geschützt?<br/><a href='#urheberrecht-lizenzen'>[→ Urheberrecht/Lizenzen]</a>"]
@@ -70,6 +70,7 @@ TODOs:
 - [ ] Beispiel für Aggregation und andere Anonymisierungsmethoden zeigen
 - [ ] Beispiel für Pseudonymisierung (z.B. Hunderegister Stadt Zürich, https://data.stadt-zuerich.ch/dataset/sid_stapo_aktueller_hundebestand_monat_od1003)
 - [ ] Flowchart à la https://handbook.opendata.swiss/de/content/glossar/bibliothek/ogd-richtlinien.html, evtl. mit Absprungpunkten zu verschiedenen Unterkapiteln, Mermaid siehe https://mermaid.js.org/syntax/flowchart.html, oder https://github.com/ebp-group/225348-Winterthur-OGD-Docs/edit/main/docs/ogd-handbuch/prozesse/index.md
+
 
 
 
