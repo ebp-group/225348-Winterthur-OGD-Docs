@@ -8,7 +8,9 @@ Dieses Handbuch hilft Personen und Organisationen dabei, Daten als Open Governme
 Es wird von der Open Government Data (OGD) bei der Fachstelle OGD für die Umsetzung des OGD-Konzepts betrieben.
 Dieses Handbuch ist als dynamisches Dokument zu verstehen: Es wird kontinuierlich aktualisiert und überarbeitet.
 
-# Abgrenzung von offenen und nicht offenen Verwaltungsdaten
+Die Stadt Winterthur möchte das Thema «Open Government Data» (OGD) stadtweit voranbringen.
+OGD wurde in der Vergangenheit bereits in der Digitalisierungsstrategie und in der Statistikstudie der Stadt Winterthur verankert.
+Die Fachstelle Daten konnte bezüglich der Publikation von Verwaltungsdaten gemäss der Idee von OGD in einem Pilotbetrieb zusammen mit dem Amt für Statistik des Kantons Zürich bereits erste praktische Erfahrungen mit OGD sammeln.
 
 :::danger
 
@@ -18,54 +20,47 @@ Dieses Handbuch ist als dynamisches Dokument zu verstehen: Es wird kontinuierlic
 
 :::
 
-Die Abgrenzung zwischen offenen und nicht offenen Verwaltungsdaten findet über die objektive Beurteilung der vordefinierten Schutzbedürfnisse statt (siehe dazu **XY**).
-Das dazu notwendige Vorgehen wird im Teilprozess «Auswahl OGD-Kandidaten» beschrieben. 
-Den Entscheid, ob ein bestimmter Datensatz veröffentlicht werden darf oder nicht, kann nur jene Abteilung fällen, welche die Datenhoheit hat.
-Als Datenhoheit gilt die Kompetenz, Dritten den Zugang zu einem Datensatz zu erlauben oder zu verbieten.
-Bevor ein Datensatz veröffentlicht wird, muss die zuständige Dienststelle – hier «Data Owner» genannt – abklären, ob eine Veröffentlichung zulässig ist.
-Diese Verantwortung kann nicht an andere Abteilungen oder Gremien delegiert werden. Die Datenhoheit bleibt auch im Falle einer Veröffentlichung als offene Verwaltungsdaten weiterhin beim Data Owner. 
+## Einordnung in Vorhaben der Stadt Winterthur
 
-Die Bereitstellung offener Verwaltungsdaten in der Stadt Winterthur basiert auf dem im Kanton Zürich geltenden Öffentlichkeitsprinzip[^1], welches das Handeln der Behörden und Ämter für Aussenstehende nachvollziehbar und transparent gestalten will.
-Mit dem Gesetz über die Information und den Datenschutz (IDG)[^2] sind die staatlichen Stellen verpflichtet, von sich aus mit vorhandenen Informationen von allgemeinem Interesse an die Öffentlichkeit zu gelangen und eine aktive Informationspolitik zu betreiben.
-Ziel ist es, die freie Meinungsbildung und die Wahrnehmung der demokratischen Rechte zu fördern und die Kontrolle des staatlichen Handelns zu erleichtern. 
+### Digitialisierungsstrategie 2023
 
-Die Publikation von offenen Verwaltungsdaten der Stadt Winterthur wird grundsätzlich auf zwei Wegen initiiert: 
-- Aktive Veröffentlichung: Gestützt auf § 14 IDG[^2] («Veröffentlichung auf eigene Initiative der Behörde») veröffentlicht die Stadt Winterthur aktiv offene Verwaltungsdaten. 
-- Veröffentlichung auf Anfrage: Gestützt auf § 20 IDG[^2] prüft und beurteilt die Stadt darüber hinaus den Zugang zu Daten auf Anfrage. 
+Die im Sommer 2023 verabschiedete [städtische Digitalisierungsstrategie](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/medienmitteilungen-stadt-winterthur/stadtrat-verabschiedet-digitalisierungsstrategie) greift OGD im Handlungsfeld «Datenmanagement» auf.
+Die Strategie postuliert «Nicht schützenswerte Daten werden im Sinne von ‹Open Government Data› zur freien Nutzung und Weitergabe zur Verfügung gestellt.
+Die dazu erforderlichen rechtlichen und politischen Grundlagen und der Datenschutz werden sichergestellt und wahren die Vertraulichkeit und Persönlichkeitsrechte aller involvierter Parteien.»
+Im Anhang zur Digitalisierungsstrategie wird im Handlungsfeld «Datenmanagement» mit höchster Priorität die Erarbeitung eines «Konzepts Open Government Data» eingeplant.
 
+### OGD-Konzept und OGD-Erlass
 
-# Zu veröffentlichende Daten und ihre Nutzungsbedingungen
+Das OGD-Konzept wurde vom Stadtrat verabschiedet und bildet die Grundlage für Open Government Data in der Stadt Winterthur.
 
-In der Stadt Winterthur sind diejenigen Daten offen, für die kein Schutzbedürfnis besteht. 
-Dabei hält sich die Stadt Winterthur an das Prinzip «Open by Default» und veröffentlicht offene Verwaltungsdaten aktiv, unter Berücksichtigung der OGD-Veröffentlichungsprinzipien[^3], zur freien Nutzung durch die Öffentlichkeit. 
+:::info
 
-Durch möglichst wenige, jedoch klar definierte Nutzungsbedingungen soll die Datennutzung vereinfacht werden. Offene Verwaltungsdaten der Stadt Winterthur können: 
-- vervielfältigt, verbreitet und weiter zugänglich gemacht, 
-- angereichert, bearbeitet und 
-- kommerziell genutzt werden
+Abschnitt ergänzen sobald mehr Infos bekannt sind bzw. das OGD-Konzept und der Erlass verabschiedet wurden.
+Ggf. auch Links zum Konzept und zum Erlass hinzufügen.
 
-Diese Nutzungen können in der Regel ohne Quellennennung erfolgen. 
-Für die Datennutzung gilt ein Haftungsausschluss. Die Verwaltung der Stadt Winterthur schliesst dabei jede Haftung durch die Datennutzung aus und übernimmt keine Garantie für die offenen Verwaltungsdaten.
-
-# Nicht zu veröffentlichende Daten 
-
-Ein Schutzbedürfnis für einen Datensatz ist durch höhere rechtliche Interessen begründet. Diese umfassen namentlich und abschliessend: 
-- Datenschutz, falls sich dieser nicht durch technische Mittel wie Aggregation, Anonymisierung, Pseudonymisierung o.ä. der zu veröffentlichenden Daten gewährleisten lässt. 
-- Amtsgeheimnis. 
-- Übergangsdaten, Daten zu laufenden Geschäften, Notizen. 
-- Übergeordnetes öffentliches Interesse (z. B. Staatsschutz). 
-- Informationsschutz (z. B. als «intern» klassifizierte Daten). 
-- Urheberrecht. 
-- Übergeordnetes Recht (z.B. Planungs- und Baugesetz, Gebäude- und Wohnungsregister-Gesetz). 
-- Konkurrenzsituation, falls die betroffene Abteilungen marktwirtschaftlich operiert und das Veröffentlichen der betreffenden Daten Wettbewerbern entscheidende Vorteile verschaffen würde.
-
-Spricht aus Sicht eines Data Owners mindestens eines der oben aufgeführten Schutzbedürfnisse gegen die Veröffentlichung eines bestimmten Datensatzes, kann er dessen Publikation mit Verweis auf das Schutzbedürfnis ablehnen.
-Es ist dabei in der Verantwortung des jeweiligen Data Owners, den Sachverhalt transparent darzulegen. 
+:::
 
 
-[^1]: [Stadt Winterthur, Öffentlichkeitsprinzip](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1)
-[^2]: [Kanton Zürich: Gesetz über die Information und den Datenschutz (IDG)](http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)
-[^3]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
+## Zielbild «Open Government Data Winterthur»
 
 
+Mit Open Government Data (OGD) will die Stadt Winterthur den Zugang zu nicht schützenswerten Daten der Stadtverwaltung allen interessierten Perso-nen und Organisationen über ein zentrales Datenportal (bzw. OGD-Portal) ermöglichen.
+
+Die Stadt Winterthur möchte mit OGD moderner und transparenter werden sowie die Basis schaffen für neue und innovative Dienstleistungen und Produkte.
+Neben der Förderung von Transparenz und Offenheit leistet die Stadt mit OGD auch einen Beitrag zur Stärkung des Bildungs- und Forschungsstandorts Winterthur, zur Informationslage der Bevölkerung und zur Schaf-fung von wirtschaftlichem Mehrwert.
+Durch das Datenportal werden auch das Wissen innerhalb der Stadtverwaltung über die eigenen Daten und der Datenaustausch über Verwaltungseinheiten hinweg gefördert und effizienter gemacht.
+Die Stadt Winterthur schafft so mit ihren bestehenden Daten einen Nutzen für die Bevölkerung, die Wirtschaft, die Forschung und die Stadtverwaltung.
+
+Im Datenportal veröffentlichen die Einheiten der Stadtverwaltung unter Führung der Fachstelle Daten verlässliche und aktuelle Daten der Stadtverwal-tung gemäss dem Prinzip «Open by Default».
+Gemäss diesem Prinzip gelten Verwaltungsdaten grundsätzlich als offen, ausser ein Schutzbedarf spricht gegen die Veröffentlichung.
+Schutzbedarfe können beispielsweise begründet sein durch einen Personenbezug von Daten, Geheimhaltungspflichten oder urheberrechtliche oder fachgesetzliche Bestimmungen.
+
+Das Prinzip «Open by Default» wird ressourcenschonend umgesetzt, indem Daten ohne schützenswerte Inhalte standardmässig veröffentlicht oder als zur Veröffentlichung geeignet gekennzeichnet sind.
+Daten in der zweiten Kategorie werden nicht proaktiv, sondern erst bei manifestem Interesse an diesen Daten (zum Beispiel belegt durch Anfragen aus der Bevölkerung, der Wirtschaft oder der Wissenschaft) und in Abwägung mit dem Aufwand veröffentlicht.
+Die offenen Verwaltungsdaten der Stadt Winterthur sind dank vorgängiger sorgfältiger Abklärungen datenschutzrechtlich unbedenklich und nach der Veröffentlichung im Datenportal langfristig verfügbar.
+Sie sind nach Möglichkeit (zum Beispiel wo entsprechende Standards bestehen) gut mit Daten an-derer Gebietseinheiten vergleich- und kombinierbar.
+
+Die Fachstelle Daten unterstützt Dateneigner der Stadtverwaltung bei der Erfassung, Prüfung, Priorisierung und Publikation der eigenen Daten mit ent-sprechenden Hilfestellungen und Grundlagen.
+Sie leistet nach innen und nach aussen Vermittlungsarbeit im Bereich offener Verwaltungsdaten und sie koordiniert partnerschaftlich die OGD-Umsetzung in der Stadtverwaltung. Die Fachstelle Daten stellt sicher, dass sich das OGD-Angebot von Winterthur an den gängigen Best Practices und Standards orientiert.
+Dabei setzt sie im Thema OGD nicht neue Akzente, sondern setzt auf Vorarbeiten und bewähr-te Grundlagen anderer Behörden und Organisationen.
 

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Prozessbeteiligte Akteure
+# Prozessbeteiligte Akteure und Rollen
 
 ## Daten-Nutzende
 
