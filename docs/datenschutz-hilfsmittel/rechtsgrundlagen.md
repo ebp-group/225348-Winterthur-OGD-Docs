@@ -37,4 +37,6 @@ Was heisst das in der Praxis?
 
 5. Regelmässig überprüfen und Metadaten aktuell halten.
 
-*** Leitsatz: So offen wie möglich, so geschützt wie nötig — OGD nur ohne (restlichen) Personenbezug oder mit klarer gesetzlicher Grundlage. ***
+:::note[ **Leitfaden** ]
+Leitsatz: So offen wie möglich, so geschützt wie nötig — OGD nur ohne (restlichen) Personenbezug oder mit klarer gesetzlicher Grundlage.
+:::

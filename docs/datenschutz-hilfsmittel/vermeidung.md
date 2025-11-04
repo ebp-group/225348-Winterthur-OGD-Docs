@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Vermeidung des Personenbezugs 
 
-:::tip
+:::note
 Die Vermeidung des Personenbezugs ist ein wichter Schritt in der datenschutzkonformen Veröffentlichung von Daten.
 :::
 
@@ -36,7 +36,7 @@ Sie umfasst sowohl Anonymisierung als auch Pseudonymisierung und beschreibt den 
 
 </Tabs>
 
-:::note
+:::tip
 Weitere unterstützende Massnahmen zur Vermeidung des Personenbezugs sind das Einfügen von Zufallsrauschen (Differential Privacy), die Unterdrückung kleiner Fallzahlen (Zell-Suppression) sowie die räumliche oder zeitliche Generalisierung von Daten.  
 Sie können je nach Datentyp mit den obigen vier Verfahren kombiniert werden.
 :::
