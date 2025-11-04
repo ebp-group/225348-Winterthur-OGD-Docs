@@ -10,42 +10,45 @@ Dieses Hilfsmittel zeigt, wie mit schützenswerten Daten umgegangen wird und wel
 :::
 ```mermaid
 flowchart TD
-  A["Besteht eine **gesetzliche Grundlage** für die Publikation?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen'>[→ Grundlagen]</a>"] -->|Ja| B["Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br/><a href='#was-ist-personenbezug'>[→ Personenbezug]</a>"]
+  A["Besteht eine **gesetzliche Grundlage** für die Publikation?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen'>[→ Grundlagen]</a>"] -->|Ja| B["Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/was-ist-personenbezug'>[→ Personenbezug]</a>"]
   A -->|Nein| X1["Kein OGD. Prüfen: gesetzliche Grundlage schaffen oder Datensatz so transformieren, dass **kein Personenbezug** mehr besteht."]
 
-  B -->|Nein| C["Sind die Daten **urheberrechtlich** geschützt?<br/><a href='#urheberrecht-lizenzen'>[→ Urheberrecht/Lizenzen]</a>"]
-  B -->|Ja| D["Handelt es sich um **besonders schützenswerte Personendaten**?<br/><a href='#besondere-kategorien'>[→ Besondere Kategorien]</a>"]
+  B -->|Nein| C["Sind die Daten **urheberrechtlich** geschützt?"]
+  B -->|Ja| D["Handelt es sich um **besonders schützenswerte Personendaten**?"]
 
-  D -->|Ja| E["Erlaubt ein **formelles Gesetz** die Publikation dieser Daten?<br/><a href='#rechtsgrundlagen'>[→ Rechtsgrundlagen]</a>"]
-  D -->|Nein| F["Sind **Anonymisierung/Aggregation** möglich, sodass **kein Personenbezug** mehr besteht?<br/><a href='#anonymisierung'>[→ Anonymisierung]</a>"]
+  D -->|Ja| E["Erlaubt ein **formelles Gesetz** die Publikation dieser Daten?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen'>[→ Rechtsgrundlagen]</a>"]
+  D -->|Nein| F["Sind **Anonymisierung/Aggregation** möglich, sodass **kein Personenbezug** mehr besteht?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/anonymisierung'>[→ Anonymisierung]</a>"]
 
   E -->|Ja| C
   E -->|Nein| X2["Kein OGD. Alternative: **Anonymisieren/Pseudonymisieren**, interne Nutzung oder Zugriffssteuerung."]
   F -->|Ja| C
   F -->|Nein| X3["Kein OGD."]
 
-  C -->|Ja| G["Wurden Rechte an die Stadt übertragen und **Persönlichkeitsrechte** gewahrt/verzichtet?<br/><a href='#urheberrecht-lizenzen'>[→ Urheberrecht/Lizenzen]</a>"]
-  C -->|Nein| H["Darf der Datensatz **kostenlos** bereitgestellt werden?<br/><a href='#lizenzen-preise'>[→ Lizenzen/Preise]</a>"]
+  C -->|Ja| G["Wurden Rechte an die Stadt übertragen und **Persönlichkeitsrechte** gewahrt/verzichtet?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/urheberrecht-lizenzen'>[→ Urheberrecht/Lizenzen]</a>"]
+  C -->|Nein| H["Darf der Datensatz **kostenlos** bereitgestellt werden?"]
 
   G -->|Ja| H
   G -->|Nein| X4["Kein OGD, bis Rechte geklärt sind."]
 
-  H -->|Ja| I["Ist **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?<br/><a href='#lizenzauswahl'>[→ Lizenzwahl]</a>"]
-  H -->|Nein| Y1["OGD möglich, aber mit **klaren Nutzungsbedingungen** (nicht-kommerziell).<br/><a href='#lizenzauswahl'>[→ Lizenzwahl]</a>"]
+  H -->|Ja| I["Ist **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/lizenzauswahl'>[→ Lizenzwahl]</a>"]
+  H -->|Nein| Y1["OGD möglich, aber mit **klaren Nutzungsbedingungen** (nicht-kommerziell)"]
 
-  I -->|Ja| J["Ist **Quellenangabe** obligatorisch?<br/><a href='#lizenzauswahl'>[→ Lizenzwahl]</a>"]
+  I -->|Ja| J["Ist **Quellenangabe** obligatorisch?"]
   I -->|Nein| Y2["OGD möglich, aber **Nutzungseinschränkungen** dokumentieren."]
 
   J -->|Ja| Z2["Publikation auf OGD mit Hinweis **Quellenangabe erforderlich**."]
   J -->|Nein| Z1["Publikation auf OGD möglich. Empfohlen: **offene Standardlizenz** (z. B. ODbL, CC BY)."]
 
-  classDef ok fill:#0aa,stroke:#066,color:#fff;
-  classDef warn fill:#fa0,stroke:#b60,color:#000;
-  classDef stop fill:#888,stroke:#444,color:#fff;
+  %% Farbdefinitionen
+  classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000;        %% sehr leicht grüne Füllung, dunkelgrüner Rahmen
+  classDef warn fill:#ffffff,stroke:#9e9e9e,color:#000;       %% keine Füllung (weiß), grauer Rahmen
+  classDef stop fill:#ffebee,stroke:#8b0000,color:#000;       %% leicht rote Füllung, weinroter Rahmen
 
   class Z1,Z2,Y1,Y2 ok;
   class X1,X2,X3,X4 stop;
 ```
+Kann eine Frage nicht klar beantwortet werden, steht die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] zur weiteren Erläterung zur Verfügung..
+[Arbeitshilfe für Behörden zur Publikation von Daten als OGD]: https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/ogd/dokumentation.assetdetail.11147071.html
 
 Hier soll die Datensouveränität, Löschfristen und Datensicherheit, wie auch der Schutz angesprochen und State- of the Art Ansätze geliefert werden - dies wird in Anlehnung an den [OGD-Masterplan] der Schweiz.
 
