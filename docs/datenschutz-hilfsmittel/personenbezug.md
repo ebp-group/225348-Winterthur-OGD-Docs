@@ -68,7 +68,6 @@ Wenn der Datensatz (direkt oder indirekt) Personenbezug enthält, gilt folgendes
 4. **Wenn ja:**  
    → Veröffentlichung nach dokumentierten Schutzmassnahmen (vgl. [→ Vermeidung des Personenbezugs](./vermeidung)).
 
-## Zusammenfassung
 
 :::tip
 **Kurzcheck Personenbezug**
