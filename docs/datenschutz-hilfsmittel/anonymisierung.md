@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+# Anonymisierung
+
 :::tip
 Anonymisierung ist ein wichter Schritt in der Datenschutzkonformen veröffenbtlichungen von Daten über OGD.
 :::
