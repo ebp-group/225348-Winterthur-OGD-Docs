@@ -39,10 +39,9 @@ flowchart TD
   J -->|Ja| Z2["Publikation auf OGD mit Hinweis **Quellenangabe erforderlich**."]
   J -->|Nein| Z1["Publikation auf OGD möglich. Empfohlen: **offene Standardlizenz** (z. B. ODbL, CC BY)."]
 
-  %% Farbdefinitionen
-  classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000;        %% sehr leicht grüne Füllung, dunkelgrüner Rahmen
-  classDef warn fill:#ffffff,stroke:#9e9e9e,color:#000;       %% keine Füllung (weiß), grauer Rahmen
-  classDef stop fill:#ffebee,stroke:#8b0000,color:#000;       %% leicht rote Füllung, weinroter Rahmen
+  classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000;
+  classDef warn fill:#ffffff,stroke:#9e9e9e,color:#000;
+  classDef stop fill:#ffebee,stroke:#8b0000,color:#000;
 
   class Z1,Z2,Y1,Y2 ok;
   class X1,X2,X3,X4 stop;
