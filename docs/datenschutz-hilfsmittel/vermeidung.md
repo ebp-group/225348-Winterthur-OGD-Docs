@@ -12,16 +12,16 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs queryString="metadata">
-  <TabItem value="ansaetze" label="Anonymisierung">
+  <TabItem value="anonym" label="Anonymisierung">
     Dies sind Ansätze.
   </TabItem>
-  <TabItem value="bestpractices" label="Best- Pseudonymisierung">
+  <TabItem value="pseudonym" label="Best- Pseudonymisierung">
     Dies sind best- practices.
   </TabItem>
-  <TabItem value="ansaetze" label="Aggregation">
+  <TabItem value="aggregation" label="Aggregation">
     Dies sind Ansätze.
   </TabItem>
-  <TabItem value="ansaetze" label="De-Identifikation">
+  <TabItem value="de-int" label="De-Identifikation">
     Dies sind Ansätze.
   </TabItem>
 </Tabs>
