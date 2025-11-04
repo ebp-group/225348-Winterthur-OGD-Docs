@@ -3,11 +3,13 @@ sidebar_position: 3
 ---
 
 # Datenschutz-Hilfsmittel
-:::info
 
 Dieses Hilfsmittel zeigt, wie mit schützenswerten Daten umgegangen wird und welche technischen Massnahmen vor einer Publikation als Open Government Data nötig sind. 
 
-:::
+
+
+
+
 
 ```mermaid
 ---
@@ -51,13 +53,16 @@ flowchart TD
      Z2:::ok
      Z1:::ok
     classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000
-    classDef warn fill:#FFFFFF,stroke:#9e9e9e,color:#FFFFFF
+    classDef warn fill:#ffffff,stroke:#9e9e9e,color:#000
     classDef stop fill:#ffebee,stroke:#8b0000,color:#000
+    classDef neutral fill:#ffffff,stroke:#000,color:#000
+
+    class A,B,C,D,E,F,G,I,J neutral
 ```
-
+:::info
 Kann eine Frage nicht klar beantwortet werden, steht die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] zur weiteren Erläuterung zur Verfügung.
-
 [Arbeitshilfe für Behörden zur Publikation von Daten als OGD]: https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/ogd/dokumentation.assetdetail.11147071.html
+:::
 
 ## TODOs:
 
