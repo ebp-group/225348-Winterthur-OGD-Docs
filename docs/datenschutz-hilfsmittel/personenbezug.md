@@ -10,7 +10,7 @@ Dieses Kapitel hilft, zu erkennen, wann Daten als personenbezogen gelten und wel
 Ein Datensatz gilt als **personenbezogen**, wenn er direkt oder indirekt einer natürlichen Person zugeordnet werden kann.
 :::
 
----
+
 
 ## Was sind Personendaten?
 
@@ -20,35 +20,29 @@ Gemäss dem **Bundesgesetz über den Datenschutz (revDSG)** und dem **Gesetz üb
 
 Eine Person gilt als **bestimmbar**, wenn sie direkt identifiziert werden kann oder sich durch Kombination mehrerer Merkmale identifizieren lässt.
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <Tabs queryString="personenbezug">
-
 <TabItem value="direkt" label="Direkter Personenbezug">
-
-**Direkter Personenbezug** liegt vor, wenn eine Person unmittelbar erkannt werden kann.  
+Direkter Personenbezug liegt vor, wenn eine Person unmittelbar erkannt werden kann.  
 Typische Beispiele:
-
 - Name, Adresse, Telefonnummer, E-Mail-Adresse  
 - Personal- oder AHV-Nummer  
 - Fahrzeugkennzeichen, Identifikationsnummern  
 - Koordinaten eines einzelnen Grundstücks oder Gebäudes  
-
 </TabItem>
-
 <TabItem value="indirekt" label="Indirekter Personenbezug">
-
-**Indirekter Personenbezug** entsteht, wenn aus scheinbar neutralen Informationen Rückschlüsse auf einzelne Personen möglich sind.  
+Indirekter Personenbezug entsteht, wenn aus scheinbar neutralen Informationen Rückschlüsse auf einzelne Personen möglich sind.  
 Beispiele:
-
 - Kombination von Alter, Beruf und Quartier  
 - Einzelfälle in kleinen Gruppen (z. B. nur eine Ärztin in einem Dorf)  
 - Sensor- oder Zähldaten, die Bewegungen einzelner Fahrzeuge oder Geräte zeigen  
 - Datensätze mit seltenen Merkmalen („alle über 90-Jährigen im Stadtteil X“)  
-
 </TabItem>
-
 </Tabs>
 
----
+
 
 ## Wann gilt ein Datensatz als anonym?
 
@@ -60,7 +54,6 @@ Sobald eine Re-Identifikation technisch oder durch Zusatzwissen möglich wäre, 
 Wenn eine Person mit allgemein zugänglichen Informationen oder durch Kombination mehrerer Merkmale erkennbar wäre, gilt der Datensatz als **personenbezogen**.
 :::
 
----
 
 ## Vorgehen bei Personenbezug
 
@@ -74,18 +67,6 @@ Wenn der Datensatz (direkt oder indirekt) Personenbezug enthält, gilt folgendes
    → **Keine Veröffentlichung** als OGD; interne Nutzung oder Zugriffsbeschränkung.  
 4. **Wenn ja:**  
    → Veröffentlichung nach dokumentierten Schutzmassnahmen (vgl. [→ Vermeidung des Personenbezugs](./vermeidung)).
-
----
-
-## Zuständigkeiten
-
-| Rolle | Aufgabe |
-|-------|----------|
-| **Dateneigner** | Prüft, ob Personenbezug besteht, entscheidet über Freigabe oder Massnahmen |
-| **Fachstelle Daten** | Stellt Hilfsmittel, Schulungen und Checklisten bereit |
-| **Datenschutzstelle** | Unterstützt bei Grenzfällen oder rechtlichen Unsicherheiten |
-
----
 
 ## Zusammenfassung
 
