@@ -14,7 +14,7 @@ Massgeblich sind das revidierte Bundesgesetz über den Datenschutz (revDSG) und 
 - Personendaten vorliegen oder Rückschlüsse auf Personen möglich sind,
 - überwiegende öffentliche/privaten Interessen, Urheberrechte, Amts-/Geheimhaltung entgegenstehen.
 
-**Vermeidung des Personenbezugs (Art. 5 Abs. 2):** Veröffentlichung ist möglich, wenn der Schutzbedarf durch Anonymisierung, Aggregation, Pseudonymisierung, Weglassen oder vergleichbare Massnahmen gewahrt wird.
+**Vermeidung des Personenbezugs (Art. 5 Abs. 2):** Veröffentlichung ist möglich, wenn der Schutzbedarf durch Anonymisierung, Aggregation, Weglassen oder vergleichbare Massnahmen gewahrt wird.
 
 **Verhältnismässigkeit (Art. 5 Abs. 3):** Ein Verzicht ist zulässig, wenn der Aufwand der Schutzmassnahmen unverhältnismässig zum öffentlichen Interesse wäre.
 

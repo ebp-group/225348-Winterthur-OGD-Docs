@@ -15,11 +15,8 @@ Die Stadtverwaltung verpflichtet sich, nur solche Daten zu publizieren, die date
 ## Prüfung und Verantwortung
 
 Vor jeder Veröffentlichung wird geprüft:
-
 - Enthalten die Daten Personenbezug oder Rückschlüsse auf Personen?
-
-- Falls ja: Können sie so bearbeitet oder anonymisiert werden, dass kein Personenbezug mehr besteht?
-
+- Falls ja: Können durch Vermeidung des Personenbezugs die Rückschlüsse vermieden werden?
 - Falls nein: Keine Publikation.
 
 Der Dateneigner führt diese Prüfung durch. Die Fachstelle Daten stellt Checklisten, Hilfsmittel und Beratung zur Verfügung. Bei Unsicherheiten unterstützt die Datenschutzstelle.
@@ -32,8 +29,10 @@ Wenn Daten Schutzbedarf aufweisen, stehen folgende Methoden zur Verfügung:
 
 - Aggregation: Zusammenfassen von Einzelwerten zu Gruppen oder Räumen.
 
-- Pseudonymisierung: Ersetzen von Identifikatoren durch Codes (bleibt personenbezogen).
-
 - De-Identifikation: Kombination mehrerer Verfahren, um Rückschlüsse auszuschliessen.
 
 Ergänzend können Zellunterdrückung, räumliche Generalisierung oder Zufallsrauschen angewendet werden.
+
+:::danger
+Die Pseudonymisierung ist nicht ausreichend zur Vermeidung des Personenbezuges, da es sich bei pseudonymisierten Daten immernoch um Personendaten handelt und die nach OGD- Verordnun Art. 5 nicht veröffentlicht werden dürfen.
+:::
