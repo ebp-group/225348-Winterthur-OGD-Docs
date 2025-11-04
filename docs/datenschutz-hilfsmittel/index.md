@@ -1,15 +1,10 @@
 ---
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Datenschutz-Hilfsmittel
 
-Dieses Hilfsmittel zeigt, wie mit schützenswerten Daten umgegangen wird und welche technischen Massnahmen vor einer Publikation als Open Government Data nötig sind. 
-
-
-
-
-
+Dieses Hilfsmittel zeigt, wie mit schützenswerten Daten umgegangen wird und welche technischen Massnahmen vor einer Publikation als Open Government Data nötig sind. Es soll als Leitfaden dienen, wenn datenschutzbedenken im Raum stehen und wie diese gelöst werden können. Dazu stehen best- practices zur Verfügung, wie der Datenschutz gewährt werden kann, ohne die Datenqualität zu tangieren. 
 
 ```mermaid
 ---
@@ -27,11 +22,11 @@ flowchart TD
     E -- Nein --> X2["Kein OGD. Alternative: **Vermeidung des Personenbezugs**, interne Nutzung oder Zugriffssteuerung."]
     F -- Ja --> C
     F -- Nein --> X3["Kein OGD."]
-    C -- Ja --> G@{ label: "Wurden Rechte an die Stadt übertragen und **Persönlichkeitsrechte** gewahrt/verzichtet?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/urheberrecht-lizenzen\">[→ Urheberrecht/Lizenzen]</a>" }
+    C -- Ja --> G@{ label: "Wurden Rechte an die Stadt übertragen und **Persönlichkeitsrechte** gewahrt/verzichtet?>" }
     C -- Nein --> H["Darf der Datensatz **kostenlos** bereitgestellt werden?"]
     G -- Ja --> H
     G -- Nein --> X4["Kein OGD, bis Rechte geklärt sind."]
-    H -- Ja --> I@{ label: "Ist **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/lizenzauswahl\">[→ Lizenzwahl]</a>" }
+    H -- Ja --> I@{ label: "Ist **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?" }
     H -- Nein --> Y1["OGD möglich, aber mit **klaren Nutzungsbedingungen** (nicht-kommerziell)"]
     I -- Ja --> J["Ist **Quellenangabe** obligatorisch?"]
     I -- Nein --> Y2["OGD möglich, aber **Nutzungseinschränkungen** dokumentieren."]
@@ -61,8 +56,8 @@ flowchart TD
 ```
 :::info
 Kann eine Frage nicht klar beantwortet werden, steht die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] zur weiteren Erläuterung zur Verfügung.
-[Arbeitshilfe für Behörden zur Publikation von Daten als OGD]: https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/ogd/dokumentation.assetdetail.11147071.html
 :::
+[Arbeitshilfe für Behörden zur Publikation von Daten als OGD]: https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/ogd/dokumentation.assetdetail.11147071.html
 
 ## TODOs:
 

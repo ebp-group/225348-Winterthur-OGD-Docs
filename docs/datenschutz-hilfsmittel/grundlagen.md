@@ -4,12 +4,36 @@ sidebar_position: 2
 
 # Grundlagen
 
-Der Datenschutz bildet eine zentrale Grundlage im Umgang mit offenen Verwaltungsdaten (Open Government Data, OGD). Ziel ist es, die Transparenz und Nachnutzbarkeit öffentlicher Daten zu fördern, ohne dabei die Rechte und Freiheiten von Personen zu gefährden. Für die Stadt Winterthur gilt: Daten sollen grundsätzlich offen zugänglich gemacht werden, sofern keine gesetzlichen oder schutzwürdigen Gründe dagegen sprechen. Bestehen Datenschutzbedenken, können technische und organisatorische Hilfsmittel wie Anonymisierung, Aggregation oder Pseudonymisierung eingesetzt werden, um eine Veröffentlichung dennoch zu ermöglichen.
+Der Datenschutz ist ein zentraler Bestandteil von Open Government Data (OGD) in der Stadt Winterthur. Gemäss dem Prinzip „Open by Default“ sollen Verwaltungsdaten grundsätzlich veröffentlicht werden – sofern kein Schutzbedarf besteht. Bestehen Datenschutzbedenken, müssen diese im Rahmen des Prüfprozesses erkannt und mit geeigneten Massnahmen adressiert werden.
 
-Rechtlich stützt sich der Datenschutz im Bereich OGD auf das revidierte Bundesgesetz über den Datenschutz (revDSG), das seit dem 1. September 2023 in Kraft ist. Es verpflichtet Behörden dazu, Personendaten rechtmässig, verhältnismässig und zweckgebunden zu bearbeiten. Eine Veröffentlichung von Daten als OGD darf daher nur erfolgen, wenn sie auf einer klaren gesetzlichen Grundlage beruht und keine Rückschlüsse auf identifizierbare Personen möglich sind. Der Grundsatz lautet: **„So offen wie möglich, so geschützt wie nötig.“**
+## Rechtlicher Rahmen
 
-Auf nationaler Ebene geben die OGD-Richtlinien von [opendata.swiss](https://handbook.opendata.swiss/de/content/glossar/bibliothek/ogd-richtlinien.html) den Rahmen vor. Sie fordern von öffentlichen Stellen eine sorgfältige Prüfung, ob Datensätze Personendaten oder andere schutzwürdige Inhalte enthalten. Sind solche Merkmale vorhanden, müssen sie vor einer Veröffentlichung entfernt oder so verändert werden, dass keine Re-Identifikation mehr möglich ist. Erst danach kann eine Publikation als OGD in Betracht gezogen werden. Diese Richtlinien bilden den massgeblichen Standard für Bund, Kantone und Gemeinden und sind damit auch für Winterthur verbindlich orientierend.
+Die Veröffentlichung von Daten richtet sich nach dem revidierten Datenschutzgesetz (revDSG) und dem Gesetz über Information und Datenschutz (IDG ZH).
+Personendaten dürfen nur veröffentlicht werden, wenn eine gesetzliche Grundlage besteht oder der Personenbezug wirksam entfernt wurde.
+Die Stadtverwaltung verpflichtet sich, nur solche Daten zu publizieren, die datenschutzrechtlich unbedenklich sind.
 
-Mehrere Kantone und Städte haben ähnliche Ansätze entwickelt. So betonen etwa die OGD-Strategien der Kantone Zürich, Zug und Basel-Stadt, dass offene Daten nur dann veröffentlicht werden dürfen, wenn keine datenschutzrechtlichen Risiken bestehen oder geeignete Schutzmassnahmen angewandt wurden. Diese Grundhaltung zeigt, dass der Datenschutz nicht als Hindernis, sondern als integraler Bestandteil eines verantwortungsvollen Datenmanagements verstanden wird. Für Winterthur bedeutet dies, die gleichen Prinzipien anzuwenden: Daten können in der Regel veröffentlicht werden, sofern sie keinen Personenbezug aufweisen oder durch geeignete Massnahmen datenschutzkonform aufbereitet wurden.
+## Prüfung und Verantwortung
 
-Das vorliegende Kapitel dient somit als Hilfsmittel für Mitarbeitende, um im Einzelfall fundiert zu entscheiden, ob ein Datensatz als OGD publiziert werden kann. Es zeigt praxisnah auf, wie mit Datenschutzfragen umzugehen ist, welche Prüfschritte notwendig sind und welche Methoden zur Verfügung stehen, um datenschutzrechtliche Risiken zu reduzieren. So unterstützt das Kapitel die Zielsetzung der Stadt Winterthur, offene Verwaltungsdaten bereitzustellen und gleichzeitig den Schutz von Personen jederzeit zu gewährleisten.
+Vor jeder Veröffentlichung wird geprüft:
+
+- Enthalten die Daten Personenbezug oder Rückschlüsse auf Personen?
+
+- Falls ja: Können sie so bearbeitet oder anonymisiert werden, dass kein Personenbezug mehr besteht?
+
+- Falls nein: Keine Publikation.
+
+Der Dateneigner führt diese Prüfung durch. Die Fachstelle Daten stellt Checklisten, Hilfsmittel und Beratung zur Verfügung. Bei Unsicherheiten unterstützt die Datenschutzstelle.
+
+## Hilfsmittel zur Vermeidung von Personenbezug
+
+Wenn Daten Schutzbedarf aufweisen, stehen folgende Methoden zur Verfügung:
+
+- Anonymisierung: Entfernen oder Verändern identifizierender Merkmale.
+
+- Aggregation: Zusammenfassen von Einzelwerten zu Gruppen oder Räumen.
+
+- Pseudonymisierung: Ersetzen von Identifikatoren durch Codes (bleibt personenbezogen).
+
+- De-Identifikation: Kombination mehrerer Verfahren, um Rückschlüsse auszuschliessen.
+
+Ergänzend können Zellunterdrückung, räumliche Generalisierung oder Zufallsrauschen angewendet werden.
