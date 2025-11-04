@@ -8,44 +8,53 @@ sidebar_position: 3
 Dieses Hilfsmittel zeigt, wie mit schützenswerten Daten umgegangen wird und welche technischen Massnahmen vor einer Publikation als Open Government Data nötig sind. 
 
 :::
-```mermaid
+
+
+---
+config:
+  layout: dagre
+---
 flowchart TD
-  A["Besteht eine **gesetzliche Grundlage** für die Publikation?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen'>[→ Grundlagen]</a>"] -->|Ja| B["Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/was-ist-personenbezug'>[→ Personenbezug]</a>"]
-  A -->|Nein| X1["Kein OGD. Prüfen: gesetzliche Grundlage schaffen oder Datensatz so transformieren, dass **kein Personenbezug** mehr besteht."]
+    A@{ label: "Besteht eine **gesetzliche Grundlage** für die Publikation?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen\">[→ Grundlagen]</a>" } -- Ja --> B@{ label: "Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/was-ist-personenbezug\">[→ Personenbezug]</a>" }
+    A -- Nein --> X1["Kein OGD. Prüfen: gesetzliche Grundlage schaffen oder Datensatz so transformieren, dass **kein Personenbezug** mehr besteht."]
+    B -- Nein --> C["Sind die Daten **urheberrechtlich** geschützt?"]
+    B -- Ja --> D["Handelt es sich um **besonders schützenswerte Personendaten**?"]
+    D -- Ja --> E@{ label: "Erlaubt ein **formelles Gesetz** die Publikation dieser Daten?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen\">[→ Rechtsgrundlagen]</a>" }
+    D -- Nein --> F@{ label: "Sind **Vermeidungen des Personenbezugs** möglich, sodass **kein Personenbezug** mehr besteht?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/vermeidung\">[→ Vermeidung des Personenbezugs ]</a>" }
+    E -- Ja --> C
+    E -- Nein --> X2["Kein OGD. Alternative: **Vermeidung des Personenbezugs**, interne Nutzung oder Zugriffssteuerung."]
+    F -- Ja --> C
+    F -- Nein --> X3["Kein OGD."]
+    C -- Ja --> G@{ label: "Wurden Rechte an die Stadt übertragen und **Persönlichkeitsrechte** gewahrt/verzichtet?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/urheberrecht-lizenzen\">[→ Urheberrecht/Lizenzen]</a>" }
+    C -- Nein --> H["Darf der Datensatz **kostenlos** bereitgestellt werden?"]
+    G -- Ja --> H
+    G -- Nein --> X4["Kein OGD, bis Rechte geklärt sind."]
+    H -- Ja --> I@{ label: "Ist **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/lizenzauswahl\">[→ Lizenzwahl]</a>" }
+    H -- Nein --> Y1["OGD möglich, aber mit **klaren Nutzungsbedingungen** (nicht-kommerziell)"]
+    I -- Ja --> J["Ist **Quellenangabe** obligatorisch?"]
+    I -- Nein --> Y2["OGD möglich, aber **Nutzungseinschränkungen** dokumentieren."]
+    J -- Ja --> Z2["Publikation auf OGD mit Hinweis **Quellenangabe erforderlich**."]
+    J -- Nein --> Z1["Der Datensatz kann auf OGD publiziert werden, es muss auf der Plattform aber der Vermerk angebracht werde, dass die Quellenangabe obligatorisch ist."]
+    C --> n1["Untitled Node"]
+    A@{ shape: rect}
+    B@{ shape: rect}
+    E@{ shape: rect}
+    F@{ shape: rect}
+    G@{ shape: rect}
+    I@{ shape: rect}
+     X1:::stop
+     X2:::stop
+     X3:::stop
+     X4:::stop
+     Y1:::ok
+     Y2:::ok
+     Z2:::ok
+     Z1:::ok
+    classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000
+    classDef warn fill:#FFFFFF,stroke:#9e9e9e,color:#FFFFFF
+    classDef stop fill:#ffebee,stroke:#8b0000,color:#000
 
-  B -->|Nein| C["Sind die Daten **urheberrechtlich** geschützt?"]
-  B -->|Ja| D["Handelt es sich um **besonders schützenswerte Personendaten**?"]
 
-  D -->|Ja| E["Erlaubt ein **formelles Gesetz** die Publikation dieser Daten?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen'>[→ Rechtsgrundlagen]</a>"]
-  D -->|Nein| F["Sind **Vermeidungen des Personenbezugs** möglich, sodass **kein Personenbezug** mehr besteht?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/vermeidung'>[→ Vermeidung des Personenbezugs ]</a>"]
-
-  E -->|Ja| C
-  E -->|Nein| X2["Kein OGD. Alternative: **Vermeidung des Personenbezugs**, interne Nutzung oder Zugriffssteuerung."]
-  F -->|Ja| C
-  F -->|Nein| X3["Kein OGD."]
-
-  C -->|Ja| G["Wurden Rechte an die Stadt übertragen und **Persönlichkeitsrechte** gewahrt/verzichtet?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/urheberrecht-lizenzen'>[→ Urheberrecht/Lizenzen]</a>"]
-  C -->|Nein| H["Darf der Datensatz **kostenlos** bereitgestellt werden?"]
-
-  G -->|Ja| H
-  G -->|Nein| X4["Kein OGD, bis Rechte geklärt sind."]
-
-  H -->|Ja| I["Ist **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/lizenzauswahl'>[→ Lizenzwahl]</a>"]
-  H -->|Nein| Y1["OGD möglich, aber mit **klaren Nutzungsbedingungen** (nicht-kommerziell)"]
-
-  I -->|Ja| J["Ist **Quellenangabe** obligatorisch?"]
-  I -->|Nein| Y2["OGD möglich, aber **Nutzungseinschränkungen** dokumentieren."]
-
-  J -->|Ja| Z2["Publikation auf OGD mit Hinweis **Quellenangabe erforderlich**."]
-  J -->|Nein| Z1["Publikation auf OGD möglich. Empfohlen: **offene Standardlizenz** (z. B. ODbL, CC BY)."]
-
-  classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000;
-  classDef warn fill:#ffffff,stroke:#9e9e9e,color:#000;
-  classDef stop fill:#ffebee,stroke:#8b0000,color:#000;
-
-  class Z1,Z2,Y1,Y2 ok;
-  class X1,X2,X3,X4 stop;
-```
 Kann eine Frage nicht klar beantwortet werden, steht die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] zur weiteren Erläuterung zur Verfügung.
 
 [Arbeitshilfe für Behörden zur Publikation von Daten als OGD]: https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/ogd/dokumentation.assetdetail.11147071.html
