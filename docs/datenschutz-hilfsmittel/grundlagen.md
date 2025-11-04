@@ -33,6 +33,6 @@ Wenn Daten Schutzbedarf aufweisen, stehen folgende Methoden zur Verfügung:
 
 Ergänzend können Zellunterdrückung, räumliche Generalisierung oder Zufallsrauschen angewendet werden.
 
-:::danger
+:::note[**Hinweis**]
 Die Pseudonymisierung ist nicht ausreichend zur Vermeidung des Personenbezuges, da es sich bei pseudonymisierten Daten immernoch um Personendaten handelt und die nach OGD- Verordnun Art. 5 nicht veröffentlicht werden dürfen.
 :::

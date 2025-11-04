@@ -6,7 +6,7 @@ sidebar_position: 3
 Vor jeder Veröffentlichung offener Verwaltungsdaten ist zu prüfen, **ob ein Personenbezug besteht**.  
 Dieses Kapitel hilft, zu erkennen, wann Daten als personenbezogen gelten und welche Schritte dann folgen.
 
-:::tip
+:::danger
 Ein Datensatz gilt als **personenbezogen**, wenn er direkt oder indirekt einer natürlichen Person zugeordnet werden kann.
 :::
 
