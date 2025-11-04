@@ -23,13 +23,13 @@ Massgeblich sind das revidierte Bundesgesetz über den Datenschutz (revDSG) und 
 - Kompetenzzentrum OGD unterstützt, setzt Richtlinien/Standards und prüft die Einhaltung (inkl. Datenschutzkonformität) vor der Erstpublikation.
 - Bei Zweifeln ist die Datenschutzstelle beizuziehen.
 
-Metadaten & Transparenz (Art. 4 Abs. 2 lit. b; Art. 10): Schutzmassnahmen und Aktualität sind in den Metadaten bzw. der Dokumentation nachvollziehbar zu beschreiben.
+**Metadaten & Transparenz (Art. 4 Abs. 2 lit. b; Art. 10):** Schutzmassnahmen und Aktualität sind in den Metadaten bzw. der Dokumentation nachvollziehbar zu beschreiben.
 
 ### Was heisst das in der Praxis?
 
 1. Personenbezug prüfen (direkt/indirekt).
 2. Ausschlussgründe gemäss Art. 5 beurteilen.
-3. Falls nötig: Vermeidung des Personenbezugs (Anonymisierung, Aggregation, Pseudonymisierung, Weglassen) und Dokumentation der Wahl/Parameter.
+3. Falls nötig: Vermeidung des Personenbezugs (Anonymisierung, Aggregation, Weglassen) und Dokumentation der Wahl/Parameter.
 4. Freigabe über Dateneigner, Qualitäts-/Compliance-Check durch Kompetenzzentrum; bei Unsicherheiten Datenschutzstelle einbinden.
 5. Regelmässig überprüfen und Metadaten aktuell halten.
 

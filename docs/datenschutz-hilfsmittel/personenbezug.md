@@ -10,8 +10,6 @@ Dieses Kapitel hilft, zu erkennen, wann Daten als personenbezogen gelten und wel
 Ein Datensatz gilt als **personenbezogen**, wenn er direkt oder indirekt einer natürlichen Person zugeordnet werden kann.
 :::
 
-
-
 ## Was sind Personendaten?
 
 Gemäss dem **Bundesgesetz über den Datenschutz (revDSG)** und dem **Gesetz über Information und Datenschutz (IDG ZH)** sind Personendaten:
@@ -42,8 +40,6 @@ Beispiele:
 </TabItem>
 </Tabs>
 
-
-
 ## Wann gilt ein Datensatz als anonym?
 
 Ein Datensatz ist **anonymisiert**, wenn **keine Person auch mit vernünftigem Aufwand identifiziert werden kann**.  
@@ -53,7 +49,6 @@ Sobald eine Re-Identifikation technisch oder durch Zusatzwissen möglich wäre, 
 **Praxisregel:**  
 Wenn eine Person mit allgemein zugänglichen Informationen oder durch Kombination mehrerer Merkmale erkennbar wäre, gilt der Datensatz als **personenbezogen**.
 :::
-
 
 ## Vorgehen bei Personenbezug
 
@@ -68,10 +63,7 @@ Wenn der Datensatz (direkt oder indirekt) Personenbezug enthält, gilt folgendes
 4. **Wenn ja:**  
    → Veröffentlichung nach dokumentierten Schutzmassnahmen (vgl. [→ Vermeidung des Personenbezugs](./vermeidung)).
 
-
-:::tip
-**Kurzcheck Personenbezug**
-
+:::note[**Kurzcheck Personenbezug**]
 1. Enthält der Datensatz Informationen über Einzelpersonen?  
 2. Lassen sich durch Kombination Rückschlüsse auf Personen ziehen?  
 3. Können die Daten ohne unzumutbaren Aufwand anonymisiert werden?

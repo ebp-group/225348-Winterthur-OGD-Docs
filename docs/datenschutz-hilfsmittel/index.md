@@ -48,6 +48,7 @@ flowchart TD
      X2:::stop
      X3:::stop
      G:::neutral
+     H:::neutral
      X4:::stop
      I:::neutral
      Y1:::stop
