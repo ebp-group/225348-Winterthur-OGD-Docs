@@ -17,10 +17,10 @@ flowchart TD
   B -->|Ja| D["Handelt es sich um **besonders schützenswerte Personendaten**?"]
 
   D -->|Ja| E["Erlaubt ein **formelles Gesetz** die Publikation dieser Daten?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen'>[→ Rechtsgrundlagen]</a>"]
-  D -->|Nein| F["Sind **Anonymisierung/Aggregation** möglich, sodass **kein Personenbezug** mehr besteht?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/anonymisierung'>[→ Anonymisierung]</a>"]
+  D -->|Nein| F["Sind **Vermeidungen des Personenbezugs** möglich, sodass **kein Personenbezug** mehr besteht?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/vermeidung'>[→ Vermeidung des Personenbezugs ]</a>"]
 
   E -->|Ja| C
-  E -->|Nein| X2["Kein OGD. Alternative: **Anonymisieren/Pseudonymisieren**, interne Nutzung oder Zugriffssteuerung."]
+  E -->|Nein| X2["Kein OGD. Alternative: **Vermeidung des Personenbezugs**, interne Nutzung oder Zugriffssteuerung."]
   F -->|Ja| C
   F -->|Nein| X3["Kein OGD."]
 
@@ -46,26 +46,11 @@ flowchart TD
   class Z1,Z2,Y1,Y2 ok;
   class X1,X2,X3,X4 stop;
 ```
-Kann eine Frage nicht klar beantwortet werden, steht die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] zur weiteren Erläterung zur Verfügung..
+Kann eine Frage nicht klar beantwortet werden, steht die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] zur weiteren Erläuterung zur Verfügung.
+
 [Arbeitshilfe für Behörden zur Publikation von Daten als OGD]: https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/ogd/dokumentation.assetdetail.11147071.html
 
-Hier soll die Datensouveränität, Löschfristen und Datensicherheit, wie auch der Schutz angesprochen und State- of the Art Ansätze geliefert werden - dies wird in Anlehnung an den [OGD-Masterplan] der Schweiz.
-
-[OGD-Masterplan]: https://data.europa.eu/sites/default/files/2025-06/2024_odm_factsheet_switzerland.pdf
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs queryString="metadata">
-  <TabItem value="ansaetze" label="Ansätze">
-    Dies sind Ansätze.
-  </TabItem>
-  <TabItem value="bestpractices" label="Best- practices">
-    Dies sind best- practices.
-  </TabItem>
-</Tabs>
-
-TODOs:
+## TODOs:
 
 - [ ] Grundlagen erarbeiten
 - [ ] Beispiel für Re-Identifikation zeigen (siehe z.B. https://spatialists.ch/posts/2025/07/01-differential-privacy-being-wrong-on-purpose/index.html, https://programming-dp.com/)
