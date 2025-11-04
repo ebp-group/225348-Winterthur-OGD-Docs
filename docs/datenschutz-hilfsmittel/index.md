@@ -9,7 +9,7 @@ Dieses Hilfsmittel zeigt, wie mit schützenswerten Daten umgegangen wird und wel
 
 :::
 
-
+```mermaid
 ---
 config:
   layout: dagre
@@ -53,7 +53,7 @@ flowchart TD
     classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000
     classDef warn fill:#FFFFFF,stroke:#9e9e9e,color:#FFFFFF
     classDef stop fill:#ffebee,stroke:#8b0000,color:#000
-
+```
 
 Kann eine Frage nicht klar beantwortet werden, steht die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] zur weiteren Erläuterung zur Verfügung.
 
