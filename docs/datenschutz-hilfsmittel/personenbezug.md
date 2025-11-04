@@ -6,7 +6,7 @@ sidebar_position: 3
 Vor jeder Veröffentlichung offener Verwaltungsdaten ist zu prüfen, **ob ein Personenbezug besteht**.  
 Dieses Kapitel hilft, zu erkennen, wann Daten als personenbezogen gelten und welche Schritte dann folgen.
 
-:::danger
+:::warning
 Ein Datensatz gilt als **personenbezogen**, wenn er direkt oder indirekt einer natürlichen Person zugeordnet werden kann.
 :::
 
@@ -57,9 +57,9 @@ Wenn der Datensatz (direkt oder indirekt) Personenbezug enthält, gilt folgendes
 1. **Gesetzliche Grundlage prüfen**  
    → Besteht eine explizite Rechtsgrundlage für die Veröffentlichung?  
 2. **Schutzmassnahmen prüfen**  
-   → Kann der Personenbezug durch Anonymisierung, Aggregation, Pseudonymisierung oder De-Identifikation beseitigt werden?  
+   → Kann der Personenbezug durch Anonymisierung, Aggregation oder De-Identifikation beseitigt werden?  
 3. **Wenn nein:**  
-   → **Keine Veröffentlichung** als OGD; interne Nutzung oder Zugriffsbeschränkung.  
+   → **Keine Veröffentlichung als OGD**  
 4. **Wenn ja:**  
    → Veröffentlichung nach dokumentierten Schutzmassnahmen (vgl. [→ Vermeidung des Personenbezugs](./vermeidung)).
 

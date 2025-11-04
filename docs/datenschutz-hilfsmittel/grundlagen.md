@@ -4,8 +4,7 @@ sidebar_position: 1
 
 # Grundlagen
 
-Der Datenschutz ist ein zentraler Bestandteil von Open Government Data (OGD) in der Stadt Winterthur. Gemäss dem Prinzip „Open by Default“ sollen Verwaltungsdaten grundsätzlich veröffentlicht werden – sofern kein Schutzbedarf besteht. Bestehen Datenschutzbedenken, müssen diese im Rahmen des Prüfprozesses erkannt und mit geeigneten Massnahmen adressiert werden.
-
+Der Datenschutz ist ein zentraler Bestandteil von Open Government Data (OGD) in der Stadt Winterthur. Gemäss dem Prinzip „Open by Default“ sollen Verwaltungsdaten grundsätzlich veröffentlicht werden – sofern kein Schutzbedarf besteht. Bestehen Datenschutzbedenken, müssen diese im Rahmen des Prüfprozesses erkannt und mit geeigneten Massnahmen adressiert werden. 
 ## Rechtlicher Rahmen
 
 Die Veröffentlichung von Daten richtet sich nach dem revidierten Datenschutzgesetz (revDSG) und dem Gesetz über Information und Datenschutz (IDG ZH).
@@ -32,7 +31,3 @@ Wenn Daten Schutzbedarf aufweisen, stehen folgende Methoden zur Verfügung:
 - De-Identifikation: Kombination mehrerer Verfahren, um Rückschlüsse auszuschliessen.
 
 Ergänzend können Zellunterdrückung, räumliche Generalisierung oder Zufallsrauschen angewendet werden.
-
-:::note[**Hinweis**]
-Die Pseudonymisierung ist nicht ausreichend zur Vermeidung des Personenbezuges, da es sich bei pseudonymisierten Daten immernoch um Personendaten handelt und die nach OGD- Verordnun Art. 5 nicht veröffentlicht werden dürfen.
-:::
