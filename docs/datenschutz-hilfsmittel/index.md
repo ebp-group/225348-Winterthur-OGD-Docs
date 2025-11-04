@@ -12,7 +12,7 @@ config:
   layout: elk
 ---
 flowchart TD
-    A@{ label: "Besteht eine **gesetzliche Grundlage** für die Publikation?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen\">[→ Grundlagen]</a>" } -- Ja --> B@{ label: "Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/was-ist-personenbezug\">[→ Personenbezug]</a>" }
+    A@{ label: "Besteht eine **gesetzliche Grundlage** für die Publikation?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen\">[→ Grundlagen]</a>" } -- Ja --> B@{ label: "Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/personenbezug\">[→ Personenbezug]</a>" }
     A -- Nein --> X1["Kein OGD. Prüfen: gesetzliche Grundlage schaffen oder Datensatz so transformieren, dass **kein Personenbezug** mehr besteht."]
     B -- Nein --> C["Sind die Daten **urheberrechtlich** geschützt?"]
     B -- Ja --> D["Handelt es sich um **besonders schützenswerte Personendaten**?"]
