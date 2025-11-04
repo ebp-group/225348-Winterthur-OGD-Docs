@@ -1,21 +1,23 @@
 ---
+title: Vermeidung des Personenbezugs
 sidebar_position: 4
 ---
-
-# Vermeidung des Personenbezugs 
-
-Wenn bei einem Datensatz ein Personenbezug vorhanden ist und eine direkte Publikation nicht in Frage kommt, stehen Verfahren zur Verfügung, mit denen der Personenbezug zumindest soweit beseitigt oder reduziert werden kann, dass eine OGD-Publikation möglich wird (§ 5 Abs. 2 der Verordnung).  
-Wichtig: Eine **Pseudonymisierung** bleibt grundsätzlich **personenbezogen** und fällt damit nicht unter „offene Verwaltungsdaten“, sofern nicht zusätzlich zur Pseudonymisierung weitere Massnahmen ergriffen werden.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Dieses Kapitel zeigt, **wie** Datensätze für OGD so aufbereitet werden, dass **kein Personenbezug** mehr besteht.  
-Gemäss Art. 5 der OGD-Verordnung gilt: **Pseudonymisierte Daten bleiben personenbezogen** und sind **nicht** als OGD zu veröffentlichen; eine Publikation kommt nur in Frage, wenn der Personenbezug **wirksam beseitigt** wird (z. B. durch Anonymisierung/Aggregation).
+# Vermeidung des Personenbezugs
+
+Dieses Kapitel zeigt, wie Datensätze so aufbereitet werden, dass **kein Personenbezug** mehr besteht.  
+Gemäss **Art. 5 der OGD-Verordnung der Stadt Winterthur** gilt:  
+**Pseudonymisierte Daten bleiben personenbezogen** und dürfen **nicht** als Open Government Data veröffentlicht werden.  
+Eine Publikation ist nur zulässig, wenn der Personenbezug durch geeignete **technische Massnahmen vollständig beseitigt** wurde.
 
 :::tip
 **Zielbild:** *So offen wie möglich, so geschützt wie nötig.*  
-Erst **nach** wirksamer Vermeidung des Personenbezugs (Anonymisierung/Aggregation/De-Identifikation) sind Daten OGD-tauglich. Leitplanken liefern die **OGD-Richtlinien** von opendata.swiss und Fachleitfäden zu De-Identifikation/Schutzmassnahmen.
+Erst nach einer wirksamen **Anonymisierung**, **Aggregation** oder **De-Identifikation** gelten Daten als OGD-tauglich.  
+Leitplanken liefern die [OGD-Richtlinien von opendata.swiss](https://handbook.opendata.swiss/de/content/glossar/bibliothek/ogd-richtlinien.html)
+und der [Leitfaden OGD für Geodaten (SIK-GIS / BFS, PDF)](https://www.sik.ch/fileadmin/user_upload/Leitfaden_OGD_Geodaten.pdf).
 :::
 
 <Tabs defaultValue="anonym" values={[
@@ -28,29 +30,36 @@ Erst **nach** wirksamer Vermeidung des Personenbezugs (Anonymisierung/Aggregatio
 
 ## Anonymisierung
 
-**Was:** Entfernt/verändert Identifikatoren so, dass **keine Re-Identifikation** für vernünftige Dritte mehr realistisch ist; anschliessend gelten die Daten **nicht** mehr als Personendaten.
+**Was:** Entfernt oder verändert alle identifizierenden Merkmale so, dass **keine Re-Identifikation** mehr möglich ist. Danach gelten die Daten **nicht** mehr als Personendaten.  
 
 **Wann einsetzen:**  
-- Punkt-/Einzeldatensätze (Events/Einträge) mit potenziell identifizierenden Merkmalen (Zeit, Ort, seltener Beruf etc.).  
-- Sensible Attribute, die nur nach **Maskierung** oder **Generalisierung** veröffentlichbar sind. 
+- Wenn Einzeldatensätze (z. B. Meldungen, Messwerte, Zählungen) potenziell Rückschlüsse auf Personen erlauben.  
+- Wenn sensible Attribute (z. B. Gesundheits-, Bewegungs- oder Standortdaten) veröffentlicht werden sollen.
 
 **Vorgehen (Winterthur-spezifisch):**
-1. **Identifikatoren inventarisieren**: direkte (Name, Kennzeichen) & Quasi-Identifikatoren (Alter, genaue Zeit, Hausnummer, exakte Koordinate).  
-2. **Direkte IDs entfernen**; Quasi-IDs **generalisieren**:  
-   - Alter → **5/10-Jahresklassen**; Datum/Zeit → **Woche/Monat**; Adresse → **Quartier/250-m-Raster**.  
-3. **Seltene Kombinationen schützen**:  
-   - **Primär-Suppression** für Gruppen mit **n < 5**; ggf. **Sekundär-Suppression**, damit Rückrechnung unmöglich bleibt.  
-4. **Rauschen** auf Zählwerten (bei Bedarf): ±1 mit dokumentierter Methode; für anspruchsvolle Fälle **Differential Privacy** mit kleinem ε und kurzer, laienverständlicher Erklärung in den Metadaten. 
-5. **Räumliche Generalisierung**: Punkt-Koordinaten **snappen** auf **250/500-m-Raster** oder **Stadt-Quartiere** (keine Hausnummern). **Geometrien vereinfachen** (keine Eingänge/Privatflächen erkennbar). Leitfaden für Geodaten-OGD beachten.
-6. **Re-ID-Check**: Stichprobe mit offen verfügbaren Quellen (Stadtplan, Firmenregister) – wenn identifizierbar → Schritt 2–5 schärfen.  
-7. **Metadaten** ergänzen: Welche Felder wurden entfernt/gebündelt? Welche Schwellen (k), Toleranzen, Raster? Verweis auf Richtlinie. 
+1. **Identifikatoren identifizieren:** direkte (Name, Kennzeichen) & Quasi-Identifikatoren (Alter, Zeitpunkt, Koordinate).  
+2. **Direkte Identifikatoren entfernen**, Quasi-IDs **generalisieren**:  
+   - Alter → 5- oder 10-Jahresklassen  
+   - Datum/Zeit → Woche oder Monat  
+   - Adresse → Quartier oder 250-m-Raster  
+3. **Seltene Kombinationen schützen:**  
+   - Unterdrücke Gruppen mit *n < 5* (Primär-Suppression)  
+   - ergänze Sekundär-Suppression, um Rückrechnung zu verhindern  
+4. **Rauschen (Noise)**: kleine Zufallsabweichungen ± 1 auf Zählwerten oder Differential-Privacy-Ansatz mit dokumentiertem ε-Wert.  
+5. **Räumliche Generalisierung:**  
+   - Punkte auf **250–500 m-Raster** oder **statistische Quartiere** runden, keine Hausnummern.  
+   - Geometrien vereinfachen (Douglas-Peucker > 20 m Toleranz).  
+6. **Re-ID-Test:** Stichprobe – können Personen durch Kombination mit öffentlichen Quellen identifiziert werden? Falls ja → Schritte 2–5 nachschärfen.  
+7. **Metadaten ergänzen:** beschreibe die angewandten Schutzmassnahmen, *k*-Schwelle, Rastergrösse und Rauschen.  
 
-**Beispiel (Schweiz):**  
-- **„Zürich schaut hin“**: Meldedaten werden **anonym** bereitgestellt; personenbezogene Angaben sind entfernt, Veröffentlichung erfolgt mit klaren Metadaten/Hinweisen. Vorgehen zeigt, dass sensible Inhalte nur **ohne Personenbezug** publiziert werden. 
-**Referenzen & Hilfsmittel:**  
-- OGD-Richtlinien (Bund): Publishing-Orientierung & Schutzvorbehalte. 
-- SIK-GIS/ BFS-Leitfaden **OGD für Geodaten**: Umgang mit räumlichen Daten & Anwendbarkeit von OGD. 
-- **EDÖB/TOM-Leitfaden**: organisatorische Massnahmen flankierend zur Technik.
+**Beispiel:**  
+- *Stadt Zürich – „Zürich schaut hin“*: Meldedaten werden vollständig **anonymisiert** veröffentlicht, ohne persönliche Angaben.  
+  👉 [data.stadt-zuerich.ch/dataset/sid_zuerich_schaut_hin](https://data.stadt-zuerich.ch/dataset/sid_zuerich_schaut_hin)
+
+**Hilfsmittel & Referenzen:**  
+- [OGD-Richtlinien opendata.swiss](https://handbook.opendata.swiss/de/content/glossar/bibliothek/ogd-richtlinien.html)  
+- [SIK-GIS/BFS Leitfaden OGD für Geodaten (PDF)](https://www.sik.ch/fileadmin/user_upload/Leitfaden_OGD_Geodaten.pdf)  
+- [EDÖB – Technische und organisatorische Massnahmen (TOM)](https://www.edoeb.admin.ch/edoeb/de/home/datenschutz/gesetzgebung/technical-and-organisational-measures.html)
 
 </TabItem>
 
@@ -58,26 +67,31 @@ Erst **nach** wirksamer Vermeidung des Personenbezugs (Anonymisierung/Aggregatio
 
 ## Aggregation
 
-**Was:** Einzelinformationen werden **auf Gruppen-, Raum- oder Zeitniveau** zusammengefasst; Individualmuster verschwinden, Aussage bleibt nutzbar.
+**Was:** Zusammenfassen von Einzelwerten zu **Gruppen, Räumen oder Zeitintervallen**, um individuelle Muster zu verbergen.
 
 **Wann einsetzen:**  
-- Städtische Zähl-/Nutzungsdaten (Verkehr, Umwelt, Meldesysteme), bei denen Einzelereignisse Personenbezug erzeugen könnten.
+- Bei städtischen Mess-, Nutzungs- oder Zähldaten (Verkehr, Umwelt, Energie, Meldesysteme).  
+- Wenn Einzelfälle oder kleine Gruppen Rückschlüsse auf Personen erlauben würden.
 
 **Vorgehen (Winterthur-spezifisch):**
-1. **Ebenen definieren**:  
-   - **Räumlich:** **Quartiere/Statistische Zonen** oder **250-m-Raster** (kein Kanton-Level).  
-   - **Zeitlich:** **Woche** oder **Monat** statt Tag/Uhrzeit.  
-2. **Schwellwerte**: Keine Veröffentlichung von Gruppen mit **n < 5**; **Merge** mit Nachbarzelle/-periode.  
-3. **Kennzahlen**: Mittel/Median/Quantile; **Top/Bottom-Coding** (z. B. Alter ≥ 90).  
-4. **Sonderfälle** (Events, seltene Kategorien): zusätzliche **Kategorie-Binning** (z. B. Berufsgruppen zusammenfassen).  
-5. **Qualitäts-/Bias-Hinweis** in den Metadaten (Auswirkung der Aggregation, MAUP-Hinweis, Stand/Update-Rhythmus).  
-6. **Portal-Praxis**: Bereitstellung über Stadt-/Kantonskatalog, Synchronisierung zu opendata.swiss; kantonale Leitlinien geben den Publikationsprozess vor. :contentReference[oaicite:10]{index=10}
+1. **Aggregations­ebenen wählen:**  
+   - Räumlich: **Quartiere**, **statistische Zonen** oder **250 m-Raster**.  
+   - Zeitlich: **Woche**, **Monat** oder **Quartal** statt einzelne Tage.  
+2. **Schwellwert anwenden:**  
+   - Keine Veröffentlichung von Gruppen mit *n < 5*.  
+   - Zusammenlegung benachbarter Zellen oder Zeiträume.  
+3. **Kennzahlen verwenden:** Mittel-, Median-, Quantil- oder Prozentwerte; Top/Bottom-Coding (z. B. „≥ 90 Jahre“).  
+4. **Kategorien bündeln:** seltene Ausprägungen zu „Andere“ oder „übrige Kategorien“ zusammenfassen.  
+5. **Metadaten ergänzen:** Aggregationslogik, Zeitbezug, Zellgrösse und aktualisierte Frequenz dokumentieren.  
 
-**Beispiel (Schweiz):**  
-- **Offene Daten Zürich (Kanton/ Stadt)**: Publiziert werden **aggregierte** Statistiken und geclusterte Geo-Daten; die Leitlinien betonen, dass **nicht-schützenswerte** Inhalte veröffentlicht werden und Schutzmassnahmen vorzuziehen sind. 
-**Referenzen & Hilfsmittel:**  
-- Kanton Zürich **Leitlinien „Offene Daten publizieren“**: Prozess & Anforderungen (auch für städtische Kontexte gut übertragbar). 
-- SIK-GIS/BFS-Leitfaden Geodaten-OGD (Aggregation/Generalisierung bei Geodaten). 
+**Beispiel:**  
+- *Open Data Zürich (Kanton Zürich)*: Bevölkerung, Verkehr und Sozialdaten werden **aggregiert** nach Gemeinde, Quartier oder Monat veröffentlicht.  
+  👉 [zh.ch – Leitlinien Open Data](https://www.zh.ch/de/politik-staat/opendata/leitlinien.html)  
+  👉 [data.stadt-zuerich.ch](https://data.stadt-zuerich.ch)
+
+**Hilfsmittel & Referenzen:**  
+- [Leitlinien „Offene Daten publizieren“ – Kanton Zürich](https://www.zh.ch/de/politik-staat/opendata/leitlinien.html)  
+- [SIK-GIS/BFS Leitfaden OGD für Geodaten (PDF)](https://www.sik.ch/fileadmin/user_upload/Leitfaden_OGD_Geodaten.pdf)
 
 </TabItem>
 
@@ -85,32 +99,33 @@ Erst **nach** wirksamer Vermeidung des Personenbezugs (Anonymisierung/Aggregatio
 
 ## De-Identifikation (Prozess)
 
-**Was:** Strukturiertes **Risikomanagement** zur Entfernung/Maskierung von Identifikatoren; kombiniert Methoden (Anonymisierung, Aggregation, Suppression, Rauschen), bis **kein** Personenbezug mehr besteht.
+**Was:** Ein strukturierter Prozess, um den Personenbezug durch Kombination mehrerer Massnahmen (Anonymisierung, Aggregation, Suppression, Rauschen) zu **eliminieren**.  
 
 **Wann einsetzen:**  
-- Bei **komplexen** Datensätzen (mehrere Quasi-IDs), iteratives Vorgehen nötig (z. B. Bewegungs-/Sensorikdaten, verknüpfte Fachdaten).
+- Bei komplexen Datensätzen mit mehreren Quasi-Identifikatoren (z. B. Verkehr, Energie, Sensorik, Verwaltungsregister).  
+- Wenn einfache Anonymisierung nicht genügt.
 
 **Vorgehen (Winterthur-spezifisch):**
-1. **Use-Case & Rechtsgrundlage** festhalten (OGD-Publikation; Art. 5).  
+1. **Zweck & Rechtsgrundlage** gemäss OGD-Verordnung festhalten.  
 2. **Variablenklassierung:** direkt identifizierend / quasi-identifizierend / sensitiv / frei.  
-3. **Risikobewertung** (Re-ID): kleine Gruppen, Ausreisser, Linkage-Risiken; Schwelle festlegen (z. B. *k* = 5).  
-4. **Massnahmen wählen:**  
-   - Generalisation (z. B. Quartier statt Adresse),  
-   - Aggregation (Woche/Monat; 250-m-Raster),  
-   - Suppression (Primär+Sekundär),  
-   - Rauschen (z. B. ±1 Count),  
-   - Top/Bottom-Coding.  
-5. **Iteration & Test**: Re-ID-Risiko erneut prüfen; ggf. Parameter nachschärfen.  
-6. **Dokumentation & Metadaten:** Methode/Schwellen klar beschreiben; Link zur internen Prüfdoku setzen.  
-7. **Freigabeprozess**: Dateneigner → Kompetenzzentrum OGD (Gatekeeping/Standards) → Veröffentlichung + Monitoring. 
+3. **Risikobewertung:** Wahrscheinlichkeit der Re-Identifikation (z. B. *k* ≥ 5 Personen pro Gruppe).  
+4. **Massnahmen umsetzen:**  
+   - Generalisierung: z. B. Quartier statt Adresse.  
+   - Aggregation: Monatswerte statt Tageswerte.  
+   - Suppression: Zellen mit *n < 5* entfernen + Sekundär-Suppression.  
+   - Rauschen: ± 1 auf Counts oder DP-Noise.  
+5. **Iterative Prüfung:** Re-ID-Test; falls Risiko > Schwelle, Massnahmen nachschärfen.  
+6. **Dokumentation:** Methode, Parameter und Risikobewertung im internen Publikationsdossier hinterlegen; Hinweis in Metadaten.  
+7. **Freigabeprozess:** Dateneigner → Kompetenzzentrum OGD → Veröffentlichung im Portal → Monitoring durch Kompetenzzentrum.  
 
-**Beispiel (Schweiz):**  
-- **SPHN „Data de-identification – phased approach“**: Schweizer Leitdokument für stufenweises De-Identifizieren inkl. **Template** und **Regeln** (übertragbar auf kommunale Datenaufbereitung). 
+**Beispiel:**  
+- *Swiss Personalized Health Network (SPHN)*: „Data De-Identification – Phased Approach“ (2022) zeigt den Schweizer Best Practice-Prozess zur stufenweisen De-Identifikation – von der Risikoanalyse bis zur Publikation.  
+  👉 [SPHN – Data de-identification (PDF)](https://sphn.ch/wp-content/uploads/2022/05/Data-de-identification-Phased-approach-v1.0.pdf)
 
-**Referenzen & Hilfsmittel:**  
-- SPHN De-Identifikation (Report + Template). 
-- EDÖB-Leitfaden **TOM** (flankierende organisatorische Massnahmen). 
-- BFS/OGD Geodaten-Leitfaden (für den Raumbezug).
+**Hilfsmittel & Referenzen:**  
+- [SPHN – Data de-identification (PDF)](https://sphn.ch/wp-content/uploads/2022/05/Data-de-identification-Phased-approach-v1.0.pdf)  
+- [EDÖB – Technische und organisatorische Massnahmen (TOM)](https://www.edoeb.admin.ch/edoeb/de/home/datenschutz/gesetzgebung/technical-and-organisational-measures.html)  
+- [SIK-GIS/BFS Leitfaden OGD für Geodaten (PDF)](https://www.sik.ch/fileadmin/user_upload/Leitfaden_OGD_Geodaten.pdf)
 
 </TabItem>
 
@@ -120,14 +135,15 @@ Erst **nach** wirksamer Vermeidung des Personenbezugs (Anonymisierung/Aggregatio
 
 ## Winterthur-Checkliste (Schnellhilfe)
 
-- **Personenbezug?** Falls ja → Art. 5 prüfen und **Vermeidung** umsetzen.  
-- **Städtische Ebenen** nutzen (nie „Kanton“): **Quartier/Statistische Zone**, **250/500-m-Raster**, **Woche/Monat**.  
-- **Schwelle**: Keine Zellen/Kombinationen mit **n < 5**; ggf. Sekundär-Suppression.  
-- **Rauschen** sparsam und nachvollziehbar (±1 Count); für heikle Fälle DP-Ansatz kurz erläutern & dokumentieren.
-- **Metadaten** nach OGD-Richtlinien pflegen (Schutzmassnahmen, Datenstand, Update-Rhythmus, Lizenz). 
-- **Gatekeeping:** Vor Erstpublikation **Kompetenzzentrum OGD** einbeziehen; bei Zweifeln **Datenschutzstelle**.
+1. **Personenbezug prüfen** → Wenn ja, Art. 5 anwenden und eine Vermeidungsstrategie wählen.  
+2. **Städtische Ebenen** verwenden: Quartiere, statistische Zonen, 250/500 m-Raster, Monatswerte.  
+3. **Schwelle *n < 5***: Zellen suppressen oder zusammenlegen.  
+4. **Rauschen**: ± 1 auf Counts; Differential Privacy nur bei sensiblen Zählwerten.  
+5. **Metadaten vollständig**: Angaben zu Aggregation, Raster, k-Wert, Rauschen, Update-Rhythmus, Lizenz.  
+6. **Gatekeeping:** Vor Erstpublikation durch das **Kompetenzzentrum OGD** prüfen lassen; bei Zweifeln Datenschutzstelle einbeziehen.
 
 :::note
 **Warum keine Pseudonymisierung als OGD?**  
-Nach Art. 5 bleibt **pseudonymisiert** = **personenbezogen**. Eine OGD-Publikation ist nur nach **wirksamer Anonymisierung/Aggregation/De-Identifikation** zulässig.
+Gemäss Art. 5 bleiben pseudonymisierte Daten personenbezogen – sie dürfen nicht veröffentlicht werden.  
+Nur nach wirksamer **Anonymisierung**, **Aggregation** oder **De-Identifikation** dürfen Daten als OGD freigegeben werden.
 :::
