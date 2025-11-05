@@ -54,3 +54,11 @@ html[data-theme='dark'] .winti-license-card {
   border-color: #ff4d4d;
 }
 html[data-theme='dark'] .winti-license-title { color: #ff8a8a; }
+
+/* Wrapper für mehrere Lizenz-Icons nebeneinander */
+.winti-license-icons{
+  display: flex;
+  align-items: center;
+  gap: .5rem;         /* Abstand zwischen den Icons */
+  flex-shrink: 0;     /* verhindert, dass die Icons zusammenschrumpfen */
+}
