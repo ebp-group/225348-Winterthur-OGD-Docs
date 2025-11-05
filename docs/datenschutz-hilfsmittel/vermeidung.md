@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # Vermeidung des Personenbezugs
 
-### Was ist Datenanonymisierung?
+### Was ist De-Identifikation?
 **De-Identifikation** ist der Prozess, der dazu dient, zu verhindern, dass die **persönliche Identität einer Person offengelegt** wird, und sie gilt als einer der Hauptansätze zum Schutz der Datenprivatsphäre. Im Kern beinhaltet die De-Identifizierung von Daten das **Entfernen, Maskieren oder Ersetzen sensibler personenbezogener Daten (PII)** aus Datensätzen. Zu den gängigen Strategien gehört das **Löschen oder Maskieren direkter Kennungen** (wie Name, Adresse oder Geburtsdatum) sowie das **Unterdrücken oder Verallgemeinern von Quasi-Identifikatoren**. Dieser Prozess ist entscheidend, damit kantonale und städtische Verwaltungen Datenschutzbestimmungen einhalten können, wenn sie Daten für Analytik, Forschung oder Testzwecke veröffentlichen. De-identifizierte Daten ist ein Überbegriff, der sowohl **anonymisierte Daten** (bei denen die Re-Identifizierung unwiderruflich und ohne Schlüssel unmöglich ist) als auch **pseudonymisierte Daten** (bei denen die Re-Identifizierung prinzipiell durch eine vertrauenswürdige Stelle mithilfe eines separat gespeicherten Schlüssels möglich bleibt) umfasst. Der umgekehrte Vorgang der Identifizierung von Personen aus de-identifizierten Daten ist als Daten-Re-Identifizierung bekannt.
 
 :::warning[Wichtig]
@@ -16,25 +16,21 @@ import TabItem from '@theme/TabItem';
 
 ### So anonymisieren Sie Daten
 
-Neben den konkreten Methoden zur Vermeidung des Personenbezugs ist es wichtig, dass die De-Identifizierung **als strukturierter Prozess** innerhalb der Verwaltung verstanden wird. Ziel ist ein **nachvollziehbarer, wiederholbarer Ablauf**, der sicherstellt, dass alle potenziell personenbezogenen Daten erkannt, geprüft und korrekt behandelt werden.
+Neben den konkreten Methoden zur Vermeidung des Personenbezugs ist es wichtig, dass die De-Identifizierung als strukturierter Prozess innerhalb der Verwaltung verstanden wird. Ziel ist ein **nachvollziehbarer, wiederholbarer Ablauf**, der sicherstellt, dass alle potenziell personenbezogenen Daten erkannt, geprüft und korrekt behandelt werden.
 
-Die folgende Übersicht orientiert sich am in der Praxis bewährten **Safe-Harbor-Ansatz** (z. B. Syntho 2024) und zeigt, wie Organisationen systematisch vorgehen können, um den Personenbezug zuverlässig zu vermeiden:
+Die folgende Übersicht orientiert sich am in der Praxis bewährten **Safe-Harbor-Ansatz**, wie Firmen und Verwaltungen systematisch vorgehen können, um den Personenbezug zuverlässig zu vermeiden:
 
 | Schritt | Beschreibung | Ziel / Ergebnis |
-|----------|---------------|-----------------|
-| **1. Daten organisieren** | Alle Datenquellen, Tabellen und Systeme erfassen. Dokumentieren, welche Daten erfasst, wie sie gespeichert und wie lange sie aufbewahrt werden. Verantwortlichkeiten für Datentypen festlegen und regelmäßige Audits einplanen. | Transparenz über Datenflüsse und Verantwortlichkeiten schaffen |
-| **2. PII erkennen und klassifizieren** | Identifizieren Sie alle Datensätze, die personenbezogene Informationen enthalten. Diese in Kategorien einteilen (z. B. direkte Identifikatoren, indirekte Kennungen, nicht sensible Daten). | Sensible Daten gezielt ansprechen können |
-| **3. Datenelemente taggen** | Sensible Felder oder Spalten mit Metadaten kennzeichnen („Tagging“), um deren Bedeutung und Sensibilität zu markieren. Einheitliche Tagging-Konventionen erleichtern die spätere De-Identifizierung. | Einheitliche Grundlage für technische Prozesse |
-| **4. Methode auswählen** | Je nach Zweck, gesetzlicher Grundlage und Datennutzung geeignete De-Identifizierungsstrategie bestimmen (siehe Tabs unten: Maskierung, Anonymisierung, Generalisierung, K-Anonymität). | Passende Technik für den Kontext wählen |
-| **5. Daten de-identifizieren** | Ausgewählte Methoden anwenden – manuell oder automatisiert. Der Prozess ist iterativ: Ergebnisse prüfen und ggf. nachschärfen. | Personenbezug schrittweise eliminieren |
-| **6. Ergebnisse validieren** | Überprüfen, ob keine Re-Identifikation möglich ist, Datengenauigkeit und Struktur erhalten bleiben und die Daten weiterhin nutzbar sind. Stakeholder und Dateneigentümer einbeziehen. | Qualität und Datenschutzkonformität sicherstellen |
+|---|---|---|
+| **1. Zweck & Umfang bestätigen** | Konkretes **Publikationsziel** (OGD ja/nein), **Rechtsgrundlage** und **benötigte Granularität** für **das bereits gewählte Dataset** festlegen. Prüfen, ob wirklich Einzeldaten nötig sind oder Aggregatdaten genügen. | Klarer Rahmen für Datenschutz und Nutzbarkeit |
+| **2. PII-/QI-Screening** | Im **gewählten Dataset** direkte Identifikatoren (PII) und Quasi-Identifikatoren (QI) markieren (z. B. Alter, PLZ, Datum/Uhrzeit, Geokoordinaten). | Relevante Risiken sind vollständig erfasst |
+| **3. Felder taggen** | PII/QI-Spalten mit **einheitlichen Tags** (z. B. `pii.direct`, `pii.quasi`, `sensitive`) versehen; Entscheid-/Audit-Notizen anfügen. | Einheitliche Grundlage für die Umsetzung |
+| **4. Methode wählen** | Passende Maßnahme je Feld/Kombination festlegen: **Maskierung/Löschung**, **Anonymisierung**, **Generalisierung/Aggregation**, **k-Anonymität/L-Diversität**. | Wirksame, zweckmäßige De-Identifizierungsstrategie |
+| **5. De-Identifikation umsetzen** | Schritte **reproduzierbar** anwenden (Script/Workflow), inkl. Parameter (Klassen, Raster, `k`-Wert). **Audit-Trail** führen. | Personenbezug wird systematisch entfernt |
+| **6. Validieren & freigeben** | **Re-Identifikationsrisiko** prüfen (z. B. `k≥5`), **Utility-Checks** (Kennzahlen/Analysen bleiben sinnvoll), **Freitext & Metadaten** kontrollieren. **Freigabe** dokumentieren. | Datenschutzkonform, nutzbar, OGD-bereit |
 
 **Hinweis:**  
-Die De-Identifizierung sollte **nicht als einmalige Maßnahme**, sondern als **kontinuierlicher Prozess** verstanden werden. Regelmäßige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
-
-:::info[Quelle]
-Das beschriebene Prozessmodell orientiert sich an der *Safe Harbor Method* nach [Syntho (2024)](https://www.syntho.ai/de/what-is-data-de-identification-and-why-do-i-need-it/), die internationale Best Practices für De-Identifizierung und Datenschutz kombiniert.
-:::
+Die De-Identifizierung sollte **nicht als einmalige Masnahme**, sondern als **kontinuierlicher Prozess** verstanden werden, sollte die Veröffentlichung der Daten kein einmaliges Ereigniss sein. Regelmäßige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
 ---
 
 ## Methoden zur Vermeidung des Personenbezugs
