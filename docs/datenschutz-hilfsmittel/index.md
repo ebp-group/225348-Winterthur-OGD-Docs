@@ -30,9 +30,9 @@ flowchart TD
     C -- Nein --> H["Darf der Datensatz **kostenlos** bereitgestellt werden?"]
     G -- Ja --> H
     G -- Nein --> X4["Kein OGD, bis Rechte geklärt sind."]
-    H -- Ja --> I["Ist eine **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?"]
+    H -- Ja --> I["Ist eine **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/nutzungsbedingungen\">[→ Nutzungsbedingungen]</a>"]
     H -- Nein --> Y1["Kein OGD"]
-    I -- Ja --> J["Ist die **Quellenangabe** obligatorisch?"]
+    I -- Ja --> J["Ist die **Quellenangabe** obligatorisch?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/nutzungsbedingungen\">[→ Nutzungsbedingungen]</a>"]
     I -- Nein --> Y2["Kein OGD."]
     J -- Ja --> Z2["Publikation auf OGD mit Hinweis **Quellenangabe erforderlich**."]
     J -- Nein --> Z1["Der Datensatz kann auf OGD publiziert werden, es muss auf der Plattform aber der Vermerk angebracht werde, dass die Quellenangabe obligatorisch ist."]
