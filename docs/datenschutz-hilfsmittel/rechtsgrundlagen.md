@@ -6,7 +6,7 @@ sidebar_position: 2
 # Rechtsgrundlagen
 
 :::info Kernaussage
-Offene Veröffentlichung ist **nur** zulässig, wenn **keine** Ausschlussgründe vorliegen. Schutzinteressen haben Vorrang; technische Massnahmen sind möglich, wenn sie den Schutz **wirksam** sicherstellen.
+Offene Veröffentlichung ist **nur** zulässig, wenn **keine** Ausschlussgründe vorliegen. Schutzinteressen haben Vorrang; technische Massnahmen sind möglich, wenn sie den Schutz **wirksam** sicherstellen. Die Pseudonymisierung ist kein ausreichender Schutz zur Vermeidung des Personenbezuges.
 :::
 
 ### Abs. 1: Ausschlussgründe (lit. a–d)
