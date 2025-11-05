@@ -55,10 +55,36 @@ html[data-theme='dark'] .winti-license-card {
 }
 html[data-theme='dark'] .winti-license-title { color: #ff8a8a; }
 
-/* Wrapper für mehrere Lizenz-Icons nebeneinander */
+/* Icons nebeneinander */
 .winti-license-icons{
   display: flex;
   align-items: center;
-  gap: .5rem;         /* Abstand zwischen den Icons */
-  flex-shrink: 0;     /* verhindert, dass die Icons zusammenschrumpfen */
+  gap: .5rem;
+  min-width: 96px;      /* sorgt für gleiche Text-Startkante in allen Karten */
+  flex-shrink: 0;
+}
+
+/* Karte: Text und Icons vertikal mittig ausrichten */
+.winti-license-card{
+  align-items: center;   /* statt flex-start */
+}
+
+/* Bilder sauber ausrichten */
+.winti-license-icon{
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;        /* verhindert Baseline-Offset */
+}
+
+/* Optional: Body als Spalte zentrieren (Titel+Text) */
+.winti-license-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Dark Mode – Icons nicht abdunkeln (falls global Filter aktiv ist) */
+html[data-theme='dark'] .winti-license-icon{
+  filter: none;
 }
