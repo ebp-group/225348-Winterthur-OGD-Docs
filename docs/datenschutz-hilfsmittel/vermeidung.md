@@ -26,32 +26,6 @@ Die folgenden **vier Methoden** sollen die Mitarbeitenden dabei unterstützen, D
 
 ---
 
----
-id: de-identifikation-methoden
-title: Methoden der De-Identifikation
-sidebar_label: Methoden zur Vermeidung des Personenbezugs
-description: Praktischer Leitfaden zur Anwendung von De-Identifikations-Techniken vor OGD-Publikation
-sidebar_position: 13
----
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-# Methoden zur Vermeidung des Personenbezugs
-
-Die folgenden **vier Methoden** unterstützen Mitarbeitende dabei, Datensätze so aufzubereiten, dass **keine Identifikation einzelner Personen möglich ist** und sie somit **als OGD veröffentlicht werden dürfen**.
-
-Wähle die Methode entsprechend der Datenlage:
-
-| Situation | Zweck | Geeignete Methode |
-|---|---|---|
-| Direkte Kennungen vorhanden (Name, Adresse, Kundennummer) | Entfernen persönlicher Identifikatoren | **1) Maskierung / Löschung** |
-| Personenbezug soll dauerhaft ausgeschlossen werden | Endgültiges Entfernen des Bezuges | **2) Anonymisierung** |
-| Präzise Werte erlauben Rückschluss auf Individuen | Genauigkeit kontrolliert reduzieren | **3) Generalisierung & Aggregation** |
-| Mehrere Attribute ermöglichen Rückschluss in Kombination | Risiko messbar reduzieren | **4) K-Anonymität sicherstellen** |
-
----
-
 <Tabs>
 
 <TabItem value="masking" label="1) Maskierung / Löschung">
@@ -179,21 +153,6 @@ Jede Merkmalskombination muss **mindestens 5 Datensätze** umfassen.
 - ☐ **Keine Re-Identifikation** möglich?
 
 → Wenn überall **Ja** → Datensatz kann veröffentlicht werden.
-
----
-
-## Möchtest du jetzt auch:
-
-| Option | Ergebnis | Dauer |
-|---|---|---|
-| ✅ Ich möchte Beispiele aus echten Winterthurer Datensätzen | Wir erstellen 3 konkrete Vorher/Nachher-Transformationen | 10–20 Minuten |
-| ✅ Ich möchte eine Vorlage zur Prüfung (Excel / PDF) | Wiederverwendbares Prüfschema für Fachstellen | 5 Minuten |
-| ✅ Ich möchte einen internen OGD-Review-Workflow | Klarer Prozess von Stelle → OGD-Team → Veröffentlichung | 10 Minuten |
-
-Sag einfach:  
-**"Bitte Beispiele aus …: Verkehr / Bevölkerung / Soziales / Gemischt"**  
-Oder: **"Bitte Checklisten-Template erstellen"**.
-
 
 
 :::info
