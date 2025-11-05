@@ -29,8 +29,10 @@ Die folgende Übersicht orientiert sich am in der Praxis bewährten **Safe-Harbo
 | **5. De-Identifikation umsetzen** | Schritte **reproduzierbar** anwenden (Script/Workflow), inkl. Parameter (Klassen, Raster, `k`-Wert). **Audit-Trail** führen. | Personenbezug wird systematisch entfernt |
 | **6. Validieren & freigeben** | **Re-Identifikationsrisiko** prüfen (z. B. `k≥5`), **Utility-Checks** (Kennzahlen/Analysen bleiben sinnvoll), **Freitext & Metadaten** kontrollieren. **Freigabe** dokumentieren. | Datenschutzkonform, nutzbar, OGD-bereit |
 
-**Hinweis:**  
+:::note[Hinweis]
 Die De-Identifizierung sollte **nicht als einmalige Masnahme**, sondern als **kontinuierlicher Prozess** verstanden werden, sollte die Veröffentlichung der Daten kein einmaliges Ereigniss sein. Regelmäßige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
+::
+
 ---
 
 ## Methoden zur Vermeidung des Personenbezugs
@@ -180,10 +182,4 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 - ☐ **Keine Re-Identifikation** möglich?
 
 → Wenn überall **Ja** → Datensatz kann veröffentlicht werden.
-:::
-
-:::info[Quellen und weiterführende Leitfäden]
-- [Office for Civil Rights (OCR), U.S. Department of Health and Human Services (2012): *Guidance Regarding Methods for De-identification of Protected Health Information in Accordance with the HIPAA Privacy Rule*](https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/)
-- [Swiss Personalized Health Network (SPHN) (2022): *Data de-identification – Phased Approach v1.0*](https://sphn.ch/wp-content/uploads/2022/05/Data-de-identification-Phased-approach-v1.0.pdf)
-- [Information and Privacy Commissioner of Ontario (2016): *De-identification Guidelines for Structured Data*](https://www.ipc.on.ca/sites/default/files/legacy/2016/08/Deidentification-Guidelines-for-Structured-Data.pdf)
 :::
