@@ -66,7 +66,7 @@ flowchart TD
     classDef neutral fill:#ffffff,stroke:#000,color:#000
 ```
 :::info
-Kann eine Frage nicht klar beantwortet werden, steht entweder die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] oder die [Datenschutzstelle der Stadt Winterthur] zur weiteren Erläuterung zur Verfügung.
+Kann eine Frage nicht klar beantwortet werden, steht entweder die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] oder die [Datenschutzstelle der Stadt Winterthur] zur weiteren Klärung zur Verfügung.
 :::
 [Arbeitshilfe für Behörden zur Publikation von Daten als OGD]: https://www.bfs.admin.ch/bfs/de/home/dienstleistungen/ogd/dokumentation.assetdetail.11147071.html
 [Datenschutzstelle der Stadt Winterthur]:https://stadt.winterthur.ch/gemeinde/behoerden-und-recht/datenschutz
