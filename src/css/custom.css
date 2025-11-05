@@ -28,3 +28,29 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Winterthur OGD – Lizenzkarten */
+.winti-license-card {
+  border: 2px solid #c00000;            /* Winterthur-Rot */
+  border-radius: 10px;
+  background-color: #fff5f5;            /* leichtes Rot */
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.winti-license-icon { width: 48px; height: 48px; }
+.winti-license-title {
+  color: #c00000;
+  font-weight: 700;
+  margin: 0 0 .2rem 0;
+}
+.winti-license-desc { margin: 0; font-size: .95rem; }
+
+/* Optional: Dark Mode Tweaks */
+html[data-theme='dark'] .winti-license-card {
+  background-color: #3b0a0a;            /* dunkles Rot */
+  border-color: #ff4d4d;
+}
+html[data-theme='dark'] .winti-license-title { color: #ff8a8a; }
