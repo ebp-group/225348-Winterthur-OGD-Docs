@@ -31,7 +31,7 @@ Die folgende Übersicht orientiert sich am in der Praxis bewährten **Safe-Harbo
 
 :::note[Hinweis]
 Die De-Identifizierung sollte **nicht als einmalige Masnahme**, sondern als **kontinuierlicher Prozess** verstanden werden, sollte die Veröffentlichung der Daten kein einmaliges Ereigniss sein. Regelmäßige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
-::
+:::
 
 ---
 
