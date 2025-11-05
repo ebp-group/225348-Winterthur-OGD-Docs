@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Winterthur veröffentlicht Verwaltungsdaten nach dem Prinzip Open by Default – jedoch nur, wenn kein Schutzbedarf besteht bzw. dieser durch geeignete Massnahmen gewahrt werden kann (OGD-Verordnung, Art. 4–5).
 
-Massgeblich sind das revidierte Bundesgesetz über den Datenschutz (revDSG) und das kantonale Gesetz über Information und Datenschutz (IDG ZH). Die OGD-Verordnung der Stadt Winterthur konkretisiert diese Vorgaben für die Publikation offener Verwaltungsdaten.
+Massgeblich sind das revidierte Bundesgesetz über den Datenschutz ([revDSG]) und das kantonale Gesetz über Information und Datenschutz (IDG ZH). Die OGD-Verordnung der Stadt Winterthur konkretisiert diese Vorgaben für die Publikation offener Verwaltungsdaten.
 
 ## Kernpunkte der OGD-Verordnung (Datenschutzbezug):
 
@@ -34,5 +34,7 @@ Massgeblich sind das revidierte Bundesgesetz über den Datenschutz (revDSG) und 
 5. Regelmässig überprüfen und Metadaten aktuell halten.
 
 :::note[ **Leitfaden** ]
-Leitsatz: So offen wie möglich, so geschützt wie nötig — OGD nur ohne (restlichen) Personenbezug oder mit klarer gesetzlicher Grundlage.
+Leitsatz: So offen wie möglich, so geschützt wie nötig — OGD nur ohne Personenbezug oder mit klarer gesetzlicher Grundlage.
 :::
+
+[revDSG]:(https://www.fedlex.admin.ch/eli/cc/2022/568/de)
