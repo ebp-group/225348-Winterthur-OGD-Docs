@@ -59,27 +59,6 @@ Die richtige Variante ergibt sich aus der gesetzlichen Grundlage und wird den Da
   </div>
 </div>
 
-<div className="winti-license-card">
-  <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" className="winti-license-icon" alt="CC Icon" />
-  <div>
-    <p className="winti-license-title">Freie Nutzung – Kommerzielle Nutzung nur mit Bewilligung</p>
-    <p className="winti-license-desc">
-      Kommerzielle Nutzung ist nur mit Bewilligung des Datenlieferanten zulässig.<br />
-      Eine Quellenangabe wird empfohlen (Autor, Titel und Link zum Datensatz).
-    </p>
-  </div>
-</div>
-
-<div className="winti-license-card">
-  <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" className="winti-license-icon" alt="CC BY Icon" />
-  <div>
-    <p className="winti-license-title">Freie Nutzung – Quellenangabe ist Pflicht, kommerzielle Nutzung nur mit Bewilligung</p>
-    <p className="winti-license-desc">
-      Kommerzielle Nutzung nur nach Bewilligung des Datenlieferanten.<br />
-      Quellenangabe ist Pflicht (Autor, Titel und Link zum Datensatz).
-    </p>
-  </div>
-</div>
 
 
 :::info
