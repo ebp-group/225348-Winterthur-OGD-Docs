@@ -127,7 +127,7 @@ Verhinderung von Rückschlüssen durch **Reduktion der Genauigkeit** oder **Zusa
 | Unfall am 03.05.2023, 13:44   | Ereigniszeit: Mai / Nachmittag           |
 
 ### Praktische Schwellenwerte (Empfehlungen)
-- **Mindesthäufigkeit**: Kategorien mit **n < 5** Fällen → **zusammenfassen oder entfernen** (keine Veröffentlichung von Zellen mit <5 Fällen, um Individualisierbarkeit zu vermeiden).
+- **Mindesthäufigkeit**: Kategorien mit **n &lt; 5** Fällen → **zusammenfassen oder entfernen** (keine Veröffentlichung von Zellen mit <5 Fällen, um Individualisierbarkeit zu vermeiden).
 - **Räumliche Auflösung**: Keine Ortsangaben präziser als **Stadtteil/Quartier** (bei geringer Bevölkerungsdichte eher noch gröber) – alternativ Geodaten auf ein **Raster ≥ 100 m** runden.
 - **Zeitliche Auflösung**: Zeitangaben nicht zu fein – ggf. nur **Monat oder Quartal** statt exaktes Datum; Tageszeit grob (z.B. "Nachmittag" statt 13:44 Uhr).
 - **Numerische Werte kappen/klassen**: Hohe Detailgenauigkeit reduzieren – z.B. Einkommen in Klassen angeben, Alter in 5-Jahres-Bänder einteilen, extreme Werte **„top-coden“** (z.B. "80+ Jahre" als höchste Kategorie).
@@ -149,12 +149,12 @@ Sicherstellen, dass **mindestens k Personen** die gleiche Kombination von potenz
 Jede mögliche Merkmalskombination (über die definierten Quasi-Identifikatoren) muss **mindestens 5 Datensätze** umfassen. Einzelne Personen "verstecken" sich also in einer Gruppe von mindestens 5 mit denselben Merkmalsausprägungen.
 
 ### Beispiel
-Angenommen, Alter und Ort seien zwei Quasi-Identifikatoren in einem Gesundheitsdatensatz:
+Angenommen, Alter und Ort seien zwei Quasi-Identifikatoren in einem Datensatz:
 
 | Altersgruppe | Quartier  | Anzahl Datensätze | OGD-Freigabe?             |
 |--------------|-----------|-------------------|---------------------------|
 | 18–25        | Altstadt  | 12                | ✅ *OK* (n=12 ≥ k=5)      |
-| 75–80        | Altstadt  | 2                 | ❌ *nicht ok* (n=2 < k=5) |
+| 75–80        | Altstadt  | 2                 | ❌ *nicht ok* (n=2 &lt; k=5) |
 
 In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusammengefasst oder unterdrückt werden, bis pro Zelle mindestens 5 Fälle vorhanden sind (z.B. Alterskategorie erweitern oder diese Datenkategorie nicht veröffentlichen).
 
@@ -175,17 +175,19 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 
 </Tabs>
 
-
----
-
-
 :::tip[Schnell-Check]
 
 - ☐ Direkte Kennungen entfernt?
-- ☐ Kleine Gruppen (n < 5) zusammengefasst?
+- ☐ Kleine Gruppen (n &lt; 5) zusammengefasst?
 - ☐ Ort oder Zeit **aggregiert oder generalisiert**?
 - ☐ Freitext auf Personenhinweise geprüft?
 - ☐ **Keine Re-Identifikation** möglich?
 
 → Wenn überall **Ja** → Datensatz kann veröffentlicht werden.
+:::
+
+:::info[Quellen und weiterführende Leitfäden]
+- [Office for Civil Rights (OCR), U.S. Department of Health and Human Services (2012): *Guidance Regarding Methods for De-identification of Protected Health Information in Accordance with the HIPAA Privacy Rule*](https://www.hhs.gov/hipaa/for-professionals/special-topics/de-identification/)
+- [Swiss Personalized Health Network (SPHN) (2022): *Data de-identification – Phased Approach v1.0*](https://sphn.ch/wp-content/uploads/2022/05/Data-de-identification-Phased-approach-v1.0.pdf)
+- [Information and Privacy Commissioner of Ontario (2016): *De-identification Guidelines for Structured Data*](https://www.ipc.on.ca/sites/default/files/legacy/2016/08/Deidentification-Guidelines-for-Structured-Data.pdf)
 :::
