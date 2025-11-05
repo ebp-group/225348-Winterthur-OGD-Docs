@@ -17,7 +17,7 @@ config:
 ---
 flowchart TD
     A@{ label: "Besteht eine **gesetzliche Grundlage** für die Publikation?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen\">[→ Grundlagen]</a>" } -- Ja --> B@{ label: "Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/personenbezug\">[→ Personenbezug]</a>" }
-    A -- Nein --> X1["Kein OGD. Prüfen: gesetzliche Grundlage schaffen oder Datensatz so transformieren, dass **kein Personenbezug** mehr besteht."]
+    A -- Nein --> X1["Kein OGD. Gesetzliche Grundlage schaffen."]
     B -- Nein --> C["Sind die Daten **urheberrechtlich** geschützt?"]
     B -- Ja --> D["Handelt es sich um **besonders schützenswerte Personendaten**?"]
     D -- Ja --> E@{ label: "Erlaubt ein **formelles Gesetz** die Publikation dieser Daten?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen\">[→ Rechtsgrundlagen]</a>" }
@@ -30,9 +30,9 @@ flowchart TD
     C -- Nein --> H["Darf der Datensatz **kostenlos** bereitgestellt werden?"]
     G -- Ja --> H
     G -- Nein --> X4["Kein OGD, bis Rechte geklärt sind."]
-    H -- Ja --> I["Ist **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?"]
+    H -- Ja --> I["Ist eine **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?"]
     H -- Nein --> Y1["Kein OGD"]
-    I -- Ja --> J["Ist **Quellenangabe** obligatorisch?"]
+    I -- Ja --> J["Ist die **Quellenangabe** obligatorisch?"]
     I -- Nein --> Y2["Kein OGD."]
     J -- Ja --> Z2["Publikation auf OGD mit Hinweis **Quellenangabe erforderlich**."]
     J -- Nein --> Z1["Der Datensatz kann auf OGD publiziert werden, es muss auf der Plattform aber der Vermerk angebracht werde, dass die Quellenangabe obligatorisch ist."]
