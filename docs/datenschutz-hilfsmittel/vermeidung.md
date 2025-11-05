@@ -127,7 +127,7 @@ Verhinderung von Rückschlüssen durch **Reduktion der Genauigkeit** oder **Zusa
 | Unfall am 03.05.2023, 13:44   | Ereigniszeit: Mai / Nachmittag           |
 
 ### Praktische Schwellenwerte (Empfehlungen)
-- **Mindesthäufigkeit**: Kategorien mit **n &lt; 5** Fällen → **zusammenfassen oder entfernen** (keine Veröffentlichung von Zellen mit <5 Fällen, um Individualisierbarkeit zu vermeiden).
+- **Mindesthäufigkeit**: Kategorien mit **n &lt; 5** Fällen → **zusammenfassen oder entfernen** (keine Veröffentlichung von Zellen mit &lt; 5 Fällen, um Individualisierbarkeit zu vermeiden).
 - **Räumliche Auflösung**: Keine Ortsangaben präziser als **Stadtteil/Quartier** (bei geringer Bevölkerungsdichte eher noch gröber) – alternativ Geodaten auf ein **Raster ≥ 100 m** runden.
 - **Zeitliche Auflösung**: Zeitangaben nicht zu fein – ggf. nur **Monat oder Quartal** statt exaktes Datum; Tageszeit grob (z.B. "Nachmittag" statt 13:44 Uhr).
 - **Numerische Werte kappen/klassen**: Hohe Detailgenauigkeit reduzieren – z.B. Einkommen in Klassen angeben, Alter in 5-Jahres-Bänder einteilen, extreme Werte **„top-coden“** (z.B. "80+ Jahre" als höchste Kategorie).
