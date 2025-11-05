@@ -9,29 +9,29 @@ sidebar_position: 2
 Offene Veröffentlichung ist **nur** zulässig, wenn **keine** Ausschlussgründe vorliegen. Schutzinteressen haben Vorrang; technische Massnahmen sind möglich, wenn sie den Schutz **wirksam** sicherstellen.
 :::
 
-## Abs. 1: Ausschlussgründe (lit. a–d)
+### Abs. 1: Ausschlussgründe (lit. a–d)
 
 > **Wenn einer der folgenden Punkte zutrifft, wird nicht veröffentlicht.**
 
-### a) Personendaten
+#### a) Personendaten
 - Daten, die sich auf eine bestimmte oder bestimmbare Person beziehen (direkt oder indirekt).
 - **Folge:** Keine OGD-Publikation. Nur zulässig, wenn eine ausdrückliche gesetzliche Grundlage es erlaubt (sofern vorgesehen).
 
-### b) Überwiegende Interessen
+#### b) Überwiegende Interessen
 - Ein überwiegendes **öffentliches** oder **privates** Interesse steht der Veröffentlichung entgegen (z. B. behördliche Willensbildung, Sicherheit, laufende Untersuchungen).
 - **Folge:** Keine OGD-Publikation.
 
-### c) Rechte Dritter / Geistiges Eigentum
+#### c) Rechte Dritter / Geistiges Eigentum
 - Daten oder Inhalte, an denen **Urheber-, Nutzungs- oder Schutzrechte** Dritter bestehen.
 - **Folge:** Keine OGD-Publikation, ausser die erforderlichen Rechte liegen vor.
 
-### d) Amtsgeheimnis / sonstige Geheimhaltungspflichten
+#### d) Amtsgeheimnis / sonstige Geheimhaltungspflichten
 - Inhalte unterstehen dem **Amtsgeheimnis** oder anderen gesetzlichen/vertraglichen **Geheimhaltungspflichten**.
 - **Folge:** Keine OGD-Publikation.
 
 ---
 
-## Abs. 2: Technische Massnahmen (Freigabe trotz Schutzbedarf)
+### Abs. 2: Technische Massnahmen (Freigabe trotz Schutzbedarf)
 
 > **Zulässig, wenn der Schutz gleichwertig gewahrt bleibt.**
 
@@ -44,7 +44,7 @@ Erlaubte Vorgehen:
 
 ---
 
-## Abs. 3: Verhältnismässigkeit
+### Abs. 3: Verhältnismässigkeit
 
 > **Aufwand vs. Nutzen abwägen.**
 
@@ -53,7 +53,7 @@ Erlaubte Vorgehen:
 
 ---
 
-## Abs. 4: Geltungsabgrenzung
+### Abs. 4: Geltungsabgrenzung
 
 > **Nur für Daten im Zuständigkeitsbereich der Stadt.**
 

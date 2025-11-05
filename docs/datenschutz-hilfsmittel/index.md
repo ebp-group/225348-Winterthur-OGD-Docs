@@ -13,57 +13,58 @@ Der nachfolgende Entscheidungsbaum dient den Mitarbeitenden der Stadtverwaltung 
 ```mermaid
 ---
 config:
-  layout: elk
+layout: elk
 ---
 flowchart TD
-    A@{ label: "Besteht eine **gesetzliche Grundlage** für die Publikation?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen\">[→ Grundlagen]</a>" } -- Ja --> B@{ label: "Enthält der Datensatz **Personendaten** oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/personenbezug\">[→ Personenbezug]</a>" }
-    A -- Nein --> X1["Kein OGD. Gesetzliche Grundlage schaffen."]
-    B -- Nein --> C["Sind die Daten **urheberrechtlich** geschützt?"]
-    B -- Ja --> D["Handelt es sich um **besonders schützenswerte Personendaten**?"]
-    D -- Ja --> E@{ label: "Erlaubt ein **formelles Gesetz** die Publikation dieser Daten?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen\">[→ Rechtsgrundlagen]</a>" }
-    D -- Nein --> F@{ label: "Sind **Vermeidungen des Personenbezugs** möglich, sodass **kein Personenbezug** mehr besteht?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/vermeidung\">[→ Vermeidung des Personenbezugs ]</a>" }
-    E -- Ja --> C
-    E -- Nein --> X2["Kein OGD. Alternative: **Vermeidung des Personenbezugs**."]
-    F -- Ja --> C
-    F -- Nein --> X3["Kein OGD."]
-    C -- Ja --> G["Wurden Rechte an die Stadt übertragen und **Persönlichkeitsrechte** gewahrt/verzichtet?"]
-    C -- Nein --> H["Darf der Datensatz **kostenlos** bereitgestellt werden?"]
-    G -- Ja --> H
-    G -- Nein --> X4["Kein OGD, bis Rechte geklärt sind."]
-    H -- Ja --> I["Ist eine **kommerzielle** und **nicht-kommerzielle** Nutzung erlaubt?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/nutzungsbedingungen\">[→ Nutzungsbedingungen]</a>"]
-    H -- Nein --> Y1["Kein OGD"]
-    I -- Ja --> J["Ist die **Quellenangabe** obligatorisch?<br><a href=\"https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/nutzungsbedingungen\">[→ Nutzungsbedingungen]</a>"]
-    I -- Nein --> Y2["Kein OGD."]
-    J -- Ja --> Z2["Publikation auf OGD mit Hinweis **Quellenangabe erforderlich**."]
-    J -- Nein --> Z1["Der Datensatz kann auf OGD publiziert werden, es muss auf der Plattform aber der Vermerk angebracht werde, dass die Quellenangabe obligatorisch ist."]
-    A@{ shape: rect}
-    B@{ shape: rect}
-    E@{ shape: rect}
-    F@{ shape: rect}
-    G@{ shape: rect}
-    I@{ shape: rect}
-     A:::neutral
-     B:::neutral
-     X1:::stop
-     C:::neutral
-     D:::neutral
-     E:::neutral
-     F:::neutral
-     X2:::stop
-     X3:::stop
-     G:::neutral
-     H:::neutral
-     X4:::stop
-     I:::neutral
-     Y1:::stop
-     J:::neutral
-     Y2:::stop
-     Z2:::ok
-     Z1:::ok
-    classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000
-    classDef warn fill:#ffffff,stroke:#9e9e9e,color:#000
-    classDef stop fill:#ffebee,stroke:#8b0000,color:#000
-    classDef neutral fill:#ffffff,stroke:#000,color:#000
+
+  A["Besteht eine <b>gesetzliche Grundlage</b> für die Publikation?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen'>→ Grundlagen</a>"]
+  B["Enthält der Datensatz <b>Personendaten</b> oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/personenbezug'>→ Personenbezug</a>"]
+  C["Sind die Daten <b>urheberrechtlich</b> geschützt?"]
+  D["Handelt es sich um <b>besonders schützenswerte Personendaten</b>?"]
+  E["Erlaubt ein <b>formelles Gesetz</b> die Publikation dieser Daten?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen'>→ Rechtsgrundlagen</a>"]
+  F["Sind <b>Vermeidungen des Personenbezugs</b> möglich, sodass <b>kein Personenbezug</b> mehr besteht?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/vermeidung'>→ Vermeidung des Personenbezugs</a>"]
+  G["Wurden Rechte an die Stadt übertragen und <b>Persönlichkeitsrechte</b> gewahrt/verzichtet?"]
+  H["Darf der Datensatz <b>kostenlos</b> bereitgestellt werden?"]
+  I["Ist eine <b>kommerzielle</b> und <b>nicht-kommerzielle</b> Nutzung erlaubt?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/nutzungsbedingungen'>→ Nutzungsbedingungen</a>"]
+  J["Ist die <b>Quellenangabe</b> obligatorisch?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/nutzungsbedingungen'>→ Nutzungsbedingungen</a>"]
+
+  X1["Kein OGD. Gesetzliche Grundlage schaffen."]
+  X2["Kein OGD. Alternative: <b>Vermeidung des Personenbezugs</b>."]
+  X3["Kein OGD."]
+  X4["Kein OGD, bis Rechte geklärt sind."]
+  Y1["Kein OGD."]
+  Y2["Kein OGD."]
+  Z1["Publikation auf OGD. (Kein Pflicht-Hinweis zur Quellenangabe)"]
+  Z2["Publikation auf OGD mit Hinweis: <b>Quellenangabe erforderlich</b>."]
+
+  A -->|Ja| B
+  A -->|Nein| X1
+  B -->|Nein| C
+  B -->|Ja| D
+  D -->|Ja| E
+  D -->|Nein| F
+  E -->|Ja| C
+  E -->|Nein| X2
+  F -->|Ja| C
+  F -->|Nein| X3
+  C -->|Ja| G
+  C -->|Nein| H
+  G -->|Ja| H
+  G -->|Nein| X4
+  H -->|Ja| I
+  H -->|Nein| Y1
+  I -->|Ja| J
+  I -->|Nein| Y2
+  J -->|Ja| Z2
+  J -->|Nein| Z1
+
+  classDef ok fill:#e8f5e9,stroke:#2e7d32,color:#000;
+  classDef stop fill:#ffebee,stroke:#8b0000,color:#000;
+  classDef neutral fill:#ffffff,stroke:#000,color:#000;
+
+  class A,B,C,D,E,F,G,H,I,J neutral;
+  class X1,X2,X3,X4,Y1,Y2 stop;
+  class Z1,Z2 ok;
 ```
 :::info
 Kann eine Frage nicht klar beantwortet werden, steht entweder die [Arbeitshilfe für Behörden zur Publikation von Daten als OGD] oder die [Datenschutzstelle der Stadt Winterthur] zur weiteren Klärung zur Verfügung.
