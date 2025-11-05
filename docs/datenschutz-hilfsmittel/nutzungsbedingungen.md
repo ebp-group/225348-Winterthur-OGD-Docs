@@ -59,8 +59,6 @@ Die richtige Variante ergibt sich aus der gesetzlichen Grundlage und wird den Da
   <div className="winti-license-icons">
     <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
          className="winti-license-icon" alt="CC Icon" />
-    <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg"
-         className="winti-license-icon" alt="CC0 Icon" />
     <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
          className="winti-license-icon" alt="CC BY Icon" />
   </div>
@@ -93,11 +91,8 @@ Die richtige Variante ergibt sich aus der gesetzlichen Grundlage und wird den Da
   </div>
 </div>
 
-
-
-
 :::info
 Weiter Information zu den Lizenztypen und deren Verwendung in **opendata.swiss** sind hier zu finden:
-[Handbuch „Nutzungsbedingungen“ – opendata.swiss](https://handbook.opendata.swiss/de/content/publishing/nutzungsbedingungen.html)  
-[Creative Commons – Lizenzübersicht (deutsch)](https://creativecommons.org/choose/?lang=de)  
+- [Handbuch „Nutzungsbedingungen“ – opendata.swiss](https://handbook.opendata.swiss/de/content/publishing/nutzungsbedingungen.html)  
+- [Creative Commons – Lizenzübersicht (deutsch)](https://creativecommons.org/choose/?lang=de)  
 :::
