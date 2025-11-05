@@ -40,6 +40,8 @@ Die richtige Variante ergibt sich aus der gesetzlichen Grundlage und wird den Da
 <!-- CC0 -->
 <div className="winti-license-card">
   <div className="winti-license-icons">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+         className="winti-license-icon" alt="CC Icon" />
     <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg"
          className="winti-license-icon" alt="CC0 Icon" />
   </div>
@@ -55,6 +57,8 @@ Die richtige Variante ergibt sich aus der gesetzlichen Grundlage und wird den Da
 <!-- CC BY (mit zwei Icons nebeneinander: CC0 + BY, wie gewünscht) -->
 <div className="winti-license-card">
   <div className="winti-license-icons">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+         className="winti-license-icon" alt="CC Icon" />
     <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg"
          className="winti-license-icon" alt="CC0 Icon" />
     <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
