@@ -37,4 +37,4 @@ Massgeblich sind das revidierte Bundesgesetz über den Datenschutz ([revDSG]) un
 Leitsatz: So offen wie möglich, so geschützt wie nötig — OGD nur ohne Personenbezug oder mit klarer gesetzlicher Grundlage.
 :::
 
-[revDSG]:(https://www.fedlex.admin.ch/eli/cc/2022/568/de)
+[revDSG]:https://www.fedlex.admin.ch/eli/cc/2022/568/de
