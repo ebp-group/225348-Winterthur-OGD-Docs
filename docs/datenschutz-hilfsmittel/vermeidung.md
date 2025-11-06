@@ -173,13 +173,22 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 
 </Tabs>
 
+---
+
 :::tip[Schnell-Check]
 
 - ☐ Direkte Kennungen entfernt?
 - ☐ Kleine Gruppen (n &lt; 5) zusammengefasst?
-- ☐ Ort oder Zeit **aggregiert oder generalisiert**?
+- ☐ Ort oder Zeit aggregiert oder generalisiert?
 - ☐ Freitext auf Personenhinweise geprüft?
-- ☐ **Keine Re-Identifikation** möglich?
+- ☐ Keine Re-Identifikation möglich?
 
-→ Wenn überall **Ja** → Datensatz kann veröffentlicht werden.
+→ Wenn überall ein **Ja** gesetzt werden kann, kann der Datensatz kann veröffentlicht werden.
+:::
+
+---
+
+:::info[Dokumentation]
+https://programming-dp.com/chapter10.html
+https://sphn.ch/wp-content/uploads/2025/02/Data-de-identification-guidance-v2.0_20250214.pdf
 :::
