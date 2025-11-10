@@ -21,7 +21,7 @@ flowchart TB
   end
     ucDP -.-> ucMD
     ucMD -.-> ucD
-    rN["👤 Endnutzer"] ~~~ ucDP
+    rN["👤 Daten-Nutzende"] ~~~ ucDP
     ucDP ~~~ rF["👤 FS Daten"] & rF
     rN -- erstellt --> ucApp
     rN -- findet, sichtet --> ucMD
@@ -43,15 +43,14 @@ flowchart TB
 
 Bei der Veröffentlichung von Daten als offene Verwaltungsdaten können die in 
 der Abbildung skizzierten drei Hauptakteure (Daten-Nutzende, Data Owner und das 
-Fachstelle OGD) und die folgenden sechs Hauptprozesse unterschieden 
+FS Daten) und die folgenden sechs Hauptprozesse unterschieden 
 werden:
 
-0. Produktion
-0. Bereitstellung
-0. Publikation
-0. Anfragen
-0. Support
-0. Nutzung
+1. Bereitstellung
+1. Publikation
+1. Anfragen
+1. Support
+1. Nutzung
 
 
 Im Folgenden werden detaillierte Teilprozesse beschrieben, die zur Veröffentlichung offener Verwaltungsdaten nötig sind.
