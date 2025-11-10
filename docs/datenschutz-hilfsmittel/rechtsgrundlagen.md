@@ -9,7 +9,7 @@ sidebar_position: 2
 Offene Veröffentlichung ist **nur** zulässig, wenn **keine** Ausschlussgründe vorliegen. Schutzinteressen haben Vorrang; technische Massnahmen sind möglich, wenn sie den Schutz **wirksam** sicherstellen. Die Pseudonymisierung ist kein ausreichender Schutz zur Vermeidung des Personenbezuges.
 :::
 
-### Abs. 1: Ausschlussgründe (lit. a–d)
+### Art. 5, Abs. 1 lit. a–d: Grenzen der Veröffentlichung
 
 > **Wenn einer der folgenden Punkte zutrifft, wird nicht veröffentlicht.**
 
@@ -31,7 +31,7 @@ Offene Veröffentlichung ist **nur** zulässig, wenn **keine** Ausschlussgründe
 
 ---
 
-### Abs. 2: Technische Massnahmen (Freigabe trotz Schutzbedarf)
+### Art. 5, Abs. 2: Technische Massnahmen (Freigabe trotz Schutzbedarf)
 
 > **Zulässig, wenn der Schutz gleichwertig gewahrt bleibt.**
 
@@ -44,7 +44,7 @@ Erlaubte Vorgehen:
 
 ---
 
-### Abs. 3: Verhältnismässigkeit
+### Art. 5, Abs. 3: Verhältnismässigkeit
 
 > **Aufwand vs. Nutzen abwägen.**
 
@@ -53,7 +53,7 @@ Erlaubte Vorgehen:
 
 ---
 
-### Abs. 4: Geltungsabgrenzung
+### Art. 5, Abs. 4: Geltungsabgrenzung
 
 > **Nur für Daten im Zuständigkeitsbereich der Stadt.**
 

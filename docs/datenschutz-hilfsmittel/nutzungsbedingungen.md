@@ -92,7 +92,7 @@ Die richtige Variante ergibt sich aus der gesetzlichen Grundlage und wird den Da
 </div>
 
 :::info
-Weiter Information zu den Lizenztypen und deren Verwendung in **opendata.swiss** sind hier zu finden:
+Weiter Information zu den Lizenztypen und deren Verwendung sind hier zu finden:
 - [Handbuch „Nutzungsbedingungen“ – opendata.swiss](https://handbook.opendata.swiss/de/content/publishing/nutzungsbedingungen.html)  
 - [Creative Commons – Lizenzübersicht (deutsch)](https://creativecommons.org/choose/?lang=de)  
 :::

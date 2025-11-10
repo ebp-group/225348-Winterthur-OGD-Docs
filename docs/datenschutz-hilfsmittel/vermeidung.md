@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 # Vermeidung des Personenbezugs
 
 ### Was ist De-Identifikation?
-**De-Identifikation** ist der Prozess, der dazu dient, zu verhindern, dass die **persönliche Identität einer Person offengelegt** wird, und sie gilt als einer der Hauptansätze zum Schutz der Datenprivatsphäre. Im Kern beinhaltet die De-Identifizierung von Daten das **Entfernen, Maskieren oder Ersetzen sensibler personenbezogener Daten (PII)** aus Datensätzen. Zu den gängigen Strategien gehört das **Löschen oder Maskieren direkter Kennungen** (wie Name, Adresse oder Geburtsdatum) sowie das **Unterdrücken oder Verallgemeinern von Quasi-Identifikatoren**. Dieser Prozess ist entscheidend, damit kantonale und städtische Verwaltungen Datenschutzbestimmungen einhalten können, wenn sie Daten für Analytik, Forschung oder Testzwecke veröffentlichen. De-identifizierte Daten ist ein Überbegriff, der sowohl **anonymisierte Daten** (bei denen die Re-Identifizierung unwiderruflich und ohne Schlüssel unmöglich ist) als auch **pseudonymisierte Daten** (bei denen die Re-Identifizierung prinzipiell durch eine vertrauenswürdige Stelle mithilfe eines separat gespeicherten Schlüssels möglich bleibt) umfasst. Der umgekehrte Vorgang der Identifizierung von Personen aus de-identifizierten Daten ist als Daten-Re-Identifizierung bekannt.
+**De-Identifikation** ist der Prozess, der dazu dient, zu verhindern, dass die **persönliche Identität einer Person offengelegt** wird, und sie gilt als einer der Hauptansätze zum Schutz der Datenprivatsphäre. Im Kern beinhaltet die De-Identifizierung von Daten das **Entfernen, Maskieren oder Ersetzen sensibler personenbezogener Daten (PII)** aus Datensätzen. Zu den gängigen Strategien gehört das **Löschen oder Maskieren direkter Kennungen** (wie Name, Adresse oder Geburtsdatum) sowie das **Unterdrücken oder Verallgemeinern von Quasi-Identifikatoren**. Dieser Prozess ist entscheidend, damit kantonale und städtische Verwaltungen Datenschutzbestimmungen einhalten können, wenn sie Daten für Analytik, Forschung oder Testzwecke veröffentlichen. De-identifizierte Daten ist ein Überbegriff, der unteranderem auch**anonymisierte Daten** (bei denen die Re-Identifizierung unwiderruflich und ohne Schlüssel unmöglich ist) umfasst. Der umgekehrte Vorgang der Identifizierung von Personen aus de-identifizierten Daten ist als Daten-Re-Identifizierung bekannt.
 
 :::warning[Wichtig]
 **Die Pseudonymisierung** der Daten ist **kein ausreichender Schutz** zur Vermeidung des Personenbezuges, da es sich bei pseudonymsiserten Daten noch immer um Personendaten handelt. Entsprechend können pseudonymisierte Daten nicht im OGD veröffentlicht werden.
@@ -18,28 +18,28 @@ import TabItem from '@theme/TabItem';
 
 Neben den konkreten Methoden zur Vermeidung des Personenbezugs ist es wichtig, dass die De-Identifizierung als strukturierter Prozess innerhalb der Verwaltung verstanden wird. Ziel ist ein **nachvollziehbarer, wiederholbarer Ablauf**, der sicherstellt, dass alle potenziell personenbezogenen Daten erkannt, geprüft und korrekt behandelt werden.
 
-Die folgende Übersicht orientiert sich am in der Praxis bewährten **Safe-Harbor-Ansatz**, wie Firmen und Verwaltungen systematisch vorgehen können, um den Personenbezug zuverlässig zu vermeiden:
+Die folgende Übersicht orientiert sich an einem **risikobasierten De-Identifikationsansatz** gemäss den Datenschutzgrundsätzen der Schweiz. Sie zeigt, wie Verwaltungen systematisch vorgehen können, um den Personenbezug zuverlässig zu vermeiden und Datensätze OGD-tauglich aufzubereiten:
 
 | Schritt | Beschreibung | Ziel / Ergebnis |
 |---|---|---|
 | **1. Zweck & Umfang bestätigen** | Konkretes **Publikationsziel** (OGD ja/nein), **Rechtsgrundlage** und **benötigte Granularität** für **das bereits gewählte Dataset** festlegen. Prüfen, ob wirklich Einzeldaten nötig sind oder Aggregatdaten genügen. | Klarer Rahmen für Datenschutz und Nutzbarkeit |
-| **2. PII-/QI-Screening** | Im **gewählten Dataset** direkte Identifikatoren (PII) und Quasi-Identifikatoren (QI) markieren (z. B. Alter, PLZ, Datum/Uhrzeit, Geokoordinaten). | Relevante Risiken sind vollständig erfasst |
-| **3. Felder taggen** | PII/QI-Spalten mit **einheitlichen Tags** (z. B. `pii.direct`, `pii.quasi`, `sensitive`) versehen; Entscheid-/Audit-Notizen anfügen. | Einheitliche Grundlage für die Umsetzung |
-| **4. Methode wählen** | Passende Maßnahme je Feld/Kombination festlegen: **Maskierung/Löschung**, **Anonymisierung**, **Generalisierung/Aggregation**, **k-Anonymität/L-Diversität**. | Wirksame, zweckmäßige De-Identifizierungsstrategie |
+| **2. PII-/QI-Screening** | Im **gewählten Dataset** Identifikatoren (PII) und **Quasi-Identifikatoren (QI)** identifizieren und kennzeichnen (z. B. Alter, PLZ, Datum/Uhrzeit, Geokoordinaten). | Relevante Risiken sind vollständig erfasst |
+| **3. Felder taggen** | PII/QI-Spalten mit **einheitlichen Tags** (z. B. `pii`, `qi`) versehen; Entscheid-/Audit-Notizen anfügen. | Einheitliche Grundlage für die Umsetzung |
+| **4. Methode wählen** | Passende Maßnahme je Feld/Kombination festlegen: **Maskierung/Löschung**, **Anonymisierung**, **Generalisierung/Aggregation**, **K-Anonymität/L-Diversität**. | Wirksame, zweckmäßige De-Identifizierungsstrategie |
 | **5. De-Identifikation umsetzen** | Schritte **reproduzierbar** anwenden (Script/Workflow), inkl. Parameter (Klassen, Raster, `k`-Wert). **Audit-Trail** führen. | Personenbezug wird systematisch entfernt |
-| **6. Validieren & freigeben** | **Re-Identifikationsrisiko** prüfen (z. B. `k≥5`), **Utility-Checks** (Kennzahlen/Analysen bleiben sinnvoll), **Freitext & Metadaten** kontrollieren. **Freigabe** dokumentieren. | Datenschutzkonform, nutzbar, OGD-bereit |
+| **6. Validieren & freigeben** | **Re-Identifikationsrisiko** prüfen (z. B. `k &lt; 5`), **Utility-Checks** (Kennzahlen/Analysen bleiben sinnvoll), **Freitext & Metadaten** kontrollieren. **Freigabe** dokumentieren. | Datenschutzkonform, nutzbar, OGD-bereit |
 
 :::note[Hinweis]
-Die De-Identifizierung sollte **nicht als einmalige Masnahme**, sondern als **kontinuierlicher Prozess** verstanden werden, sollte die Veröffentlichung der Daten kein einmaliges Ereigniss sein. Regelmäßige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
+Die De-Identifizierung sollte **nicht als einmalige Massnahme**, sondern als **kontinuierlicher Prozess** verstanden werden, sollte die Veröffentlichung der Daten kein einmaliges Ereigniss sein. Regelmäßige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
 :::
 
 ---
 
 ## Methoden zur Vermeidung des Personenbezugs
 
-Die folgenden **vier Methoden** sollen die Mitarbeitenden dabei unterstützen, Datensätze so aufzubereiten, dass **keine Identifikation einzelner Personen möglich ist** und sie somit **als OGD veröffentlicht werden dürfen**. Entschieden werden kann je nach Situation, wo eine entsprechende Methode am einfachsten oder vielversprechendsten ist:
+Die folgenden **vier Methoden** sollen die Mitarbeitenden dabei unterstützen, Datensätze so aufzubereiten, dass **keine Identifikation einzelner Personen möglich ist** und sie somit als OGD veröffentlicht werden dürfen. Entschieden werden kann je nach Situation, wo eine entsprechende Methode am einfachsten oder vielversprechendsten ist:
 
-| Situation | Zweck | Geeignete Methode |
+| Situation | Zweck | Empfohlene Methode zur De-Identifikation |
 |---|---|---|
 | Direkte Kennungen vorhanden (Name, Adresse, Kundennummer) | Entfernen persönlicher Identifikatoren | **Maskierung / Löschung** |
 | Personenbezug soll dauerhaft ausgeschlossen werden | Endgültiges Entfernen des Bezuges | **Anonymisierung** |
@@ -57,15 +57,14 @@ Die folgenden **vier Methoden** sollen die Mitarbeitenden dabei unterstützen, D
 - Name
 - Adresse
 - Telefonnummer / E-Mail
-- Kundennummer / Fallnummer
 - Kontonummer, Versicherungsnummer, Sozialversicherungsnummer etc.
 
 ### Vorgehen (Schritt für Schritt)
 | Feld           | Aktion                               | Beispiel                                      |
 |--------------- |--------------------------------------|-----------------------------------------------|
 | Name           | löschen                              | `Müller Anna` → *(entfernt)*                  |
-| Kundennummer   | durch neutralen Code ersetzen        | `K12345` → `Fall_001`                         |
-| Adresse        | auf Quartier-Ebene reduzieren        | `Zürcherstrasse 14` → `Quartier Altstadt`     |
+| AHV-Nummer   | durch neutralen Code ersetzen        | `AHV-123` → `Person_001`                         |
+| Adresse        | eine Ebene reduzieren        | `Dienerstrasse 8` → `Kreis 4`     |
 | E-Mail         | entfernen                            | `anna.mueller@...` → *(entfernt)*             |
 | Telefonnummer  | entfernen (oder Teilmaskierung)      | `079 123 45 67` → *(entfernt)*                |
 
@@ -118,11 +117,11 @@ Verhinderung von Rückschlüssen durch **Reduktion der Genauigkeit** oder **Zusa
 ### Beispiele
 
 | Vorher (personenbeziehbar)    | Nachher (anonymisiert, OGD-geeignet)      |
-|------------------------------|-------------------------------------------|
+|-------------------------------|-------------------------------------------|
 | Alter = 41                    | Altersgruppe: 40–44                       |
 | Einkommen = 92'450            | Einkommensklasse: 90'000–100'000          |
 | Adresse = Marktgasse 12       | Wohnort: Quartier Altstadt                |
-| Unfall am 03.05.2023, 13:44   | Ereigniszeit: Mai / Nachmittag           |
+| Unfall am 03.05.2023, 13:44   | Ereigniszeit: Mai, 2023                   |
 
 ### Praktische Schwellenwerte (Empfehlungen)
 - **Mindesthäufigkeit**: Kategorien mit **n &lt; 5** Fällen → **zusammenfassen oder entfernen** (keine Veröffentlichung von Zellen mit &lt; 5 Fällen, um Individualisierbarkeit zu vermeiden).
@@ -151,13 +150,13 @@ Angenommen, Alter und Ort seien zwei Quasi-Identifikatoren in einem Datensatz:
 
 | Altersgruppe | Quartier  | Anzahl Datensätze | OGD-Freigabe?             |
 |--------------|-----------|-------------------|---------------------------|
-| 18–25        | Altstadt  | 12                | ✅ *OK* (n=12 ≥ k=5)      |
-| 75–80        | Altstadt  | 2                 | ❌ *nicht ok* (n=2 &lt; k=5) |
+| 18–25        | Altstadt  | 12                | *OK* (n=12 ≥ k=5)      |
+| 75–80        | Altstadt  | 2                 | *nicht ok* (n=2 &lt; k=5) |
 
 In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusammengefasst oder unterdrückt werden, bis pro Zelle mindestens 5 Fälle vorhanden sind (z.B. Alterskategorie erweitern oder diese Datenkategorie nicht veröffentlichen).
 
 ### Umsetzungsschritte
-1. **Quasi-Identifikatoren festlegen** – Identifiziere die Kombination von Merkmalen (z.B. Alter + Wohnort + Zeitraum + Ereignisart), die gemeinsam eine Person potentiell identifizierbar machen könnten.
+1. **Quasi-Identifikatoren (QI) festlegen** – Identifiziere die Kombination von Merkmalen (z.B. Alter + Wohnort + Zeitraum + Ereignisart), die gemeinsam eine Person potentiell identifizierbar machen könnten.
 2. **Kategorien bilden** – Lege sinnvolle Klassifizierungen/Generalisierungen für diese Merkmale fest (siehe vorheriger Tab für Beispiele).
 3. **Häufigkeiten prüfen** – Analysiere den Datensatz dahingehend, ob alle Kombinationen der Quasi-Identifikatoren mit mindestens *k* Datensätzen vorkommen.
 4. **Anpassen bis Regel erfüllt** – Falls nein: Kategorien weiter vergröbern oder seltene Kombinationen unterdrücken, bis **jede** Merkmalskombination ≥ k Einträge enthält.
@@ -189,6 +188,31 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 ---
 
 :::info[Dokumentation]
-https://programming-dp.com/chapter10.html
-https://sphn.ch/wp-content/uploads/2025/02/Data-de-identification-guidance-v2.0_20250214.pdf
+
+**Allgemeine Einführung & Schweizer Leitfäden**
+1. [Programming Differential Privacy – Kapitel 10: De-identification in Practice (Python, SQL)](https://programming-dp.com/chapter10.html)  
+   → Praktische Einführung in Maskierung, Aggregation, K-Anonymität und Differential Privacy mit Beispielcode in Python und SQL.
+2. [Swiss Personalized Health Network (SPHN) (2025): *Data De-identification Guidance v2.0*](https://sphn.ch/wp-content/uploads/2025/02/Data-de-identification-guidance-v2.0_20250214.pdf)  
+   → Offizieller Schweizer Leitfaden mit Phasenmodell, Rollen, Risikoanalyse und Methodenempfehlungen (übertragbar auf OGD-Daten).
+
+**Technische Umsetzung und Methodik**
+3. [European Data Protection Board (EDPB) – *Guidelines 05/2021 on Anonymisation Techniques*](https://edpb.europa.eu/system/files/2021-04/edpb_guidelines_202105_anonymisation_en.pdf)  
+   → Detaillierte Erklärung zu Generalisierung, Randomisierung und Aggregation mit Beispielen für numerische und kategoriale Daten.
+4. [R – Package „sdcMicro“ (Statistical Disclosure Control)](https://cran.r-project.org/web/packages/sdcMicro/index.html)  
+   → Open-Source-Tool der EU-Statistikbehörden zur Umsetzung von K-Anonymität, L-Diversität und Datensuppression direkt in R.
+5. [Python – Library „ARX-Python Wrapper“ für Anonymisierung](https://github.com/IBM/arx-python)  
+   → Wrapper der bekannten ARX-Anonymization Engine mit Beispielen für Attribute-Tagging, Generalisierung und Risikoanalyse.
+6. [SQL – Anonymization Using Window Functions (Microsoft Data Platform Blog)](https://techcommunity.microsoft.com/t5/sql-server-blog/data-anonymization-techniques-using-sql-window-functions/ba-p/3901573)  
+   → Schritt-für-Schritt-Beispiele zur Anonymisierung und Generalisierung direkt in SQL (TOP-CODES, Bucketisierung, Randomisierung).
+
+**Praxisorientierte Frameworks**
+7. [UK Office for National Statistics (ONS) – *Guidelines for Anonymisation of Data Sets*](https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2016/11/Guidelines-for-anonymisation.pdf)  
+   → Praxisnahe Regeln und Fallbeispiele, inklusive Tabellenaggregation, Schwellenwerten und Excel-basierten Kontrollmethoden.
+8. [OECD (2023): *Practical Approaches to Anonymisation and De-identification*](https://www.oecd.org/digital/privacy/practical-approaches-to-anonymisation.pdf)  
+   → Überblick über moderne Verfahren (Suppression, Noise Injection, Microaggregation) und deren Implementierung in Statistiksoftware.
+9. [Data Privacy Handbook – *Anonymization Techniques in Practice* (R & Python)](https://dataprivacyhandbook.org/anonymization-techniques-in-practice.html)  
+   → Interaktive Notebook-Beispiele für Maskierung, Generalisierung, K-Anonymität und Differential Privacy in R und Python.
+10. [World Bank Open Data Toolkit – *Practical Guide to Data De-identification*](https://opendatatoolkit.worldbank.org/de-identification.html)  
+   → Schrittweise Anleitung zur De-Identifikation offener Verwaltungsdaten; enthält Excel-Tabellenbeispiele und SQL-Snippets.
+
 :::
