@@ -176,7 +176,7 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 
 :::tip[Schnell-Check]
 
-- ☐ Direkte Kennungen entfernt?
+- ☐ Direkte Kennungen entfernt (PII/QI)?
 - ☐ Kleine Gruppen (n &lt; 5) zusammengefasst?
 - ☐ Ort oder Zeit aggregiert oder generalisiert?
 - ☐ Freitext auf Personenhinweise geprüft?
