@@ -190,28 +190,13 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 :::info[Dokumentation]
 
 **Allgemeine Einführung & Schweizer Leitfäden**
-- [Programming Differential Privacy (Python, SQL)](https://programming-dp.com/chapter1.html)  
-   → Praktische Einführung in Maskierung, Aggregation, K-Anonymität und Differential Privacy mit Beispielcode in Python und SQL.
 - [Swiss Personalized Health Network (SPHN) (2025): *Data De-identification Guidance v2.0*](https://sphn.ch/wp-content/uploads/2025/02/Data-de-identification-guidance-v2.0_20250214.pdf)  
-   → Offizieller Schweizer Leitfaden mit Phasenmodell, Rollen, Risikoanalyse und Methodenempfehlungen (übertragbar auf OGD-Daten).
+   → Offizieller Schweizer Leitfaden mit Phasenmodell aus dem Gesundheitsweisen,zu Rollen, Risikoanalyse und Methodenempfehlungen (übertragbar auf OGD-Daten).
 
 **Technische Umsetzung und Methodik**
-- [European Data Protection Board (EDPB) – *Guidelines 05/2021 on Anonymisation Techniques*](https://edpb.europa.eu/system/files/2021-04/edpb_guidelines_202105_anonymisation_en.pdf)  
-   → Detaillierte Erklärung zu Generalisierung, Randomisierung und Aggregation mit Beispielen für numerische und kategoriale Daten.
-- [R – Package „sdcMicro“ (Statistical Disclosure Control)](https://cran.r-project.org/web/packages/sdcMicro/index.html)  
-   → Open-Source-Tool der EU-Statistikbehörden zur Umsetzung von K-Anonymität, L-Diversität und Datensuppression direkt in R.
-- [Python – Library „ARX-Python Wrapper“ für Anonymisierung](https://github.com/IBM/arx-python)  
-   → Wrapper der bekannten ARX-Anonymization Engine mit Beispielen für Attribute-Tagging, Generalisierung und Risikoanalyse.
-- [SQL – Anonymization Using Window Functions (Microsoft Data Platform Blog)](https://techcommunity.microsoft.com/t5/sql-server-blog/data-anonymization-techniques-using-sql-window-functions/ba-p/3901573)  
-   → Schritt-für-Schritt-Beispiele zur Anonymisierung und Generalisierung direkt in SQL (TOP-CODES, Bucketisierung, Randomisierung).
+- [Programming Differential Privacy (Python, SQL)](https://programming-dp.com/chapter1.html)  
+   → Praktische Einführung in Maskierung, Aggregation, K-Anonymität und Differential Privacy mit Beispielcode in Python und SQL.
 
 **Praxisorientierte Frameworks**
-- [UK Office for National Statistics (ONS) – *Guidelines for Anonymisation of Data Sets*](https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2016/11/Guidelines-for-anonymisation.pdf)  
-   → Praxisnahe Regeln und Fallbeispiele, inklusive Tabellenaggregation, Schwellenwerten und Excel-basierten Kontrollmethoden.
-- [OECD (2023): *Practical Approaches to Anonymisation and De-identification*](https://www.oecd.org/digital/privacy/practical-approaches-to-anonymisation.pdf)  
-   → Überblick über moderne Verfahren (Suppression, Noise Injection, Microaggregation) und deren Implementierung in Statistiksoftware.
-- [Data Privacy Handbook – *Anonymization Techniques in Practice* (R & Python)](https://dataprivacyhandbook.org/anonymization-techniques-in-practice.html)  
-   → Interaktive Notebook-Beispiele für Maskierung, Generalisierung, K-Anonymität und Differential Privacy in R und Python.
-- [World Bank Open Data Toolkit – *Practical Guide to Data De-identification*](https://opendatatoolkit.worldbank.org/de-identification.html)  
-   → Schrittweise Anleitung zur De-Identifikation offener Verwaltungsdaten; enthält Excel-Tabellenbeispiele und SQL-Snippets.
+
 :::
