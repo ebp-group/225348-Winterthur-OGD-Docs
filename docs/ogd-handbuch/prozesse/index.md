@@ -46,7 +46,7 @@ der Abbildung skizzierten drei Hauptakteure (Daten-Nutzende, Data Owner und das
 FS Daten) und die folgenden sechs Hauptprozesse unterschieden 
 werden:
 
-1. Bereitstellung
+1. [Bereitstellung](./bereitstellung)
 1. Publikation
 1. Anfragen
 1. Support
