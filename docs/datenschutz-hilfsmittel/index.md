@@ -18,7 +18,7 @@ layout: elk
 flowchart TD
 
   A["Besteht eine <b>gesetzliche Grundlage</b> für die Publikation?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/grundlagen'>→ Grundlagen</a>"]
-  B["Enthält der Datensatz <b>Personendaten</b> oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/personenbezug'>→ Personenbezug</a>"]
+  B["Enthält der Datensatz <b>Personendaten</b> oder lassen sich aus Sachverhalten Rückschlüsse auf Personen ziehen?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/personenbezug/personenbezug'>→ Personenbezug</a>"]
   C["Sind die Daten <b>urheberrechtlich</b> geschützt?"]
   D["Handelt es sich um <b>besonders schützenswerte Personendaten</b>?"]
   E["Erlaubt ein <b>formelles Gesetz</b> die Publikation dieser Daten?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen'>→ Rechtsgrundlagen</a>"]
