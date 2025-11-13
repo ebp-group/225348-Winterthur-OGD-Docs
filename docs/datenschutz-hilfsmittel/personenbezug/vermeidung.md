@@ -183,24 +183,10 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 :::info[Dokumentation]
 
 - **Programming Differential Privacy – Kapitel 10 (Python/SQL):**  
-  https://programming-dp.com/chapter10.html  
+  https://programming-dp.com/chapter1.html  
 - **SPHN (2025): Data De-identification Guidance v2.0:**  
   https://sphn.ch/wp-content/uploads/2025/02/Data-de-identification-guidance-v2.0_20250214.pdf  
-- **EDPB – Guidelines 05/2021 on Anonymisation Techniques:**  
-  https://edpb.europa.eu/system/files/2021-04/edpb_guidelines_202105_anonymisation_en.pdf  
-- **R: sdcMicro (Statistical Disclosure Control):**  
-  https://cran.r-project.org/web/packages/sdcMicro/index.html  
-- **ARX (Java) & ARX-Python-Wrapper:**  
-  https://arx.deidentifier.org/ • https://github.com/IBM/arx-python  
-- **SQL: Data Anonymization with Window Functions (Microsoft):**  
-  https://techcommunity.microsoft.com/t5/sql-server-blog/data-anonymization-techniques-using-sql-window-functions/ba-p/3901573  
-- **UK ONS – Guidelines for Anonymisation of Data Sets:**  
-  https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2016/11/Guidelines-for-anonymisation.pdf  
 - **OECD (2023): Practical Approaches to Anonymisation and De-identification:**  
   https://www.oecd.org/digital/privacy/practical-approaches-to-anonymisation.pdf  
-- **Data Privacy Handbook – Anonymization Techniques in Practice (R/Python):**  
-  https://dataprivacyhandbook.org/anonymization-techniques-in-practice.html  
-- **World Bank Open Data Toolkit – De-identification Guide (Excel/SQL):**  
-  https://opendatatoolkit.worldbank.org/de-identification.html
 
 :::
