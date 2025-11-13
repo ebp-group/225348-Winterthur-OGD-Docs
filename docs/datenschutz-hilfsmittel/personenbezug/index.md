@@ -42,6 +42,14 @@ Beispiele:
 
 ## Normalfall: in 3 Schritten zur OGD-Freigabe
 
+De-Identifikation bezeichnet alle Massnahmen, mit denen personenbezogene Informationen so verändert werden, dass keine Identifikation von Personen mehr möglich ist. Dazu gehören insbesondere das Entfernen direkter Kennungen (z. B. Name, Adresse) sowie das Generalisieren oder Unterdrücken von Quasi-Identifikatoren (z. B. Alter, Ort, Zeit).
+
+Das Ziel ist sicherzustellen, dass Daten für Analyse, Forschung oder als Open Government Data genutzt werden können, ohne die Privatsphäre zu verletzen. De-identifizierte Daten können auch anonymisierte Daten umfassen, bei denen eine Re-Identifikation nicht mehr möglich ist.
+
+:::warning[Wichtig]
+**Die Pseudonymisierung** der Daten ist **kein ausreichender Schutz** zur Vermeidung des Personenbezuges, da es sich bei pseudonymsiserten Daten noch immer um Personendaten handelt. Entsprechend können pseudonymisierte Daten nicht im OGD veröffentlicht werden.
+:::
+
 1. **Direkte Kennungen löschen**  
    Namen, Adressen, E-Mails, Telefonnummern, IDs (AHV, Konto, Fall-Nr.) **entfernen oder maskieren**.
 2. **Quasi-Identifikatoren generalisieren**  
@@ -69,9 +77,8 @@ Wenn nach diesen Schritten **Re-Identifikationsrisiken** bestehen, ist das Datas
 - ☐ Sind Freitexte und Metadaten auf Personenhinweise geprüft?
 
 → Nur **anonymisierte oder ausreichend aggregierte** Daten dürfen als OGD veröffentlicht werden.
-
 ---
-
-### Weiterführende Vertiefung
+:::info[Weiterführende Vertiefung]
 Für Methodik, Beispiele und detaillierte Umsetzung:  
 **[→ Vermeidung des Personenbezugs (Vertiefung)](./personenbezug/vermeidung)**
+:::
