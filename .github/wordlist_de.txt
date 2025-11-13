@@ -32,6 +32,7 @@ Datenportal
 Datenportals
 Datenqualität
 Datenschutzbedenken
+Datenschutzgrundsätzen
 Datenschutzstelle
 Datenstrategie
 Datenverwaltende
@@ -57,6 +58,7 @@ Grundhaltungen
 Guide
 Haftungsausschluss
 Handlungsfeld
+Identifikationsansatz
 Identifikationsrisiko
 Identifizierungsstrategie
 IDG
@@ -70,6 +72,7 @@ IPST
 kantonale
 Kompetenzzentrum
 Kontaktangaben
+Kostenfreiheit
 Kulturdaten
 Kundennummer
 Lizenztypen
@@ -90,10 +93,12 @@ Nutzungsbedingungen
 Öffentlichkeitsprinzip
 OGD
 Open
+opendata
 Organisationseinheit
 Owner
 Partnerschaftlichkeit
 Personenbezug
+Personenbezugs
 Personendaten
 Personenerkennung
 Persönlichkeitsrechte
@@ -112,6 +117,7 @@ Quellennennung
 Querschnittsaufgabe
 Re
 Recognition
+risikobasierten
 RSS
 SA
 Schutzbedarf
@@ -130,6 +136,7 @@ stadtweit
 Standardlizenz
 Statistikstudie
 Strommangellage
+swiss
 Tabellenblatt
 taggen
 Teilmaskierung
@@ -148,9 +155,3 @@ Workflow
 Zero
 ZH
 Zielpublikum
-opendata
-swiss
-Kostenfreiheit
-Datenschutzgrundsätzen
-Identifikationsansatz
-risikobasierten
