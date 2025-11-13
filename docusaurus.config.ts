@@ -46,6 +46,7 @@ const config: Config = {
     mermaid: true,
     remarkRehypeOptions: {
       footnoteLabel: "Fussnoten",
+      footnoteBackLabel: "Zurück zur Referenz",
       handlers: {
         ...defListHastHandlers,
       },
