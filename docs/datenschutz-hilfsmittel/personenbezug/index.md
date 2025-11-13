@@ -61,7 +61,7 @@ Wenn der Datensatz (direkt oder indirekt) Personenbezug enthält, gilt folgendes
 3. **Wenn nein:**  
    → **Keine Veröffentlichung als OGD**  
 4. **Wenn ja:**  
-   → Veröffentlichung nach dokumentierten Schutzmassnahmen (vgl. [→ Vermeidung des Personenbezugs](./vermeidung)).
+   → Veröffentlichung nach dokumentierten Schutzmassnahmen (vgl. [→ Vermeidung des Personenbezugs](./personenbezug/vermeidung)).
 
 :::note[**Kurzcheck Personenbezug**]
 1. Enthält der Datensatz Informationen über Einzelpersonen?  
