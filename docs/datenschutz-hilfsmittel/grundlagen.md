@@ -27,9 +27,10 @@ Die OGD-Verordnung der Stadt Winterthur stützt sich auf
 - **Grundsatz:** Daten werden veröffentlicht, **sofern kein legitimer Ausschlussgrund** besteht (***Art. 4 OGD-V***).  
 - **Grenzen:** Keine Publikation bei Datenschutz-, Urheber- oder Geheimhaltungspflichten (***Art. 5 OGD-V***).  
 - **Zuständigkeit:** Jedes Amt benennt eine **OGD-Ansprechperson**. Das **Kompetenzzentrum OGD** koordiniert, prüft Qualität und berät (***Art. 7 OGD-V***).  
-- **Kostenfreiheit:** Offene Verwaltungsdaten sind **grundsätzlich kostenlos** zugänglich (***Art. 16 Abs. 1).  
+- **Kostenfreiheit:** Offene Verwaltungsdaten sind **grundsätzlich kostenlos** zugänglich (***Art. 16 Abs. 1***).  
 - **Standardisierung:** Veröffentlichung gemäss **DCAT-AP CH** und ISO-Normen (z. B. ISO 19115/19139 für Geodaten).
 
 :::info[Dokumentation]
 Für weitere Informationen zu den gesetzlichen Grundlagen konsultieren Sie die **[OGD-Verordnung Winterthur](https://stadt.winterthur.ch/stadtratsbeschluesse/beschluesse-des-stadtrats/stadtratssitzung-vom-26-februar-2025/stadtratssitzung-vom-26-februar-2025/open-government-data-konzept-stadt-winterthur-ogd-konzept-zustimmung-und-auftraege-zur-umsetzung.pdf/download)**.
 :::
+
