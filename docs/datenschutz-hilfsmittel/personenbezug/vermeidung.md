@@ -7,33 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # Vermeidung des Personenbezugs
 
-### Was ist De-Identifikation?
-**De-Identifikation** ist der Prozess, der dazu dient, zu verhindern, dass die **persönliche Identität einer Person offengelegt** wird, und sie gilt als einer der Hauptansätze zum Schutz der Datenprivatsphäre. Im Kern beinhaltet die De-Identifizierung von Daten das **Entfernen, Maskieren oder Ersetzen sensibler personenbezogener Daten (PII)** aus Datensätzen. Zu den gängigen Strategien gehört das **Löschen oder Maskieren direkter Kennungen** (wie Name, Adresse oder Geburtsdatum) sowie das **Unterdrücken oder Verallgemeinern von Quasi-Identifikatoren**. Dieser Prozess ist entscheidend, damit kantonale und städtische Verwaltungen Datenschutzbestimmungen einhalten können, wenn sie Daten für Analytik, Forschung oder Testzwecke veröffentlichen. De-identifizierte Daten ist ein Überbegriff, der unteranderem auch**anonymisierte Daten** (bei denen die Re-Identifizierung unwiderruflich und ohne Schlüssel unmöglich ist) umfasst. Der umgekehrte Vorgang der Identifizierung von Personen aus de-identifizierten Daten ist als Daten-Re-Identifizierung bekannt.
-
-:::warning[Wichtig]
-**Die Pseudonymisierung** der Daten ist **kein ausreichender Schutz** zur Vermeidung des Personenbezuges, da es sich bei pseudonymsiserten Daten noch immer um Personendaten handelt. Entsprechend können pseudonymisierte Daten nicht im OGD veröffentlicht werden.
-:::
-
-### So anonymisieren Sie Daten
-
-Neben den konkreten Methoden zur Vermeidung des Personenbezugs ist es wichtig, dass die De-Identifizierung als strukturierter Prozess innerhalb der Verwaltung verstanden wird. Ziel ist ein **nachvollziehbarer, wiederholbarer Ablauf**, der sicherstellt, dass alle potenziell personenbezogenen Daten erkannt, geprüft und korrekt behandelt werden.
-
-Die folgende Übersicht orientiert sich an einem **risikobasierten De-Identifikationsansatz** gemäss den Datenschutzgrundsätzen der Schweiz. Sie zeigt, wie Verwaltungen systematisch vorgehen können, um den Personenbezug zuverlässig zu vermeiden und Datensätze OGD-tauglich aufzubereiten:
-
-| Schritt | Beschreibung | Ziel / Ergebnis |
-|---|---|---|
-| **1. Zweck & Umfang bestätigen** | Konkretes **Publikationsziel** (OGD ja/nein), **Rechtsgrundlage** und **benötigte Granularität** für **das bereits gewählte Dataset** festlegen. Prüfen, ob wirklich Einzeldaten nötig sind oder Aggregatdaten genügen. | Klarer Rahmen für Datenschutz und Nutzbarkeit |
-| **2. PII-/QI-Screening** | Im **gewählten Dataset** Identifikatoren (PII) und **Quasi-Identifikatoren (QI)** identifizieren und kennzeichnen (z. B. Alter, PLZ, Datum/Uhrzeit, Geokoordinaten). | Relevante Risiken sind vollständig erfasst |
-| **3. Felder taggen** | PII/QI-Spalten mit **einheitlichen Tags** (z. B. `pii`, `qi`) versehen; Entscheid-/Audit-Notizen anfügen. | Einheitliche Grundlage für die Umsetzung |
-| **4. Methode wählen** | Passende Maßnahme je Feld/Kombination festlegen: **Maskierung/Löschung**, **Anonymisierung**, **Generalisierung/Aggregation**, **K-Anonymität/L-Diversität**. | Wirksame, zweckmäßige De-Identifizierungsstrategie |
-| **5. De-Identifikation umsetzen** | Schritte **reproduzierbar** anwenden (Script/Workflow), inkl. Parameter (Klassen, Raster, `k`-Wert). **Audit-Trail** führen. | Personenbezug wird systematisch entfernt |
-| **6. Validieren & freigeben** | **Re-Identifikationsrisiko** prüfen (z. B. `k &lt; 5`), **Utility-Checks** (Kennzahlen/Analysen bleiben sinnvoll), **Freitext & Metadaten** kontrollieren. **Freigabe** dokumentieren. | Datenschutzkonform, nutzbar, OGD-bereit |
-
-:::note[Hinweis]
-Die De-Identifizierung sollte **nicht als einmalige Massnahme**, sondern als **kontinuierlicher Prozess** verstanden werden, sollte die Veröffentlichung der Daten kein einmaliges Ereigniss sein. Regelmäßige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
-:::
-
----
+Dieses Kapitel erläutert die **Methodik und Umsetzung** im Detail. Es baut auf dem einfachen Einstieg unter **Personenbezug** auf und bietet konkrete Schritte, Beispiele und Kriterien.
 
 ## Methoden zur Vermeidung des Personenbezugs
 
@@ -189,14 +163,25 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 
 :::info[Dokumentation]
 
-**Allgemeine Einführung & Schweizer Leitfäden**
-- [Swiss Personalized Health Network (SPHN) (2025): *Data De-identification Guidance v2.0*](https://sphn.ch/wp-content/uploads/2025/02/Data-de-identification-guidance-v2.0_20250214.pdf)  
-   → Offizieller Schweizer Leitfaden mit Phasenmodell aus dem Gesundheitsweisen,zu Rollen, Risikoanalyse und Methodenempfehlungen (übertragbar auf OGD-Daten).
-
-**Technische Umsetzung und Methodik**
-- [Programming Differential Privacy (Python, SQL)](https://programming-dp.com/chapter1.html)  
-   → Praktische Einführung in Maskierung, Aggregation, K-Anonymität und Differential Privacy mit Beispielcode in Python und SQL.
-
-**Praxisorientierte Frameworks**
+- **Programming Differential Privacy – Kapitel 10 (Python/SQL):**  
+  https://programming-dp.com/chapter10.html  
+- **SPHN (2025): Data De-identification Guidance v2.0:**  
+  https://sphn.ch/wp-content/uploads/2025/02/Data-de-identification-guidance-v2.0_20250214.pdf  
+- **EDPB – Guidelines 05/2021 on Anonymisation Techniques:**  
+  https://edpb.europa.eu/system/files/2021-04/edpb_guidelines_202105_anonymisation_en.pdf  
+- **R: sdcMicro (Statistical Disclosure Control):**  
+  https://cran.r-project.org/web/packages/sdcMicro/index.html  
+- **ARX (Java) & ARX-Python-Wrapper:**  
+  https://arx.deidentifier.org/ • https://github.com/IBM/arx-python  
+- **SQL: Data Anonymization with Window Functions (Microsoft):**  
+  https://techcommunity.microsoft.com/t5/sql-server-blog/data-anonymization-techniques-using-sql-window-functions/ba-p/3901573  
+- **UK ONS – Guidelines for Anonymisation of Data Sets:**  
+  https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2016/11/Guidelines-for-anonymisation.pdf  
+- **OECD (2023): Practical Approaches to Anonymisation and De-identification:**  
+  https://www.oecd.org/digital/privacy/practical-approaches-to-anonymisation.pdf  
+- **Data Privacy Handbook – Anonymization Techniques in Practice (R/Python):**  
+  https://dataprivacyhandbook.org/anonymization-techniques-in-practice.html  
+- **World Bank Open Data Toolkit – De-identification Guide (Excel/SQL):**  
+  https://opendatatoolkit.worldbank.org/de-identification.html
 
 :::

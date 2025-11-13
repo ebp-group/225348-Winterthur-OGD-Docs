@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Personenbezug
 Vor jeder Veröffentlichung offener Verwaltungsdaten ist zu prüfen, **ob ein Personenbezug besteht**.  
-Dieses Kapitel hilft, zu erkennen, wann Daten als personenbezogen gelten und welche Schritte dann folgen.
+Dieses Kapitel bietet einen **einfachen Einstieg**: Woran erkenne ich Personendaten – und wie bereite ich das **bereits ausgewählte Dataset** schnell und datenschutzkonform für OGD auf?
 
 :::warning
 Ein Datensatz gilt als **personenbezogen**, wenn er direkt oder indirekt einer natürlichen Person zugeordnet werden kann.
@@ -40,33 +40,38 @@ Beispiele:
 </TabItem>
 </Tabs>
 
-## Wann gilt ein Datensatz als anonym?
+## Normalfall: in 3 Schritten zur OGD-Freigabe
 
-Ein Datensatz ist **anonymisiert**, wenn **keine Person auch mit vernünftigem Aufwand identifiziert werden kann**.  
-Sobald eine Re-Identifikation technisch oder durch Zusatzwissen möglich wäre, gelten die Daten weiterhin als personenbezogen.
+1. **Direkte Kennungen löschen**  
+   Namen, Adressen, E-Mails, Telefonnummern, IDs (AHV, Konto, Fall-Nr.) **entfernen oder maskieren**.
+2. **Quasi-Identifikatoren generalisieren**  
+   z. B. **Altersklassen** (5-Jahres-Bänder), **räumlich** (Quartier statt Adresse / Raster ≥ 100 m), **zeitlich** (Monat/Quartal statt exaktes Datum/Uhrzeit).
+3. **Gruppenbildung sicherstellen (k-Anonymität)**  
+   Jede veröffentlichte Kombination soll **mindestens k Fälle** enthalten (empfohlen **k ≥ 5**; für besonders schützenswerte Daten höhere Schwellen).
+
+### Schnellverfahren (Orientierung)
+
+| Situation | Zweck | Empfohlene Methode |
+|---|---|---|
+| Direkte Kennungen vorhanden (Name, Adresse, Kundennummer) | Entfernen persönlicher Identifikatoren | **Maskierung / Löschung** |
+| Präzise Werte erlauben Rückschluss auf Individuen | Genauigkeit kontrolliert reduzieren | **Generalisierung & Aggregation** |
+| Mehrere Attribute ermöglichen Rückschluss in Kombination | Risiko messbar reduzieren | **K-Anonymität sicherstellen** |
 
 :::note
-**Praxisregel:**  
-Wenn eine Person mit allgemein zugänglichen Informationen oder durch Kombination mehrerer Merkmale erkennbar wäre, gilt der Datensatz als **personenbezogen**.
+Wenn nach diesen Schritten **Re-Identifikationsrisiken** bestehen, ist das Dataset im aktuellen Zustand **nicht OGD-fähig**. Nutzen Sie die **Vertiefung** für weitere Massnahmen.
 :::
 
-## Vorgehen bei Personenbezug
+## Kurzcheck Personenbezug
 
-Wenn der Datensatz (direkt oder indirekt) Personenbezug enthält, gilt folgendes Vorgehen:
+- ☐ Enthält der Datensatz direkte Kennungen?  
+- ☐ Lassen Kombinationen indirekte Identifikation zu (kleine Gruppen, seltene Merkmale)?  
+- ☐ Wurden Ort/Zeit **ausreichend aggregiert** und Gruppen mit **k ≥ 5** sichergestellt?  
+- ☐ Sind Freitexte und Metadaten auf Personenhinweise geprüft?
 
-1. **Gesetzliche Grundlage prüfen**  
-   → Besteht eine explizite Rechtsgrundlage für die Veröffentlichung?  
-2. **Schutzmassnahmen prüfen**  
-   → Kann der Personenbezug durch Anonymisierung, Aggregation oder De-Identifikation beseitigt werden?  
-3. **Wenn nein:**  
-   → **Keine Veröffentlichung als OGD**  
-4. **Wenn ja:**  
-   → Veröffentlichung nach dokumentierten Schutzmassnahmen (vgl. [→ Vermeidung des Personenbezugs](./personenbezug/vermeidung)).
+→ Nur **anonymisierte oder ausreichend aggregierte** Daten dürfen als OGD veröffentlicht werden.
 
-:::note[**Kurzcheck Personenbezug**]
-1. Enthält der Datensatz Informationen über Einzelpersonen?  
-2. Lassen sich durch Kombination Rückschlüsse auf Personen ziehen?  
-3. Können die Daten ohne unzumutbaren Aufwand anonymisiert werden?
+---
 
-→ Nur **anonymisierte oder aggregierte Daten** dürfen als OGD veröffentlicht werden.
-:::
+### Weiterführende Vertiefung
+Für Methodik, Beispiele und detaillierte Umsetzung:  
+**[→ Vermeidung des Personenbezugs (Vertiefung)](./personenbezug/vermeidung)**
