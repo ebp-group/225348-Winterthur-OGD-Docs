@@ -22,7 +22,7 @@ flowchart TD
   C["Sind die Daten <b>urheberrechtlich</b> geschützt?"]
   D["Handelt es sich um <b>besonders schützenswerte Personendaten</b>?"]
   E["Erlaubt ein <b>formelles Gesetz</b> die Publikation dieser Daten?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/rechtsgrundlagen'>→ Rechtsgrundlagen</a>"]
-  F["Sind <b>Vermeidungen des Personenbezugs</b> möglich, sodass <b>kein Personenbezug</b> mehr besteht?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/vermeidung'>→ Vermeidung des Personenbezugs</a>"]
+  F["Sind <b>Vermeidungen des Personenbezugs</b> möglich, sodass <b>kein Personenbezug</b> mehr besteht?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/personenbezug/vermeidung'>→ Vermeidung des Personenbezugs</a>"]
   G["Wurden Rechte an die Stadt übertragen und <b>Persönlichkeitsrechte</b> gewahrt/verzichtet?"]
   H["Darf der Datensatz <b>kostenlos</b> bereitgestellt werden?"]
   I["Ist eine <b>kommerzielle</b> und <b>nicht-kommerzielle</b> Nutzung erlaubt?<br/><a href='https://ebp-group.github.io/225348-Winterthur-OGD-Docs/datenschutz-hilfsmittel/nutzungsbedingungen'>→ Nutzungsbedingungen</a>"]
