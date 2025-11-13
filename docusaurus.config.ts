@@ -60,8 +60,7 @@ const config: Config = {
           routeBasePath: "/",
           remarkPlugins: [remarkDefList],
 
-          editUrl:
-            "https://github.com/ebp-group/225348-Winterthur-OGD-Docs/edit/main/",
+          editUrl: "https://github.com/ebp-group/225348-Winterthur-OGD-Docs/edit/main/",
         },
         blog: {
           showReadingTime: false,
@@ -74,10 +73,7 @@ const config: Config = {
           blogSidebarCount: "ALL",
           blogTitle: "OGD-Blog",
           blogDescription: "OGD Blog der Stadt Winterthur",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/ebp-group/225348-Winterthur-OGD-Docs/edit/main",
+          editUrl: "https://github.com/ebp-group/225348-Winterthur-OGD-Docs/edit/main",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
