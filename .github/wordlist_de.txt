@@ -148,3 +148,9 @@ Workflow
 Zero
 ZH
 Zielpublikum
+opendata
+swiss
+Kostenfreiheit
+Datenschutzgrundsätzen
+Identifikationsansatz
+risikobasierten
