@@ -1,3 +1,7 @@
+[![Build documentation](https://github.com/ebp-group/225348-Winterthur-OGD-Docs/actions/workflows/build.yml/badge.svg)](https://github.com/ebp-group/225348-Winterthur-OGD-Docs/actions/workflows/build.yml)
+[![Deploy to GitHub Pages](https://github.com/ebp-group/225348-Winterthur-OGD-Docs/actions/workflows/deploy.yml/badge.svg)](https://github.com/ebp-group/225348-Winterthur-OGD-Docs/actions/workflows/deploy.yml)
+[![Spellcheck Text](https://github.com/ebp-group/225348-Winterthur-OGD-Docs/actions/workflows/spellcheck.yml/badge.svg)](https://github.com/ebp-group/225348-Winterthur-OGD-Docs/actions/workflows/spellcheck.yml)
+
 # 225348-Winterthur-OGD-Docs
 
 OGD Dokumentation für die Stadt Winterthur
