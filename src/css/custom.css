@@ -29,6 +29,11 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+/* Definition Lists */
+dt {
+  font-weight: bold;
+}
+
 /* Winterthur OGD – Lizenzkarten */
 .winti-license-card {
   border: 2px solid #c00000;            /* Winterthur-Rot */
