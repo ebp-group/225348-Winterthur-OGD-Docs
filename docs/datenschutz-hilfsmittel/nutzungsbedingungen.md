@@ -28,14 +28,14 @@ Gemäss Verordnung sind somit nur zwei Einschränkungen möglich:
 1. **Pflicht zur Quellenangabe**, und/oder  
 2. **Bewilligung für kommerzielle Nutzung.** - Diese Lizenzen (`CC-BY-SA`) ist jedoch ausschliesslich in Ausnahmefällen und nur mit Absprache des Kompetenzzentrum OGD zu verwenden.
 
-Beide müssen in den **Metadaten** vermerkt sein und erscheinen auf opendata.swiss als Symbol.
+Beide müssen in den **Metadaten** vermerkt sein und erscheinen auf __opendata.swiss__ als Symbol.
 
 ---
 
 ## Auswahl der Nutzungsbedingungen
 
-Für alle Daten auf opendata.swiss ist eine Nutzungsbedingung zu wählen.  
-Die richtige Variante ergibt sich aus der gesetzlichen Grundlage und wird den Datennutzenden in Symbolform angezeigt.
+Für alle Daten auf __opendata.swiss__ ist eine Nutzungsbedingung zu wählen.  
+Die richtige Variante ergibt sich aus der gesetzlichen Grundlage und wird den Datennutzenden als Symbol angezeigt.
 
 <!-- CC0 -->
 <div className="winti-license-card">
