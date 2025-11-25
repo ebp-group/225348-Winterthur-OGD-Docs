@@ -21,7 +21,7 @@ flowchart TB
   end
     ucDP -.-> ucMD
     ucMD -.-> ucD
-    rN["👤 Daten-Nutzende"] ~~~ ucDP
+    rN["👤 Daten-Nutzende"] -- nutzt --> ucDP
     ucDP ~~~ rF["👤 FS Daten"] & rF
     rN -- erstellt --> ucApp
     rN -- findet, sichtet --> ucMD
