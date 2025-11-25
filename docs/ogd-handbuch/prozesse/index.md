@@ -47,7 +47,7 @@ der Abbildung skizzierten drei Hauptakteure (Daten-Nutzende, Data Owner und das
 FS Daten) und die folgenden sechs Hauptprozesse unterschieden 
 werden:
 
-1. Produktion 
+1. [Produktion](/ogd-handbuch/prozesse/produktion)
 2. [Bereitstellung](/ogd-handbuch/prozesse/bereitstellung)
 1. [Publikation](/ogd-handbuch/prozesse/publikation)
 1. [Anfragen](/ogd-handbuch/prozesse/anfragen)
