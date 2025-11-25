@@ -35,7 +35,7 @@ Transparenz und Integrität
 : Die bereitgestellten offenen Verwaltungsda-ten sollen verlässlich, aktuell und von guter Qualität sowie gut nutzbar sein. Das OGD-Angebot in Form des Datenportals soll stabil verfügbar sein. Dank der Veröffentlichung von Daten unter Beachtung dieser Anfor-derungen schafft die Stadtverwaltung Vertrauen.
 
 Innovation
-: Das OGD-Angebot der Stadtverwaltung ist darauf ausgerich-tet, dass es Innovation ermöglicht. Aufseiten der Verwaltung erlauben Rückmeldungen zu den Daten die Verbesserung der Datenqualität.
+: Das OGD-Angebot der Stadtverwaltung ist darauf ausgerichtet, dass es Innovation ermöglicht. Aufseiten der Verwaltung erlauben Rückmeldungen zu den Daten die Verbesserung der Datenqualität.
 
 Agilität
 : Die Stadtverwaltung reagiert möglichst flexibel auf interne oder externe Fragen zum OGD-Angebot und zeigt Lösungswege auf. Die OGD-bezogenen Prozesse sind möglichst einfach, Entscheidungsprozesse möglichst kurz. Die Kompetenzen in den Verwaltungseinheiten der Daten-eigner ergänzen sich mit jenen der Fachstelle mit Themenführerschaft (Fachstelle Daten).
@@ -46,7 +46,7 @@ Partnerschaftlichkeit
 
 ## Abgrenzung von offenen und nicht offenen Verwaltungsdaten
 
-Die Abgrenzung zwischen offenen und nicht offenen Verwaltungsdaten findet über die objektive Beurteilung der vordefinierten Schutzbedürfnisse statt (siehe dazu **XY**).
+Die Abgrenzung zwischen offenen und nicht offenen Verwaltungsdaten findet über die objektive Beurteilung der vordefinierten Schutzbedürfnisse statt (siehe dazu **[«Nicht zu veröffentlichende Daten»](#nicht-veroeffentlichende-datan**)).
 Das dazu notwendige Vorgehen wird im Teilprozess «Auswahl OGD-Kandidaten» beschrieben. 
 Den Entscheid, ob ein bestimmter Datensatz veröffentlicht werden darf oder nicht, kann nur jene Abteilung fällen, welche die Datenhoheit hat.
 Als Datenhoheit gilt die Kompetenz, Dritten den Zugang zu einem Datensatz zu erlauben oder zu verbieten.
@@ -75,7 +75,7 @@ Durch möglichst wenige, jedoch klar definierte Nutzungsbedingungen soll die Dat
 Diese Nutzungen können in der Regel ohne Quellennennung erfolgen. 
 Für die Datennutzung gilt ein Haftungsausschluss. Die Verwaltung der Stadt Winterthur schliesst dabei jede Haftung durch die Datennutzung aus und übernimmt keine Garantie für die offenen Verwaltungsdaten.
 
-# Nicht zu veröffentlichende Daten 
+# Nicht zu veröffentlichende Daten {#nicht-veroeffentlichende-datan}
 
 Ein Schutzbedürfnis für einen Datensatz ist durch höhere rechtliche Interessen begründet. Diese umfassen namentlich und abschliessend: 
 - Datenschutz, falls sich dieser nicht durch technische Mittel wie Aggregation, Anonymisierung, Pseudonymisierung o.ä. der zu veröffentlichenden Daten gewährleisten lässt. 
@@ -93,5 +93,5 @@ Es ist dabei in der Verantwortung des jeweiligen Data Owners, den Sachverhalt tr
 
 [^1]: [Stadt Winterthur, Öffentlichkeitsprinzip](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1)
 [^2]: [Kanton Zürich: Gesetz über die Information und den Datenschutz (IDG)](http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)
-
 [^3]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
+
