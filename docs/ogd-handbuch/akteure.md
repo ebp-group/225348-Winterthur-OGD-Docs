@@ -29,7 +29,7 @@ Dezentral bei einer Verwaltungseinheit (Departement oder Bereich) angesiedelte R
 Die OGD-Ansprechperson ist für alle OGD-Belange in der jeweiligen Verwaltungseinheit zuständig (inklusive Aufgaben der Rollen «Datenverwaltende» und «Metadatenverwaltende»), einschliesslich der Koordination der Aufbereitung und Publikation der Daten.
 Die OGD-Ansprechperson dient zudem verwaltungsintern und verwaltungsextern als Ansprechperson für (An)Fragen zum Thema OGD im Einflussbereich der Verwaltungseinheit. 
 
-[^1] [Leitlinien für den Publikationsprozess des Kantons Zürich](https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-1956905922)
+
 
 ## Datenverwaltende 
 Dezentral bei einer Organisationseinheit angesiedelte Rolle des «Hüters» von Daten.
@@ -39,3 +39,6 @@ Sie bzw. er ist dafür verantwortlich, dass diese gemäss den technischen und fo
 ## Metadatenverwaltende 
 Dezentral bei der Organisationseinheit angesiedelte Rolle des «Verwalters» bzw. «Pflegers» von Meta-Angaben zu Daten.
 Der oder die Metadatenverwaltende beschreibt die Daten (bzw. einen Teil der Daten) der Verwaltungseinheit so, dass diese von den Daten-Nutzenden selbständig gefunden, bezogen und verwendet werden können. 
+
+
+[^1] [Leitlinien für den Publikationsprozess des Kantons Zürich](https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-1956905922)
