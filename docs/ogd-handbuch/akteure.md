@@ -41,4 +41,4 @@ Dezentral bei der Organisationseinheit angesiedelte Rolle des «Verwalters» bzw
 Der oder die Metadatenverwaltende beschreibt die Daten (bzw. einen Teil der Daten) der Verwaltungseinheit so, dass diese von den Daten-Nutzenden selbständig gefunden, bezogen und verwendet werden können. 
 
 
-[^1] [Leitlinien für den Publikationsprozess des Kantons Zürich](https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-1956905922)
+[^1]: [Leitlinien für den Publikationsprozess des Kantons Zürich](https://www.zh.ch/de/politik-staat/opendata/leitlinien.html#-1956905922)
