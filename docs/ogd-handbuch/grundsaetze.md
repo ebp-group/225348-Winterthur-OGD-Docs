@@ -46,7 +46,7 @@ Partnerschaftlichkeit
 
 ## Abgrenzung von offenen und nicht offenen Verwaltungsdaten
 
-Die Abgrenzung zwischen offenen und nicht offenen Verwaltungsdaten findet über die objektive Beurteilung der vordefinierten Schutzbedürfnisse statt (siehe dazu **[«Nicht zu veröffentlichende Daten»](#nicht-veroeffentlichende-datan**)).
+Die Abgrenzung zwischen offenen und nicht offenen Verwaltungsdaten findet über die objektive Beurteilung der vordefinierten Schutzbedürfnisse statt (siehe dazu [**«Nicht zu veröffentlichende Daten»**](#nicht-veroeffentlichende-datan**)).
 Das dazu notwendige Vorgehen wird im Teilprozess «Auswahl OGD-Kandidaten» beschrieben. 
 Den Entscheid, ob ein bestimmter Datensatz veröffentlicht werden darf oder nicht, kann nur jene Abteilung fällen, welche die Datenhoheit hat.
 Als Datenhoheit gilt die Kompetenz, Dritten den Zugang zu einem Datensatz zu erlauben oder zu verbieten.
@@ -94,4 +94,5 @@ Es ist dabei in der Verantwortung des jeweiligen Data Owners, den Sachverhalt tr
 [^1]: [Stadt Winterthur, Öffentlichkeitsprinzip](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1)
 [^2]: [Kanton Zürich: Gesetz über die Information und den Datenschutz (IDG)](http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)
 [^3]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
+
 
