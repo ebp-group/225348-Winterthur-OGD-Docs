@@ -26,7 +26,8 @@ flowchart TB
     rN -- erstellt --> ucApp
     rN -- findet, sichtet --> ucMD
     rN -- sichtet, bezieht, nutzt --> ucD
-    rN -- stellt --> ucQA
+    ucApp -- nutzt --> ucD
+    rN -- meldet --> ucQA
     rN -- gibt --> ucFB
     rF -- verantwortet, betreibt --> ucDP
     rA["👤 OGD-Ansprechperson
