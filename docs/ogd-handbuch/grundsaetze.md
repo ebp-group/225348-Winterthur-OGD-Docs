@@ -46,7 +46,7 @@ Partnerschaftlichkeit
 
 ## Abgrenzung von offenen und nicht offenen Verwaltungsdaten
 
-Die Abgrenzung zwischen offenen und nicht offenen Verwaltungsdaten findet über die objektive Beurteilung der vordefinierten Schutzbedürfnisse statt (siehe dazu [**«Nicht zu veröffentlichende Daten»**](#nicht-veroeffentlichende-datan**)).
+Die Abgrenzung zwischen offenen und nicht offenen Verwaltungsdaten findet über die objektive Beurteilung der vordefinierten Schutzbedürfnisse statt (siehe dazu [**«Nicht zu veröffentlichende Daten»**](#nicht-veroeffentlichende-daten)).
 Das dazu notwendige Vorgehen wird im Teilprozess «Auswahl OGD-Kandidaten» beschrieben. 
 Den Entscheid, ob ein bestimmter Datensatz veröffentlicht werden darf oder nicht, kann nur jene Abteilung fällen, welche die Datenhoheit hat.
 Als Datenhoheit gilt die Kompetenz, Dritten den Zugang zu einem Datensatz zu erlauben oder zu verbieten.
@@ -75,7 +75,7 @@ Durch möglichst wenige, jedoch klar definierte Nutzungsbedingungen soll die Dat
 Diese Nutzungen können in der Regel ohne Quellennennung erfolgen. 
 Für die Datennutzung gilt ein Haftungsausschluss. Die Verwaltung der Stadt Winterthur schliesst dabei jede Haftung durch die Datennutzung aus und übernimmt keine Garantie für die offenen Verwaltungsdaten.
 
-# Nicht zu veröffentlichende Daten {#nicht-veroeffentlichende-datan}
+# Nicht zu veröffentlichende Daten {#nicht-veroeffentlichende-daten}
 
 Ein Schutzbedürfnis für einen Datensatz ist durch höhere rechtliche Interessen begründet. Diese umfassen namentlich und abschliessend: 
 - Datenschutz, falls sich dieser nicht durch technische Mittel wie Aggregation, Anonymisierung, Pseudonymisierung o.ä. der zu veröffentlichenden Daten gewährleisten lässt. 
