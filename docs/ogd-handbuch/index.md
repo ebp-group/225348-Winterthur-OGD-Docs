@@ -12,6 +12,9 @@ Die Stadt Winterthur möchte das Thema «Open Government Data» (OGD) stadtweit 
 OGD wurde in der Vergangenheit bereits in der Digitalisierungsstrategie und in der Statistikstudie der Stadt Winterthur verankert.
 Die Fachstelle Daten konnte bezüglich der Publikation von Verwaltungsdaten gemäss der Idee von OGD in einem Pilotbetrieb zusammen mit dem Amt für Statistik des Kantons Zürich bereits erste praktische Erfahrungen mit OGD sammeln.
 
+Dieses Handbuch soll Aspekte rund um das Thema OGD, die für Winterthur spezifisch gelten, abdecken.
+Allgemeine Hinweis zur Publikation von OGD finden sich auch in den Leitlinien des Kantons Zürich[^1].
+
 :::danger
 
 * Update Referenz zu Schutzbedürfnisse
@@ -64,3 +67,4 @@ Die Fachstelle Daten unterstützt Dateneigner der Stadtverwaltung bei der Erfass
 Sie leistet nach innen und nach aussen Vermittlungsarbeit im Bereich offener Verwaltungsdaten und sie koordiniert partnerschaftlich die OGD-Umsetzung in der Stadtverwaltung. Die Fachstelle Daten stellt sicher, dass sich das OGD-Angebot von Winterthur an den gängigen Best Practices und Standards orientiert.
 Dabei setzt sie im Thema OGD nicht neue Akzente, sondern setzt auf Vorarbeiten und bewähr-te Grundlagen anderer Behörden und Organisationen.
 
+[^1] [«Leitlinien des Kantons Zürich für einfach nutzbare Behördendaten»](https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md) vom [Fachausschuss Open Government Data des Kantons Zürich](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/statistisches-amt/open-government-data.html#-1895806187)
