@@ -8,6 +8,10 @@ import SupportList from "../common/_support_list.md"
 
 ## Auswahl OGD-Kandidaten
 
+Die Prüfung der Verwendbarkeit von Datenbeständen für OGD liegt in der Verantwortung des Data Owners. 
+Dieser Teilprozess beschreibt das koordinierte Vorgehen eines Data Owners, um die Datenbestände in der Datenhoheit seiner Organisationseinheit zu identifizieren, sie auf ihre Verwendbarkeit für OGD zu prüfen und sie nachvollziehbar anhand vordefinierter Kriterien zu bewerten.
+Die so erstellte Datenübersicht ist die Grundlage für die Auswahl der OGD-Kandidaten und für die Priorisierung und Planung von deren Veröffentlichung.  
+
 ```mermaid
 ---
 config:
@@ -83,6 +87,12 @@ Basierend auf den gesammelten und konsolidierten Einschätzungen erarbeitet die 
 
 ## Initiale Datenaufbereitung
 
+Dieser Teilprozess beschreibt das Vorgehen bei einer erstmaligen Veröffentlichung von offenen Verwaltungsdaten.  
+Eine Fachperson des Data Owners bestimmt – bei Bedarf mit Unterstützung des OGD-Kompezenzzentrums – den genauen Umfang, Inhalt und die Struktur des neu zu veröffentlichenden Datensatzes.
+Dabei ist die Einhaltung allfälliger zuvor definierter Datenschutzmassnahmen zu beachten.
+Zu den aufbereiteten Daten werden vollständige Metadaten erfasst.
+Bevor die Daten und die Metadaten dem OGD Kompetenzzentrum über einen vordefinierten Lieferkanal zur Verfügung gestellt werden, ist deren Qualität von mindestens einer weiteren Person des Data Owners zu prüfen (Vier-Augen-Prinzip). 
+
 ```mermaid
 ---
 config:
@@ -133,12 +143,51 @@ Je nach Datentyp sind die Aufbereitungsprozesse anders und unterschiedlich aufw�
 
 ### Aufbereitung von Metadaten
 
+Die Datenbeschreibungen offener Verwaltungsdaten sollen so umfangreich und präzise sein, dass Daten-Nutzende Daten auf dem OGD-Katalog problemlos finden, deren Inhalte ohne Rückfragen oder Recherchen verstehen und in der Lage sind, diese korrekt zu interpretieren. 
+Die Metadaten sind strukturell gemäss dem standardisierten Metadatenmodell und inhaltlich gemäss den Anforderungen des OGD Kompezenzzentrums zu erfassen.
+
+:::info[Support durch OGD Kompezenzzentrum]
+* Dokumentation der Metadaten-Attribute
+* Unterstützung bei der Klassifikation von Datensätzen
+:::
+
 ### Sicherstellen der Datenqualität
+
+Die Qualitätssicherung für die inhaltliche Richtigkeit der Daten ist in der Verantwortung des Data Owners.
+Er prüft, die Vollständigkeit und Plausibilität der Daten und die Qualität der Metadaten.
+
+Zu prüfende Sachverhalte umfassen: 
+* Fehlen Werte? Hat es z.B. in einer Zeitreihe umfangreiche und unerklärliche Lücken? 
+* Scheinen die Werte bzw. Wertebereiche plausibel? Oder gibt es unplausible Ausreisser? 
+* Stimmen aus den Daten abgeleitete Werte überein mit anderswo bereits publizierten und qualitätsgesicherten Werten, z.B. aus Geschäftsberichten? 
+* Sind die Metadaten so beschrieben, dass Daten-Nutzende selbstständig damit arbeiten können? 
 
 ### Datenlieferung
 
+Der Data Owner liefert die qualitätsgesicherten Daten und Metadaten gemäss den zuvor getroffenen Vereinbarungen an das OGD Kompezenzzentrum zwecks Veröffentlichung. 
+
 
 ## Datenaktualisierung
+
+Bei der Datenaktualisierung werden bereits publizierte offene Verwaltungsdaten gemäss vereinbarter Aktualisierungsfrequenz aktualisiert (z.B. zur Fortführung einer Zeitreihe) oder vorgängig dazu noch Daten und Metadaten korrigiert.
+Eine Korrektur kann von einer Fehlermeldung von Daten-Nutzenden ausgehen oder durch interne Qualitätssicherungen des Data Owners oder des OGD-Kompezenzzentrums initiiert werden. 
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    dErr{"Sind die Daten fehlerhaft?"} -- Ja --> stKorr(["Korrektur der Daten oder Metadaten"])
+    dErr-- Nein --> stNachD(["Nachführen der Daten"])
+    stNachD ---> stNachMD(["Nachführen der Metadaten"])
+    stNachMD ---> stDQ(["Sicherstellen der Datenqualität"])
+    stDQ ---> dDQ{"Datenqualität i.O.?"}
+    dDQ -- Ja --> stDeploy(["Datenlieferung"])
+    dDQ -- Nein --> stKorr
+    stDeploy ---> pInit[["Qualitätssicherung und Freigabe"]]
+    
+```
 
 ## Qualitätssicherung und Freigabe
 
