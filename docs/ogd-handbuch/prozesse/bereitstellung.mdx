@@ -182,6 +182,7 @@ flowchart TB
     dErr-- Nein --> stNachD(["Nachführen der Daten"])
     stNachD ---> stNachMD(["Nachführen der Metadaten"])
     stNachMD ---> stDQ(["Sicherstellen der Datenqualität"])
+    stKorr ---> stDQ
     stDQ ---> dDQ{"Datenqualität i.O.?"}
     dDQ -- Ja --> stDeploy(["Datenlieferung"])
     dDQ -- Nein --> stKorr
@@ -189,6 +190,66 @@ flowchart TB
     
 ```
 
+### Korrektur der Daten oder Metadaten
+
+Bei einer berechtigterweise erfolgten Fehlermeldung sind fehlerhafte offene Verwaltungsdaten oder Metadaten umgehend zu korrigieren.
+Sollte eine Korrektur nicht möglich sein (z.B. fehlende Werte), so muss dies in den Metadaten im Feld «Datenqualität» festgehalten werden. 
+
+### Nachführen der Daten
+
+Der Data Owner aktualisiert oder ersetzt offene Verwaltungsdaten.
+Dieser Prozess sollte möglichst automatisiert ablaufen (vgl. oben [«Aufbereitung von Verwaltungsdaten als offene Verwaltungsdaten»](#aufbereitung-der-daten-als-offene-verwaltungsdaten)). 
+
+### Nachführen der Metadaten
+
+Wenn bestehende offene Verwaltungsdaten aktualisiert werden, muss der Data Owner auch sicherstellen, dass die dazu gehörenden Metadaten weiterhin stimmen. 
+Der Data Owner passt in jedem Fall das Aktualisierungsdatum an. 
+
+### Sicherstellen der Datenqualität
+
+Die Qualitätssicherung für die inhaltliche Richtigkeit der Daten ist in der Verantwortung des Data Owners.
+Er prüft, die Vollständigkeit und Plausibilität der Daten und die Qualität der Metadaten.
+
+Zu prüfende Sachverhalte umfassen: 
+* Fehlen Werte? Hat es z.B. in einer Zeitreihe umfangreiche und unerklärliche Lücken? 
+* Scheinen die Werte bzw. Wertebereiche plausibel? Oder gibt es unplausible Ausreisser? 
+* Stimmen aus den Daten abgeleitete Werte überein mit anderswo bereits publizierten und qualitätsgesicherten Werten, z.B. aus Geschäftsberichten? 
+* Sind die Metadaten so beschrieben, dass Daten-Nutzende selbstständig damit arbeiten können? 
+
+### Datenlieferung
+
+Der Data Owner liefert die qualitätsgesicherten Daten und Metadaten gemäss den zuvor getroffenen Vereinbarungen an das OGD Kompezenzzentrum zwecks Veröffentlichung. 
+
 ## Qualitätssicherung und Freigabe
+
+Das OGD-Kompetenzzentrum prüft die Daten und Metadaten auf relevante Qualitätsmerkmale und stellt so sicher, dass die Datenkonformität eingehalten wird. 
+Wenn alle Qualitätskriterien erfüllt sind, gibt das Kompetenzzentrum den Datensatz für die Publikation frei, ansonsten wird er dem Data Owner zur Korrektur übergeben.
+
+```mermaid
+---
+config:
+  layout: elk
+---
+flowchart TB
+    sDataKonf(["Prüfung der Datenkonformität]) --> dKonf{"Datenkonformität i.O.?"}
+    dKonf -- Ja --> pPub[["Publikation"]]
+    dKonf -- Nein --> pAkt[["Datenaktualisierung"]]
+```
+
+### Prüfen der Datenkonformität
+
+Die vom Data Owner gelieferten Daten und Metadaten werden vom OGD-Kompetenzzentrum auf Konformität geprüft. Dies umfasst in der Regel:
+
+* Durchführung einer einfachen Plausibilitätsprüfung, um Auffälligkeiten in den Daten zu finden. 
+* Quantifizierung von allfälligen fehlenden Daten 
+* Prüfung der Maschinenlesbarkeit der Datensätze 
+* Prüfung auf Lesbarkeit und Vollständigkeit der Attribute in den Datensätzen und Metadaten 
+* Kontrolle der Vollständigkeit und Verständlichkeit der Metadaten 
+* Prüfung der Umsetzung allenfalls vereinbarter Datenschutzmassnahmen 
+* Testen der Datenverwendbarkeit 
+
+Sofern während der Datenkonformitätsprüfungen die Qualitätsanforderungen erfüllt und keine Mängel entdeckt wurden, kann zum Publikationsprozess geschritten werden.
+Ansonsten informiert das OGD-Kompetenzzentrum den Data Owner über die gefundenen Mängel und wie diese im [Teilprozess «Datenaktualisierung»](#datenaktualisierung) behoben werden sollen.  
+
 
 [^1]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
