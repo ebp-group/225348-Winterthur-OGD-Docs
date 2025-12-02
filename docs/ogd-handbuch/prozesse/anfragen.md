@@ -83,7 +83,7 @@ Fehler können über sämtliche Kontaktmöglichkeiten dem OGD-Kompetenzzentrum g
 
 ### Fehler analysieren
 
-Gegenüber Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (Single Point of Contact) auf und triagiert Fehlermeldungen nach Zuständigkeit und Dringlichkeit.
+Gegenüber Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (__Single Point of Contact__) auf und triagiert Fehlermeldungen nach Zuständigkeit und Dringlichkeit.
 Das OGD-Kompetenzzentrum versucht nachzuvollziehen, welcher Fehler in welchem Teilprozess vorgefallen ist.  
 Falls der Fehler nicht im Publikationsprozess aufgetreten ist, müssen Fehlermeldungen an die zuständigen Data Owner delegiert und von diesen analysiert und gegebenenfalls behoben werden.
 

@@ -139,6 +139,7 @@ Kategorienbildung
 Kommunikations
 Kompetenzzentrum
 Kontaktangaben
+Kontaktmöglichkeiten
 Kooperationsmassnahmen
 Kostenfreiheit
 Kulturdaten
@@ -262,6 +263,7 @@ Teilprozesse
 Themenführerschaft
 Thümmel
 Trail
+triagiert
 Übergangsdaten
 Vermessungsamts
 Vermittlungsarbeit
