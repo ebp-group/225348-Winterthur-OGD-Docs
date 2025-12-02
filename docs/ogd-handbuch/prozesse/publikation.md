@@ -58,4 +58,8 @@ Das OGD-Kompetenzzentrum koordiniert die Kommunikation über neue oder aktualisi
 Wenn der ganze Teilprozess durchlaufen ist, veröffentlicht das OGD-Kompetenzzentrum den Datensatz im OGD-Katalog [7].
 Somit steht der Datensatz der Öffentlichkeit zur freien Verfügung.
 
+<!-- @NOSPELL@ -->
+
 [^1]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
+
+<!-- @ENDNOSPELL@ -->

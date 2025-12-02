@@ -20,12 +20,12 @@ Die folgende Übersicht orientiert sich an einem **risikobasierten De-Identifika
 | **1. Zweck & Umfang bestätigen** | Konkretes **Publikationsziel** (OGD ja/nein), **Rechtsgrundlage** und **benötigte Granularität** für **das bereits gewählte Dataset** festlegen. Prüfen, ob wirklich Einzeldaten nötig sind oder Aggregatdaten genügen. | Klarer Rahmen für Datenschutz und Nutzbarkeit |
 | **2. PII-/QI-Screening** | Im **gewählten Dataset** Identifikatoren (PII) und **Quasi-Identifikatoren (QI)** identifizieren und kennzeichnen (z. B. Alter, PLZ, Datum/Uhrzeit, Geokoordinaten). | Relevante Risiken sind vollständig erfasst |
 | **3. Felder taggen** | PII/QI-Spalten mit **einheitlichen Tags** (z. B. `pii`, `qi`) versehen; Entscheid-/Audit-Notizen anfügen. | Einheitliche Grundlage für die Umsetzung |
-| **4. Methode wählen** | Passende Maßnahme je Feld/Kombination festlegen: **Maskierung/Löschung**, **Anonymisierung**, **Generalisierung/Aggregation**, **K-Anonymität/L-Diversität**. | Wirksame, zweckmäßige De-Identifizierungsstrategie |
-| **5. De-Identifikation umsetzen** | Schritte **reproduzierbar** anwenden (Script/Workflow), inkl. Parameter (Klassen, Raster, `k`-Wert). **Audit-Trail** führen. | Personenbezug wird systematisch entfernt |
+| **4. Methode wählen** | Passende Massnahme je Feld/Kombination festlegen: **Maskierung/Löschung**, **Anonymisierung**, **Generalisierung/Aggregation**, **K-Anonymität/L-Diversität**. | Wirksame, zweckmässige De-Identifizierungsstrategie |
+| **5. De-Identifikation umsetzen** | Schritte **reproduzierbar** anwenden (Script/Workflow), inklusive Parameter (Klassen, Raster, `k`-Wert). **Audit-Trail** führen. | Personenbezug wird systematisch entfernt |
 | **6. Validieren & freigeben** | **Re-Identifikationsrisiko** prüfen (z. B. `k &lt; 5`), **Utility-Checks** (Kennzahlen/Analysen bleiben sinnvoll), **Freitext & Metadaten** kontrollieren. **Freigabe** dokumentieren. | Datenschutzkonform, nutzbar, OGD-bereit |
 
 :::note[Hinweis]
-Die De-Identifizierung sollte **nicht als einmalige Massnahme**, sondern als **kontinuierlicher Prozess** verstanden werden, sollte die Veröffentlichung der Daten kein einmaliges Ereigniss sein. Regelmäßige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
+Die De-Identifizierung sollte **nicht als einmalige Massnahme**, sondern als **kontinuierlicher Prozess** verstanden werden, sollte die Veröffentlichung der Daten kein einmaliges Ereignis sein. Regelmässige Überprüfung, Standardisierung (z. B. über Tagging-Schemas) und Automatisierung helfen, langfristig konsistente, sichere und OGD-taugliche Datenflüsse zu gewährleisten.
 :::
 
 ## Methoden zur Vermeidung des Personenbezugs
@@ -76,7 +76,7 @@ Die folgenden **vier Methoden** sollen die Mitarbeitenden dabei unterstützen, D
 
 ### Ziel
 Der Personenbezug wird **irreversibel** entfernt.  
-Keine Stelle (auch nicht der ursprüngliche Dateninhaber) besitzt einen Schlüssel zur Wiederherstellung.
+Keine Stelle (auch nicht der ursprüngliche Data Owner) besitzt einen Schlüssel zur Wiederherstellung.
 
 ### Eigenschaften anonymisierter Daten
 | Merkmal                 | Bedeutung                                                |
@@ -97,8 +97,8 @@ Keine Stelle (auch nicht der ursprüngliche Dateninhaber) besitzt einen Schlüss
 
 **Hinweise:** 
 - **Externe Daten berücksichtigen** → Bedenken, dass Angreifer auch andere Quellen nutzen könnten. Wenn eine Person durch Kombination aus unseren Daten *und* extern verfügbaren Informationen (z.B. Social Media, Telefonbuch, Register) identifizierbar wäre, müssen entsprechende Merkmale weiter verallgemeinert oder entfernt werden.
-- **Keine Pseudonym-Schlüssel behalten** → Falls ein Datensatz intern pseudonymisiert wurde, dürfen die Zuordnungs-Tabellen nicht mit veröffentlicht werden. Idealerweise vernichtet man Mapping-Tabellen nach interner Nutzung, um echte Anonymität zu gewährleisten.
-- ***Differential Privacy* (fortgeschritten)** → Bei sehr großen Datenmengen oder der Bereitstellung rein statistischer Daten kann Differential-Privacy-Technik erwogen werden. Dabei wird kontrolliertes statistisches Rauschen zu Daten bzw. Abfragen hinzugefügt, um die Privatsphäre mathematisch zu garantieren (wird z.B. in offiziellen Statistiken erprobt).
+- **Keine Pseudonym-Schlüssel behalten** → Falls ein Datensatz intern pseudonymisiert wurde, dürfen die Zuordnungstabellen nicht mit veröffentlicht werden. Idealerweise vernichtet man Mappingtabellen nach interner Nutzung, um echte Anonymität zu gewährleisten.
+- ***Differential Privacy* (fortgeschritten)** → Bei sehr grossen Datenmengen oder der Bereitstellung rein statistischer Daten kann Differential-Privacy-Technik erwogen werden. Dabei wird kontrolliertes statistisches Rauschen zu Daten bzw. Abfragen hinzugefügt, um die Privatsphäre mathematisch zu garantieren (wird z.B. in offiziellen Statistiken erprobt).
 
 </TabItem>
 
@@ -109,7 +109,7 @@ Verhinderung von Rückschlüssen durch **Reduktion der Genauigkeit** oder **Zusa
 
 ### Beispiele
 
-| Vorher (personenbeziehbar)    | Nachher (anonymisiert, OGD-geeignet)      |
+| Vorher (mit Personenbezug)    | Nachher (anonymisiert, OGD-geeignet)      |
 |-------------------------------|-------------------------------------------|
 | Alter = 41                    | Altersgruppe: 40–44                       |
 | Einkommen = 92'450            | Einkommensklasse: 90'000–100'000          |
@@ -121,11 +121,11 @@ Verhinderung von Rückschlüssen durch **Reduktion der Genauigkeit** oder **Zusa
 - **Räumliche Auflösung**: Keine Ortsangaben präziser als **Stadtteil/Quartier** (bei geringer Bevölkerungsdichte eher noch gröber) – alternativ Geodaten auf ein **Raster ≥ 100 m** runden.
 - **Zeitliche Auflösung**: Zeitangaben nicht zu fein – ggf. nur **Monat oder Quartal** statt exaktes Datum; Tageszeit grob (z.B. "Nachmittag" statt 13:44 Uhr).
 - **Numerische Werte kappen/klassen**: Hohe Detailgenauigkeit reduzieren – z.B. Einkommen in Klassen angeben, Alter in 5-Jahres-Bänder einteilen, extreme Werte **„top-coden“** (z.B. "80+ Jahre" als höchste Kategorie).
-- **Ausreißer behandeln**: Falls einzelne Datensätze immer noch einzigartig sind (z.B. einzige Person >100 Jahre alt), diese Werte weiter verallgemeinern oder ggf. aus dem veröffentlichbaren Datensatz ausschließen.
+- **Ausreisser behandeln**: Falls einzelne Datensätze immer noch einzigartig sind (z.B. einzige Person >100 Jahre alt), diese Werte weiter verallgemeinern oder ggf. aus dem veröffentlichbaren Datensatz ausschliessen.
 - **Aggregierung statt Details**: Gegebenenfalls **Daten nur aggregiert** bereitstellen (z.B. Summen oder Durchschnittswerte pro Gruppe statt individuelle Einzeldaten), um personenbeziehbare Details vollständig zu vermeiden.
 
 ### Umsetzung in 2 Minuten
-In der Praxis lässt sich Generalisierung oft schnell umsetzen. Beispielsweise können bereits in Tabellenkalkulationen durch Kategorienbildung oder Pivot-Tabellen Daten zusammengefasst werden (Altersklassen definieren, Adressen auf Gebietseinheiten mappen etc.). Wichtig ist, vorab sinnvolle Klassen und Schwellenwerte festzulegen. Auch einfache Skripte oder SQL-Abfragen können genutzt werden, um Werte zu runden oder zu gruppieren. Durch diese Maßnahmen wird in kurzer Zeit eine deutlich höhere Anonymität erreicht, ohne die Gesamtaussage der Daten zu verlieren.
+In der Praxis lässt sich Generalisierung oft schnell umsetzen. Beispielsweise können bereits in Tabellenkalkulationen durch Kategorienbildung oder Pivot-Tabellen Daten zusammengefasst werden (Altersklassen definieren, Adressen auf Gebietseinheiten mappen etc.). Wichtig ist, vorab sinnvolle Klassen und Schwellenwerte festzulegen. Auch einfache Skripte oder SQL-Abfragen können genutzt werden, um Werte zu runden oder zu gruppieren. Durch diese Massnahmen wird in kurzer Zeit eine deutlich höhere Anonymität erreicht, ohne die Gesamtaussage der Daten zu verlieren.
 
 </TabItem>
 
@@ -159,7 +159,7 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 
 **Hinweise:** 
 - **Wahl von k**: Üblich sind Werte wie k=3, k=5 oder k=10 – je höher *k*, desto stärker der Datenschutz, allerdings umso mehr Detailverlust. Für offene Daten wird oft mindestens k=5 empfohlen.
-- **L-Diversität & Co.**: K-Anonymität schützt vor Identifikation über Quasi-Identifikatoren, berücksichtigt aber nicht die Verteilung sensibler Inhalte. Ergänzend kann z.B. eine **L-Diversität** gefordert werden (jede Gruppe weist mindestens L unterschiedliche Werte eines sensitiven Attributes auf), damit nicht alle Personen einer k-Gruppe z.B. dieselbe Diagnose haben. Noch weitergehend stellt **T-Closeness** sicher, dass die Verteilung eines sensitiven Merkmals in jeder Gruppe der Verteilung im Gesamtdatensatz ähnelt. Solche erweiterten Maßnahmen können sinnvoll sein, wenn sensible persönliche Informationen im Datensatz enthalten sind.
+- **L-Diversität & Co.**: K-Anonymität schützt vor Identifikation über Quasi-Identifikatoren, berücksichtigt aber nicht die Verteilung sensibler Inhalte. Ergänzend kann z.B. eine **L-Diversität** gefordert werden (jede Gruppe weist mindestens L unterschiedliche Werte eines sensitiven Attributes auf), damit nicht alle Personen einer k-Gruppe z.B. dieselbe Diagnose haben. Noch weitergehend stellt **T-Closeness** sicher, dass die Verteilung eines sensitiven Merkmals in jeder Gruppe der Verteilung im Gesamtdatensatz ähnelt. Solche erweiterten Massnahmen können sinnvoll sein, wenn sensible persönliche Informationen im Datensatz enthalten sind.
 
 </TabItem>
 
@@ -182,11 +182,15 @@ In obigem Beispiel müsste die Gruppe "75–80 im Quartier Altstadt" weiter zusa
 
 :::info[Dokumentation]
 
+<!-- @NOSPELL@ -->
+
 - **Programming Differential Privacy – Kapitel 10 (Python/SQL):**  
   https://programming-dp.com/chapter1.html  
 - **SPHN (2025): Data De-identification Guidance v2.0:**  
   https://sphn.ch/wp-content/uploads/2025/02/Data-de-identification-guidance-v2.0_20250214.pdf  
 - **OECD (2023): Practical Approaches to Anonymisation and De-identification:**  
   https://www.oecd.org/digital/privacy/practical-approaches-to-anonymisation.pdf  
+
+<!-- @ENDNOSPELL@ -->
 
 :::

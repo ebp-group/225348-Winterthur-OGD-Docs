@@ -47,11 +47,11 @@ De-Identifikation bezeichnet alle Massnahmen, mit denen personenbezogene Informa
 Das Ziel ist sicherzustellen, dass Daten für Analyse, Forschung oder als Open Government Data genutzt werden können, ohne die Privatsphäre zu verletzen. De-identifizierte Daten können auch anonymisierte Daten umfassen, bei denen eine Re-Identifikation nicht mehr möglich ist.
 
 :::warning[Wichtig]
-**Die Pseudonymisierung** der Daten ist **kein ausreichender Schutz** zur Vermeidung des Personenbezuges, da es sich bei pseudonymsiserten Daten noch immer um Personendaten handelt. Entsprechend können pseudonymisierte Daten nicht im OGD veröffentlicht werden.
+**Die Pseudonymisierung** der Daten ist **kein ausreichender Schutz** zur Vermeidung des Personenbezugs, da es sich bei pseudonymsiserten Daten noch immer um Personendaten handelt. Entsprechend können pseudonymisierte Daten nicht im OGD veröffentlicht werden.
 :::
 
 1. **Direkte Kennungen löschen**  
-   Namen, Adressen, E-Mails, Telefonnummern, IDs (AHV, Konto, Fall-Nr.) **entfernen oder maskieren**.
+   Namen, Adressen, E-Mails, Telefonnummern, IDs (AHV, Konto, Fallnummer) **entfernen oder maskieren**.
 2. **Quasi-Identifikatoren generalisieren**  
    z. B. **Altersklassen** (5-Jahres-Bänder), **räumlich** (Quartier statt Adresse / Raster ≥ 100 m), **zeitlich** (Monat/Quartal statt exaktes Datum/Uhrzeit).
 3. **Gruppenbildung sicherstellen (k-Anonymität)**  
@@ -69,7 +69,7 @@ Das Ziel ist sicherzustellen, dass Daten für Analyse, Forschung oder als Open G
 Wenn nach diesen Schritten **Re-Identifikationsrisiken** bestehen, ist das Dataset im aktuellen Zustand **nicht OGD-fähig**. Nutzen Sie die **Vertiefung** für weitere Massnahmen.
 :::
 
-## Kurzcheck Personenbezug
+## Checkliste Personenbezug
 
 - ☐ Enthält der Datensatz direkte Kennungen?  
 - ☐ Lassen Kombinationen indirekte Identifikation zu (kleine Gruppen, seltene Merkmale)?  

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# OGD-Handuch
+# OGD-Handbuch
 
 Dieses Handbuch hilft Personen und Organisationen dabei, Daten als Open Government Data (OGD) zu veröffentlichen.
 Es wird von der Open Government Data (OGD) bei der Fachstelle OGD für die Umsetzung des OGD-Konzepts betrieben.
@@ -39,7 +39,7 @@ Das OGD-Konzept wurde vom Stadtrat verabschiedet und bildet die Grundlage für O
 :::info
 
 Abschnitt ergänzen sobald mehr Infos bekannt sind bzw. das OGD-Konzept und der Erlass verabschiedet wurden.
-Ggf. auch Links zum Konzept und zum Erlass hinzufügen.
+ggf. auch Links zum Konzept und zum Erlass hinzufügen.
 
 :::
 
@@ -47,14 +47,14 @@ Ggf. auch Links zum Konzept und zum Erlass hinzufügen.
 ## Zielbild «Open Government Data Winterthur»
 
 
-Mit Open Government Data (OGD) will die Stadt Winterthur den Zugang zu nicht schützenswerten Daten der Stadtverwaltung allen interessierten Perso-nen und Organisationen über ein zentrales Datenportal (bzw. OGD-Portal) ermöglichen.
+Mit Open Government Data (OGD) will die Stadt Winterthur den Zugang zu nicht schützenswerten Daten der Stadtverwaltung allen interessierten Personen und Organisationen über ein zentrales Datenportal (bzw. OGD-Portal) ermöglichen.
 
 Die Stadt Winterthur möchte mit OGD moderner und transparenter werden sowie die Basis schaffen für neue und innovative Dienstleistungen und Produkte.
-Neben der Förderung von Transparenz und Offenheit leistet die Stadt mit OGD auch einen Beitrag zur Stärkung des Bildungs- und Forschungsstandorts Winterthur, zur Informationslage der Bevölkerung und zur Schaf-fung von wirtschaftlichem Mehrwert.
+Neben der Förderung von Transparenz und Offenheit leistet die Stadt mit OGD auch einen Beitrag zur Stärkung des Bildungs- und Forschungsstandorts Winterthur, zur Informationslage der Bevölkerung und zur Schaffung von wirtschaftlichem Mehrwert.
 Durch das Datenportal werden auch das Wissen innerhalb der Stadtverwaltung über die eigenen Daten und der Datenaustausch über Verwaltungseinheiten hinweg gefördert und effizienter gemacht.
 Die Stadt Winterthur schafft so mit ihren bestehenden Daten einen Nutzen für die Bevölkerung, die Wirtschaft, die Forschung und die Stadtverwaltung.
 
-Im Datenportal veröffentlichen die Einheiten der Stadtverwaltung unter Führung der Fachstelle Daten verlässliche und aktuelle Daten der Stadtverwal-tung gemäss dem Prinzip «Open by Default».
+Im Datenportal veröffentlichen die Einheiten der Stadtverwaltung unter Führung der Fachstelle Daten verlässliche und aktuelle Daten der Stadtverwaltung gemäss dem Prinzip «Open by Default».
 Gemäss diesem Prinzip gelten Verwaltungsdaten grundsätzlich als offen, ausser ein Schutzbedarf spricht gegen die Veröffentlichung.
 Schutzbedarfe können beispielsweise begründet sein durch einen Personenbezug von Daten, Geheimhaltungspflichten oder urheberrechtliche oder fachgesetzliche Bestimmungen.
 
@@ -63,8 +63,8 @@ Daten in der zweiten Kategorie werden nicht proaktiv, sondern erst bei manifeste
 Die offenen Verwaltungsdaten der Stadt Winterthur sind dank vorgängiger sorgfältiger Abklärungen datenschutzrechtlich unbedenklich und nach der Veröffentlichung im Datenportal langfristig verfügbar.
 Sie sind nach Möglichkeit (zum Beispiel wo entsprechende Standards bestehen) gut mit Daten an-derer Gebietseinheiten vergleich- und kombinierbar.
 
-Die Fachstelle Daten unterstützt Dateneigner der Stadtverwaltung bei der Erfassung, Prüfung, Priorisierung und Publikation der eigenen Daten mit ent-sprechenden Hilfestellungen und Grundlagen.
+Die Fachstelle Daten unterstützt Dateneigner der Stadtverwaltung bei der Erfassung, Prüfung, Priorisierung und Publikation der eigenen Daten mit entsprechenden Hilfestellungen und Grundlagen.
 Sie leistet nach innen und nach aussen Vermittlungsarbeit im Bereich offener Verwaltungsdaten und sie koordiniert partnerschaftlich die OGD-Umsetzung in der Stadtverwaltung. Die Fachstelle Daten stellt sicher, dass sich das OGD-Angebot von Winterthur an den gängigen Best Practices und Standards orientiert.
-Dabei setzt sie im Thema OGD nicht neue Akzente, sondern setzt auf Vorarbeiten und bewähr-te Grundlagen anderer Behörden und Organisationen.
+Dabei setzt sie im Thema OGD nicht neue Akzente, sondern setzt auf Vorarbeiten und bewährte Grundlagen anderer Behörden und Organisationen.
 
 [^1] [«Leitlinien des Kantons Zürich für einfach nutzbare Behördendaten»](https://github.com/openZH/ogd-handbook/blob/main/publikationsleitlinien.md) vom [Fachausschuss Open Government Data des Kantons Zürich](https://www.zh.ch/de/direktion-der-justiz-und-des-innern/statistisches-amt/open-government-data.html#-1895806187)

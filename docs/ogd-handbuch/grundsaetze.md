@@ -7,19 +7,19 @@ sidebar_position: 2
 ## Zentrale Begriffe
 
 Daten
-: Daten sind beispielsweise durch Beobachtung, Erhebungen oder Messungen gewonnene, strukturierte und für die maschinelle Verarbei-tung geeignete Werte und Angaben, die Informationen transportieren.
+: Daten sind beispielsweise durch Beobachtung, Erhebungen oder Messungen gewonnene, strukturierte und für die maschinelle Verarbeitung geeignete Werte und Angaben, die Informationen transportieren.
 
 Metadaten
-: Metadaten sind Informationen zu Eigenschaften von Daten, die Nutzerinnen und Nutzer der Daten bei deren korrekten Verwendung unterstützen. Metadaten können beispielsweise die Bezeichnung (und po-tenziell Identifikationsnummer) von Daten, das Datum von deren letzten Nachführung, Angaben zur Genauigkeit, die Quelle und den Urheber in-klusive Kontaktangaben für Rückfragen, verfügbare Datenformate und ei-ne Beschreibung der Datenstruktur umfassen.
+: Metadaten sind Informationen zu Eigenschaften von Daten, die Nutzerinnen und Nutzer der Daten bei deren korrekten Verwendung unterstützen. Metadaten können beispielsweise die Bezeichnung (und potenziell Identifikationsnummer) von Daten, das Datum von deren letzten Nachführung, Angaben zur Genauigkeit, die Quelle und den Urheber inklusive Kontaktangaben für Rückfragen, verfügbare Datenformate und eine Beschreibung der Datenstruktur umfassen.
 
 Open Government Data bzw. OGD
 : «OGD» bezeichnet den Grundsatz, Daten der öffentlichen Hand einem uneingeschränkten Nutzerinnen- und Nutzerkreis frei zugänglich zu machen. Bei OGD handelt es sich um eine Sekundärnutzung von bestehenden Daten. 
 
 Offene Verwaltungsdaten
-: Offene Verwaltungsdaten sind Daten der öffentlichen Hand, die gemäss OGD-Prinzipien – d.h. unter anderem unter Berücksichtigung von Datenschutz und potenziell weiteren Schutzbedürf-nissen – allen ohne Einschränkungen zur freien Nutzung, Weiterverwen-dung und Weiterverbreitung zugänglich gemacht werden.
+: Offene Verwaltungsdaten sind Daten der öffentlichen Hand, die gemäss OGD-Prinzipien – d.h. unter anderem unter Berücksichtigung von Datenschutz und potenziell weiteren Schutzbedürfnissen – allen ohne Einschränkungen zur freien Nutzung, Weiterverwendung und Weiterverbreitung zugänglich gemacht werden.
 
 Dateneigner
-: Der Dateneigner ist im Kontext von OGD diejenige Verwal-tungseinheit der Stadtverwaltung Winterthur welche gemäss den anwend-baren gesetzlichen Bestimmungen für ein Set von Daten verantwortlich ist.
+: Der Dateneigner ist im Kontext von OGD diejenige Verwaltungseinheit der Stadtverwaltung Winterthur welche gemäss den anwend-baren gesetzlichen Bestimmungen für ein Set von Daten verantwortlich ist.
 
 Datenverwaltende (Data Stewards), Metadatenverwaltende (Data Custodian), OGD-Ansprechperson, OGD-Leiter (Data Guide)
 : Diese Begriffe bezeichnen Rollen im Datenmanagement bzw. in der Umsetzung von OGD. Sie werden im [Abschnitt über Prozessbeteiligte Akteure und Rollen](./akteure) genauer beschrieben.
@@ -32,16 +32,16 @@ Open by Default und Pragmatismus
 : Die offenen Verwaltungsdaten werden gemäss dem Paradigma «Open by Default» bereitgestellt. Die be-schränkten Mittel werden möglichst effektiv eingesetzt. Beispielsweise er-folgt die Veröffentlichung von Daten nicht durchgehend aktiv, sondern teilweise reaktiv (d.h. für die Publikation geeignete Daten werden erst auf Anfrage publiziert).
 
 Transparenz und Integrität
-: Die bereitgestellten offenen Verwaltungsda-ten sollen verlässlich, aktuell und von guter Qualität sowie gut nutzbar sein. Das OGD-Angebot in Form des Datenportals soll stabil verfügbar sein. Dank der Veröffentlichung von Daten unter Beachtung dieser Anfor-derungen schafft die Stadtverwaltung Vertrauen.
+: Die bereitgestellten offenen Verwaltungsdaten sollen verlässlich, aktuell und von guter Qualität sowie gut nutzbar sein. Das OGD-Angebot in Form des Datenportals soll stabil verfügbar sein. Dank der Veröffentlichung von Daten unter Beachtung dieser Anforderungen schafft die Stadtverwaltung Vertrauen.
 
 Innovation
 : Das OGD-Angebot der Stadtverwaltung ist darauf ausgerichtet, dass es Innovation ermöglicht. Aufseiten der Verwaltung erlauben Rückmeldungen zu den Daten die Verbesserung der Datenqualität.
 
 Agilität
-: Die Stadtverwaltung reagiert möglichst flexibel auf interne oder externe Fragen zum OGD-Angebot und zeigt Lösungswege auf. Die OGD-bezogenen Prozesse sind möglichst einfach, Entscheidungsprozesse möglichst kurz. Die Kompetenzen in den Verwaltungseinheiten der Daten-eigner ergänzen sich mit jenen der Fachstelle mit Themenführerschaft (Fachstelle Daten).
+: Die Stadtverwaltung reagiert möglichst flexibel auf interne oder externe Fragen zum OGD-Angebot und zeigt Lösungswege auf. Die OGD-bezogenen Prozesse sind möglichst einfach, Entscheidungsprozesse möglichst kurz. Die Kompetenzen in den Verwaltungseinheiten der Dateneigner ergänzen sich mit jenen der Fachstelle mit Themenführerschaft (Fachstelle Daten).
 
 Partnerschaftlichkeit
-: Die Stadtverwaltung und die Fachstelle mit The-menführerschaft (Fachstelle Daten) agieren im Thema OGD nach innen und nach aussen partnerschaftlich. Das OGD-Angebot und die OGD-Prozesse richten sich nach den Bedürfnissen der Nutzenden (extern: Da-tennutzende; intern: Dateneigner). Die internen Prozesse und Grundlagen sind auf eine breite interne Abstützung und Akzeptanz ausgerichtet. Die Kommunikation erfolgt «auf Augenhöhe» auf den für das Zielpublikum relevanten Kanälen. Dabei tritt die Stadtverwaltung geeint, als eine Stadtverwaltung auf.
+: Die Stadtverwaltung und die Fachstelle mit Themenführerschaft (Fachstelle Daten) agieren im Thema OGD nach innen und nach aussen partnerschaftlich. Das OGD-Angebot und die OGD-Prozesse richten sich nach den Bedürfnissen der Nutzenden (extern: Datennutzende; intern: Dateneigner). Die internen Prozesse und Grundlagen sind auf eine breite interne Abstützung und Akzeptanz ausgerichtet. Die Kommunikation erfolgt «auf Augenhöhe» auf den für das Zielpublikum relevanten Kanälen. Dabei tritt die Stadtverwaltung geeint, als eine Stadtverwaltung auf.
 
 
 ## Abgrenzung von offenen und nicht offenen Verwaltungsdaten
@@ -91,8 +91,11 @@ Spricht aus Sicht eines Data Owners mindestens eines der oben aufgeführten Schu
 Es ist dabei in der Verantwortung des jeweiligen Data Owners, den Sachverhalt transparent darzulegen. 
 
 
+<!-- @NOSPELL@ -->
+
 [^1]: [Stadt Winterthur, Öffentlichkeitsprinzip](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1)
 [^2]: [Kanton Zürich: Gesetz über die Information und den Datenschutz (IDG)](http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)
-[^3]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
+[^3]: OGD-Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
 
 
+<!-- @ENDNOSPELL@ -->

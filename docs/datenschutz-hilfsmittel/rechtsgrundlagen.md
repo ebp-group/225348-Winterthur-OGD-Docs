@@ -6,7 +6,7 @@ sidebar_position: 2
 # Rechtsgrundlagen
 
 :::info Kernaussage
-Offene Veröffentlichung ist **nur** zulässig, wenn **keine** Ausschlussgründe vorliegen. Schutzinteressen haben Vorrang; technische Massnahmen sind möglich, wenn sie den Schutz **wirksam** sicherstellen. Die Pseudonymisierung ist kein ausreichender Schutz zur Vermeidung des Personenbezuges.
+Offene Veröffentlichung ist **nur** zulässig, wenn **keine** Ausschlussgründe vorliegen. Schutzinteressen haben Vorrang; technische Massnahmen sind möglich, wenn sie den Schutz **wirksam** sicherstellen. Die Pseudonymisierung ist kein ausreichender Schutz zur Vermeidung des Personenbezugs.
 :::
 
 ### Art. 5, Abs. 1 lit. a–d: Grenzen der Veröffentlichung
@@ -38,7 +38,7 @@ Offene Veröffentlichung ist **nur** zulässig, wenn **keine** Ausschlussgründe
 Erlaubte Vorgehen:
 - **Anonymisierung** (Personenbezug dauerhaft entfernen)
 - **Aggregation** (Zusammenfassen/Vergröbern von Einzeldaten)
-- **Weglassen** schützensamer Inhalte (Felder/Detailstufen)
+- **Weglassen** schützenswerter Inhalte (Felder/Detailstufen)
 
 **Prinzip:** So offen wie möglich, so geschützt wie nötig.
 
@@ -46,7 +46,7 @@ Erlaubte Vorgehen:
 
 ### Art. 5, Abs. 3: Verhältnismässigkeit
 
-> **Aufwand vs. Nutzen abwägen.**
+> **Aufwand/Nutzen abwägen.**
 
 - Ist der Aufwand der Massnahmen **unverhältnismässig** zum öffentlichen Interesse an den Daten, **kann** auf die Veröffentlichung verzichtet werden.
 - Entscheidung **begründet dokumentieren**.

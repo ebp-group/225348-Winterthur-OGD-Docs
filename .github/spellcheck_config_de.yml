@@ -33,6 +33,7 @@ matrix:
       ignores:
       - code
       - pre
+      - a.footnote-backref
   - pyspelling.filters.context:
       context_visible_first: true
       escapes: '\\[\\`~]'
@@ -47,7 +48,7 @@ matrix:
       - open: '(?P<open>`+)'
         close: '(?P=open)'
       # Ignore admonitions
-      - open: '::(tip|warning|info)'
+      - open: '::(tip|warning|info|danger)'
         close: '\n'
       # Ignore links
       - open: '\[([^]]*)\]'
@@ -63,6 +64,6 @@ matrix:
         close: '\n'
   - pyspelling.filters.url:
   sources:
-  - 'docs/**/*.md'
-  - 'blog/**/*.md'
+  - 'docs/**/*.md*'
+  - 'blog/**/*.md*'
   default_encoding: utf-8

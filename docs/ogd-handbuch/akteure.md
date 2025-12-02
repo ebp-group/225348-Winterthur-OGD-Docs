@@ -12,7 +12,8 @@ Sollten für Daten-Nutzende relevante Datenbestände noch nicht als offene Verwa
 
 ## Kompetenzzentrum OGD / FS Daten
 Zentral bei der Fachstelle mit Themenführerschaft (Fachstelle Daten als Querschnitt-Fachstelle des Amts für Stadtentwicklung und des Geomatik- und Vermessungsamts gemäss der Digitalisierungsstrategie) angesiedelte Rolle.
-Sie unterstützt die OGD-An-sprechpersonen, Datenverwaltende und Metadatenverwaltende bei der Erfüllung ihrer Aufgaben. Der Lead liegt beim Amt für Stadtentwicklung. 
+Sie unterstützt die OGD-An-prechpersonen, Datenverwaltende und Metadatenverwaltende bei der Erfüllung ihrer Aufgaben.
+Der Lead liegt beim Amt für Stadtentwicklung. 
 
 ## Data Owner
 Data Owner (=Dateneigner) ist diejenige Organisationseinheit, welche die Verantwortung für die Daten trägt.
@@ -37,7 +38,7 @@ Der oder die Datenverwaltende kennt die Daten (bzw. einen Teil der Daten) des ve
 Sie bzw. er ist dafür verantwortlich, dass diese gemäss den technischen und formalen OGD-Vorgaben maschinenlesbar zur Verfügung stehen. 
 
 ## Metadatenverwaltende 
-Dezentral bei der Organisationseinheit angesiedelte Rolle des «Verwalters» bzw. «Pflegers» von Meta-Angaben zu Daten.
+Dezentral bei der Organisationseinheit angesiedelte Rolle des «Verwalters» bzw. «Pflegers» von Metadaten zu Daten («Daten über Daten»).
 Der oder die Metadatenverwaltende beschreibt die Daten (bzw. einen Teil der Daten) der Verwaltungseinheit so, dass diese von den Daten-Nutzenden selbständig gefunden, bezogen und verwendet werden können. 
 
 
