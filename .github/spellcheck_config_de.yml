@@ -48,7 +48,7 @@ matrix:
       - open: '(?P<open>`+)'
         close: '(?P=open)'
       # Ignore text between inline italics
-      - open: '(?P<open>__)'
+      - open: '.*(?P<open>__)'
         close: '(?P=open)'
       # Ignore admonitions
       - open: '::(tip|warning|info|danger)'
