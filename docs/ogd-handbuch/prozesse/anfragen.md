@@ -29,14 +29,25 @@ flowchart TB
     stFeedback ---> stAnswer
 ```
 
-### Anfrage stellen 
+### Anfrage stellen
+
+Anfragen können über sämtliche Kontaktmöglichkeiten zum OGD-Kompetenzzentrum gemeldet werden.
+Gegenüber den Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (Single Point of Contact) auf und triagiert die Anfragen nach Zuständigkeit und Dringlichkeit.
 
 ### Antwort auf Anfrage formulieren 
 
+Wenn möglich wird die Anfrage direkt vom OGD-Kompetenzzentrum beantwortet. 
+
 ### Feedback für Daten-Nutzende formulieren
 
-### Rückmeldung an Daten-Nutzende 
+In einigen Fällen muss auf das Fachwissen oder die Entscheidungskompetenz der Data Owner zurückgegriffen werden, um eine Anfrage zu beantworten.
+In diesem Fall leitet das OGD-Kompetenzzentrum die Anfrage weiter mit der Bitte um entsprechende Abklärungen und Feedback. 
 
+### Rückmeldung an Daten-Nutzende
+
+Daten-Nutzende sollen in jedem Fall eine Antwort auf Anfragen erhalten.
+In der Regel wird die Antwort auf eine Anfrage vom OGD-Kompetenzzentrum an Daten-Nutzende weitergegeben.
+Data Ownern steht es selbstverständlich frei, sich selbst direkt mit den Daten-Nutzenden auszutauschen. 
 
 ## Fehler melden 
 
@@ -66,10 +77,22 @@ flowchart TB
     pAkt --> stAnswer
 ```
 
-### Fehler melden 
+### Fehler melden
 
-### Fehler analysieren 
+Fehler können über sämtliche Kontaktmöglichkeiten dem OGD-Kompetenzzentrum gemeldet werden. 
+
+### Fehler analysieren
+
+Gegenüber Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (Single Point of Contact) auf und triagiert Fehlermeldungen nach Zuständigkeit und Dringlichkeit.
+Das OGD-Kompetenzzentrum versucht nachzuvollziehen, welcher Fehler in welchem Teilprozess vorgefallen ist.  
+Falls der Fehler nicht im Publikationsprozess aufgetreten ist, müssen Fehlermeldungen an die zuständigen Data Owner delegiert und von diesen analysiert und gegebenenfalls behoben werden.
 
 ### Fehlerbehebung
 
-### Rückmeldung an Daten-Nutzende 
+Wenn Fehler während des Publikationsprozesses entstanden sind, können diese vom OGD-Kompetenzzentrum eigenständig behoben und korrigiert werden. 
+
+### Rückmeldung an Daten-Nutzende
+
+Daten-Nutzende sollen in jedem Fall eine Antwort auf ihre Fehlermeldungen erhalten. 
+In der Regel wird die Antwort auf eine Fehlermeldung vom OGD-Kompetenzzentrum an die Daten-Nutzende weitergegeben.
+Data Ownern steht es selbstverständlich frei, sich selbst direkt dazu mit den Daten-Nutzenden auszutauschen.

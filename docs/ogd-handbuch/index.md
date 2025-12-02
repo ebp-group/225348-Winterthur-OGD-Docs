@@ -15,7 +15,7 @@ Die Fachstelle Daten konnte bez체glich der Publikation von Verwaltungsdaten gem�
 Dieses Handbuch soll Aspekte rund um das Thema OGD, die f체r Winterthur spezifisch gelten, abdecken.
 Allgemeine Hinweis zur Publikation von OGD finden sich auch in den Leitlinien des Kantons Z체rich[^1].
 
-:::danger
+:::danger[TODO]
 
 * Update Referenz zu Schutzbed체rfnisse
 * Glossar pr체fen (Data Owner, Abteilungen)

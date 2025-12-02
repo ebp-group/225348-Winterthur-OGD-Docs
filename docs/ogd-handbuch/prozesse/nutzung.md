@@ -2,6 +2,13 @@
 sidebar_position: 6
 ---
 
+:::danger[TODO]
+
+* Sollen wir diesen Abschnitt löschen?
+* Welchen Mehrwert kann hier geboten werden? Was müsste noch ergänzt werden, dass der Abschnitt sinnvoll ist?
+
+:::
+
 # Nutzung
 
 Das Veröffentlichen offener Verwaltungsdaten alleine reicht nicht aus, um das gesamte Potenzial von OGD auszuschöpfen.
