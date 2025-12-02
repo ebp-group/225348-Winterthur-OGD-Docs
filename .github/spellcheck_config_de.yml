@@ -60,7 +60,7 @@ matrix:
       - open: '<!--'
         close: '-->'
       # Ignore imports comments
-      - open: 'import \w+ from .+;'
+      - open: 'import \w+ from .+'
         close: '\n'
   - pyspelling.filters.url:
   sources:

@@ -12,7 +12,7 @@ Sollten für Daten-Nutzende relevante Datenbestände noch nicht als offene Verwa
 
 ## Kompetenzzentrum OGD / FS Daten
 Zentral bei der Fachstelle mit Themenführerschaft (Fachstelle Daten als Querschnitt-Fachstelle des Amts für Stadtentwicklung und des Geomatik- und Vermessungsamts gemäss der Digitalisierungsstrategie) angesiedelte Rolle.
-Sie unterstützt die OGD-An-prechpersonen, Datenverwaltende und Metadatenverwaltende bei der Erfüllung ihrer Aufgaben.
+Sie unterstützt die OGD-Anprechpersonen, Datenverwaltende und Metadatenverwaltende bei der Erfüllung ihrer Aufgaben.
 Der Lead liegt beim Amt für Stadtentwicklung. 
 
 ## Data Owner
