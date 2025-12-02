@@ -47,7 +47,7 @@ matrix:
       # Ignore text between inline back ticks
       - open: '(?P<open>`+)'
         close: '(?P=open)'
-      # Ignore text between italics underlines
+      # Ignore text between inline italics
       - open: '(?P<open>__)'
         close: '(?P=open)'
       # Ignore admonitions
