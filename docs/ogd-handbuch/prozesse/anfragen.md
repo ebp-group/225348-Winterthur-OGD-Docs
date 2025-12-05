@@ -27,7 +27,6 @@ flowchart TB
     dPub -- Nein --> stFeedback["Feedback für Daten-Nutzende formulieren"]
     pAuswahl ---> stFeedback
     stFeedback ---> stAnswer
-
     stAsk@{ shape: rect}
     dInde@{ shape: rect}
     stForm@{ shape: rect}
@@ -38,9 +37,14 @@ flowchart TB
       pAuswahl:::ok
       stForm:::ok
       dPub:::stop
+      dInde:::neutral
+      stFeedback:::neutral
+      stAnswer:::neutral
+      stAsk:::neutral
     classDef ok fill:#e8f5e9,stroke:#000,color:#000
     classDef stop fill:#ffebee,stroke:#000,color:#000
     classDef neutral fill:#ffffff,stroke:#000,color:#000
+
 ```
 
 ### Anfrage stellen
@@ -105,7 +109,7 @@ flowchart TB
      stAnalyse2:::stop
      stAnswer:::neutral
      dUpdate:::neutral
-     pAkt:::neutral
+     pAkt:::ok
     classDef ok fill:#e8f5e9,stroke:#000,color:#000
     classDef stop fill:#ffebee,stroke:#000,color:#000
     classDef neutral fill:#ffffff,stroke:#000,color:#000
@@ -119,8 +123,7 @@ Fehler können über sämtliche Kontaktmöglichkeiten dem OGD-Kompetenzzentrum g
 ### Fehler analysieren
 
 Gegenüber Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (**Single Point of Contact**)auf und triagiert Fehlermeldungen nach Zuständigkeit und Dringlichkeit.
-Das OGD-Kompetenzzentrum versucht nachzuvollziehen, welcher Fehler in welchem Teilprozess vorgefallen ist.  
-Falls der Fehler nicht im Publikationsprozess aufgetreten ist, müssen Fehlermeldungen an die zuständigen Data Owner delegiert und von diesen analysiert und gegebenenfalls behoben werden.
+Das OGD-Kompetenzzentrum versucht nachzuvollziehen, welcher Fehler in welchem Teilprozess vorgefallen ist. Falls der Fehler nicht im Publikationsprozess aufgetreten ist, müssen Fehlermeldungen an die zuständigen Data Owner delegiert und von diesen analysiert und gegebenenfalls behoben werden.
 
 ### Fehlerbehebung
 
