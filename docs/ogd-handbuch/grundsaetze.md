@@ -56,7 +56,7 @@ Diese Verantwortung kann nicht an andere Abteilungen oder Gremien delegiert werd
 Die Bereitstellung offener Verwaltungsdaten in der Stadt Winterthur basiert auf dem im Kanton Zürich geltenden [Öffentlichkeitsprinzip](https://stadt.winterthur.ch/gemeinde/verwaltung/stadtkanzlei/kommunikation-stadt-winterthur/oeffentlichkeitsprinzip-1), welches das Handeln der Behörden und Ämter für Aussenstehende nachvollziehbar und transparent gestalten will.
 
 
-Mit dem Gesetz über die Information und den Datenschutz (**[IDG]**(http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)) sind die staatlichen Stellen verpflichtet, von sich aus mit vorhandenen Informationen von allgemeinem Interesse an die Öffentlichkeit zu gelangen und eine aktive Informationspolitik zu betreiben.
+Mit dem Gesetz über die Information und den Datenschutz ([IDG](http://www.zh.ch/internet/de/rechtliche_grundlagen/gesetze/erlass.html?Open&Ordnr=170.4)) sind die staatlichen Stellen verpflichtet, von sich aus mit vorhandenen Informationen von allgemeinem Interesse an die Öffentlichkeit zu gelangen und eine aktive Informationspolitik zu betreiben.
 Ziel ist es, die freie Meinungsbildung und die Wahrnehmung der demokratischen Rechte zu fördern und die Kontrolle des staatlichen Handelns zu erleichtern. 
 
 Die Publikation von offenen Verwaltungsdaten der Stadt Winterthur wird grundsätzlich auf zwei Wegen initiiert: 
