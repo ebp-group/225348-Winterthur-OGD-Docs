@@ -12,6 +12,7 @@ Bei neu zu publizierenden Daten wird eine Vorschau zur Verfügung gestellt, dami
 ---
 config:
   layout: elk
+  look: neo
 ---
 flowchart TB
     stAufb(["Aufbereitung der Daten gemäss Veröffentlichungsprinzipien"]) ---> stBereit(["Daten und Metadaten für OGD-Katalog bereitstellen"])
@@ -24,7 +25,19 @@ flowchart TB
     dPreviewOK -- Ja --> stKomm
     dPreviewOK -- Nein --> pAkt[["Datenaktualisierung"]]
 
-    classDef default fill:#ffffff,stroke:#000,color:#000,stroke-width:1px;
+    %% Farbdefinitionen
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000;
+    classDef stop fill:#ffebee,stroke:#000,color:#000;
+    classDef neutral fill:#ffffff,stroke:#000,color:#000;
+
+    %% Klassifizierung: "i.O." = OK, "Nein" = rot
+    class dNeu,dPreviewOK neutral;
+    class pAkt ok;
+    class stKomm,stOGD neutral;
+    %% "Nein" bei dPreviewOK führt zu Datenaktualisierung → neutral oder rot?
+    %% Ich setze pAkt auf ok; stPreview/stKontrolle neutral
+    class stAufb,stBereit,stPreview,stKontrolle neutral;
+
 ```
 
 ## Aufbereitung der Daten gemäss OGD-Veröffentlichungsprinzipien

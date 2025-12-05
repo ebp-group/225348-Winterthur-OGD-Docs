@@ -64,6 +64,7 @@ Andernfalls erfolgt eine Rückmeldung an den Data Owner, so dass eine Aktualisie
 ---
 config:
   layout: elk
+  look: neo
 ---
 flowchart TB
     stAsk(["Fehler melden"]) ---> stAnalyse(["Fehler analysieren"])
@@ -72,11 +73,23 @@ flowchart TB
     dPub -- Nein --> stAnalyse2(["Fehler analysieren"])
     stFix ---> stAnswer(["Rückmeldung an Daten-Nutzende"])
     stAnalyse2 ---> dUpdate{"Aktualisierung der Daten/Metadaten nötig?"}
-    dUpdate -- Ja --> pAkt[["Datenaktualisierung"]]
+    dUpdate -- Ja --> pAkt["Datenaktualisierung"]
     dUpdate -- Nein --> stAnswer
     pAkt --> stAnswer
 
-    classDef default fill:#ffffff,stroke:#000,color:#000,stroke-width:1px;
+    %% Farben wie Vorlage (Alles schwarz umrandet!)
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000;
+    classDef stop fill:#ffebee,stroke:#000,color:#000;
+    classDef neutral fill:#ffffff,stroke:#000,color:#000;
+
+    %% Klassifizierung
+    class dPub,dUpdate neutral;
+    class stFix,pAkt ok;
+    class stAnalyse2 stop;
+    %% Rest neutral
+    class stAsk,stAnalyse,stAnswer neutral;
+
+```
 
 ### Fehler melden
 

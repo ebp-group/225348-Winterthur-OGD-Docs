@@ -16,6 +16,7 @@ Die so erstellte Datenübersicht ist die Grundlage für die Auswahl der OGD-Kand
 ---
 config:
   layout: dagre
+  look: neo
 ---
 flowchart TB
     stKoord(["Koordination der Abklärungen initiieren"]) ---> stId(["Identifikation von Daten"])
@@ -26,7 +27,17 @@ flowchart TB
     stRA ---> stPrio
     stPrio ---> pInit[["Initiale Datenaufbereitung"]]
 
-    classDef default fill:#ffffff,stroke:#000,color:#000,stroke-width:1px;
+    %% Farben nach Vorlage
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000;
+    classDef stop fill:#ffebee,stroke:#000,color:#000;
+    classDef neutral fill:#ffffff,stroke:#000,color:#000;
+
+    %% Klassifizierung
+    class dR neutral;
+    class stRA ok;
+    class stPrio ok;
+    class stKoord,stId,stInfo,pInit neutral;
+
 ```
 
 ### Koordination der Abklärungen initiieren
