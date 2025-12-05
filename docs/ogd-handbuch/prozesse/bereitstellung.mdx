@@ -16,27 +16,28 @@ Die so erstellte Datenübersicht ist die Grundlage für die Auswahl der OGD-Kand
 ---
 config:
   layout: dagre
-  look: neo
 ---
 flowchart TB
-    stKoord(["Koordination der Abklärungen initiieren"]) ---> stId(["Identifikation von Daten"])
-    stId ---> stInfo(["Informationen zu Kriterien liefern"])
-    stInfo ---> dR{"Rechtliche Abklärung nötig?"}
-    dR -- Ja --> stRA(["Rechtliche Abklärung vornehmen"])
-    dR -- Nein --> stPrio(["Selektion und Priorisierung der OGD-Kandidaten"])
+    stKoord["Koordination der Abklärungen initiieren"] ---> stId["Identifikation von Daten"]
+    stId ---> stInfo["Informationen zu Kriterien liefern"]
+    stInfo ---> dR["Rechtliche Abklärung nötig?"]
+    dR -- Ja --> stRA["Rechtliche Abklärung vornehmen"]
+    dR -- Nein --> stPrio["Selektion und Priorisierung der OGD-Kandidaten"]
     stRA ---> stPrio
-    stPrio ---> pInit[["Initiale Datenaufbereitung"]]
+    stPrio ---> pInit["Initiale Datenaufbereitung"]
 
-    %% Farben nach Vorlage
-    classDef ok fill:#e8f5e9,stroke:#000,color:#000;
-    classDef stop fill:#ffebee,stroke:#000,color:#000;
-    classDef neutral fill:#ffffff,stroke:#000,color:#000;
-
-    %% Klassifizierung
-    class dR neutral;
-    class stRA ok;
-    class stPrio ok;
-    class stKoord,stId,stInfo,pInit neutral;
+    dR@{ shape: rect}
+     stKoord:::neutral
+     stId:::neutral
+     stInfo:::neutral
+     dR:::neutral
+     stRA:::ok
+     stPrio:::neutral
+     pInit:::neutral
+     
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000
+    classDef stop fill:#ffebee,stroke:#000,color:#000
+    classDef neutral fill:#ffffff,stroke:#000,color:#000
 
 ```
 

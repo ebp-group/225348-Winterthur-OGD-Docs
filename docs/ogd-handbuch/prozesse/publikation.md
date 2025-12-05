@@ -12,31 +12,34 @@ Bei neu zu publizierenden Daten wird eine Vorschau zur Verfügung gestellt, dami
 ---
 config:
   layout: elk
-  look: neo
 ---
 flowchart TB
-    stAufb(["Aufbereitung der Daten gemäss Veröffentlichungsprinzipien"]) ---> stBereit(["Daten und Metadaten für OGD-Katalog bereitstellen"])
-    stBereit ---> dNeu{"Wird ein neuer Datensatz publiziert?"}
-    dNeu -- Ja --> stPreview(["Vorschau der Publikation bereitstellen"])
-    dNeu -- Nein --> stKomm(["Kommunikation koordinieren"])
-    stKomm --> stOGD(["Veröffentlichung im OGD-Katalog"])
-    stPreview ---> stKontrolle(["Kontrolle der Vorschau"])
-    stKontrolle ---> dPreviewOK{"Kontrolle i.O.?"}
+    stAufb["Aufbereitung der Daten gemäss Veröffentlichungsprinzipien"] ---> stBereit["Daten und Metadaten für OGD-Katalog bereitstellen"]
+    stBereit ---> dNeu["Wird ein neuer Datensatz publiziert?"]
+    dNeu -- Ja --> stPreview["Vorschau der Publikation bereitstellen"]
+    dNeu -- Nein --> stKomm["Kommunikation koordinieren"]
+    stKomm --> stOGD["Veröffentlichung im OGD-Katalog"]
+    stPreview ---> stKontrolle["Kontrolle der Vorschau"]
+    stKontrolle ---> dPreviewOK["Kontrolle i.O.?"]
     dPreviewOK -- Ja --> stKomm
-    dPreviewOK -- Nein --> pAkt[["Datenaktualisierung"]]
+    dPreviewOK -- Nein --> pAkt["Datenaktualisierung"]
 
-    %% Farbdefinitionen
-    classDef ok fill:#e8f5e9,stroke:#000,color:#000;
-    classDef stop fill:#ffebee,stroke:#000,color:#000;
-    classDef neutral fill:#ffffff,stroke:#000,color:#000;
-
-    %% Klassifizierung: "i.O." = OK, "Nein" = rot
-    class dNeu,dPreviewOK neutral;
-    class pAkt ok;
-    class stKomm,stOGD neutral;
-    %% "Nein" bei dPreviewOK führt zu Datenaktualisierung → neutral oder rot?
-    %% Ich setze pAkt auf ok; stPreview/stKontrolle neutral
-    class stAufb,stBereit,stPreview,stKontrolle neutral;
+    dNeu@{ shape: rect}
+    dPreviewOK@{ shape: rect}
+    pAkt@{ shape: rect}
+     stAufb:::neutral
+     stBereit:::neutral
+     dNeu:::neutral
+     stPreview:::ok
+     stKomm:::neutral
+     stOGD:::neutral
+     stKontrolle:::neutral
+     dPreviewOK:::neutral
+     pAkt:::stop
+     
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000
+    classDef stop fill:#ffebee,stroke:#000,color:#000
+    classDef neutral fill:#ffffff,stroke:#000,color:#000
 
 ```
 

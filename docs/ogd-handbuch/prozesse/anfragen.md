@@ -19,14 +19,28 @@ config:
   layout: elk
 ---
 flowchart TB
-    stAsk(["Anfrage stellen"]) ---> dInde{"Kann das OGD-Kompetenzzentrum die Anfrage beantworten?"} 
-    dInde -- Ja --> stForm(["Antwort auf Anfrage formulieren"])
-    stForm ---> stAnswer(["Rückmeldung an Daten-Nutzende"])
-    dInde -- Nein --> dPub{"Anfrage für Publikation von Daten?"} 
-    dPub -- Ja --> pAuswahl[["Auswahl OGD-Kandidaten"]]
-    dPub -- Nein --> stFeedback(["Feedback für Daten-Nutzende formulieren"])
+    stAsk["Anfrage stellen"] ---> dInde["Kann das OGD-Kompetenzzentrum die Anfrage beantworten?"]
+    dInde -- Ja --> stForm["Antwort auf Anfrage formulieren"]
+    stForm ---> stAnswer["Rückmeldung an Daten-Nutzende"]
+    dInde -- Nein --> dPub["Anfrage für Publikation von Daten?"]
+    dPub -- Ja --> pAuswahl["Auswahl OGD-Kandidaten"]
+    dPub -- Nein --> stFeedback["Feedback für Daten-Nutzende formulieren"]
     pAuswahl ---> stFeedback
     stFeedback ---> stAnswer
+
+    stAsk@{ shape: rect}
+    dInde@{ shape: rect}
+    stForm@{ shape: rect}
+    stAnswer@{ shape: rect}
+    dPub@{ shape: rect}
+    pAuswahl@{ shape: rect}
+    stFeedback@{ shape: rect}
+      pAuswahl:::ok
+      stForm:::ok
+      dPub:::stop
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000
+    classDef stop fill:#ffebee,stroke:#000,color:#000
+    classDef neutral fill:#ffffff,stroke:#000,color:#000
 ```
 
 ### Anfrage stellen
@@ -67,27 +81,34 @@ config:
   look: neo
 ---
 flowchart TB
-    stAsk(["Fehler melden"]) ---> stAnalyse(["Fehler analysieren"])
-    stAnalyse ---> dPub{"Fehler im Publikationsprozess?"}
-    dPub -- Ja --> stFix(["Fehlerbehebung"])
-    dPub -- Nein --> stAnalyse2(["Fehler analysieren"])
-    stFix ---> stAnswer(["Rückmeldung an Daten-Nutzende"])
-    stAnalyse2 ---> dUpdate{"Aktualisierung der Daten/Metadaten nötig?"}
+    stAsk["Fehler melden"] ---> stAnalyse["Fehler analysieren"]
+    stAnalyse ---> dPub["Fehler im Publikationsprozess?"]
+    dPub -- Ja --> stFix["Fehlerbehebung"]
+    dPub -- Nein --> stAnalyse2["Fehler analysieren"]
+    stFix ---> stAnswer["Rückmeldung an Daten-Nutzende"]
+    stAnalyse2 ---> dUpdate["Aktualisierung der Daten/Metadaten nötig?"]
     dUpdate -- Ja --> pAkt["Datenaktualisierung"]
     dUpdate -- Nein --> stAnswer
     pAkt --> stAnswer
 
-    %% Farben wie Vorlage (Alles schwarz umrandet!)
-    classDef ok fill:#e8f5e9,stroke:#000,color:#000;
-    classDef stop fill:#ffebee,stroke:#000,color:#000;
-    classDef neutral fill:#ffffff,stroke:#000,color:#000;
-
-    %% Klassifizierung
-    class dPub,dUpdate neutral;
-    class stFix,pAkt ok;
-    class stAnalyse2 stop;
-    %% Rest neutral
-    class stAsk,stAnalyse,stAnswer neutral;
+    stAsk@{ shape: rect}
+    stAnalyse@{ shape: rect}
+    dPub@{ shape: rect}
+    stFix@{ shape: rect}
+    stAnalyse2@{ shape: rect}
+    stAnswer@{ shape: rect}
+    dUpdate@{ shape: rect}
+     stAsk:::neutral
+     stAnalyse:::neutral
+     dPub:::neutral
+     stFix:::ok
+     stAnalyse2:::stop
+     stAnswer:::neutral
+     dUpdate:::neutral
+     pAkt:::neutral
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000
+    classDef stop fill:#ffebee,stroke:#000,color:#000
+    classDef neutral fill:#ffffff,stroke:#000,color:#000
 
 ```
 
