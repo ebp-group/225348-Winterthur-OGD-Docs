@@ -23,6 +23,8 @@ flowchart TB
     stKontrolle ---> dPreviewOK{"Kontrolle i.O.?"}
     dPreviewOK -- Ja --> stKomm
     dPreviewOK -- Nein --> pAkt[["Datenaktualisierung"]]
+
+    classDef Class_01 fill:#ffffff,stroke:#000,color:#000;
 ```
 
 ## Aufbereitung der Daten gemäss OGD-Veröffentlichungsprinzipien

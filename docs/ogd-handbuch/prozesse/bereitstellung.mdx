@@ -15,7 +15,7 @@ Die so erstellte Datenübersicht ist die Grundlage für die Auswahl der OGD-Kand
 ```mermaid
 ---
 config:
-  layout: elk
+  layout: dagre
 ---
 flowchart TB
     stKoord(["Koordination der Abklärungen initiieren"]) ---> stId(["Identifikation von Daten"])
@@ -25,6 +25,8 @@ flowchart TB
     dR -- Nein --> stPrio(["Selektion und Priorisierung der OGD-Kandidaten"])
     stRA ---> stPrio
     stPrio ---> pInit[["Initiale Datenaufbereitung"]]
+
+    classDef Class_01 fill:#ffffff,stroke:#000,color:#000;
 ```
 
 ### Koordination der Abklärungen initiieren

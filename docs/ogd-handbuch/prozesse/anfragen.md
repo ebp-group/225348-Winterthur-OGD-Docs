@@ -75,6 +75,8 @@ flowchart TB
     dUpdate -- Ja --> pAkt[["Datenaktualisierung"]]
     dUpdate -- Nein --> stAnswer
     pAkt --> stAnswer
+
+    classDef Class_01 fill:#ffffff,stroke:#000,color:#000;
 ```
 
 ### Fehler melden
