@@ -10,7 +10,7 @@ config:
   layout: elk
   look: neo
 ---
-flowchart LR
+flowchart TB
  subgraph S["<b><span style=font-size:26px>OGD-Angebot</span></b>"]
     direction TB
         ucApp["Anwendungen"]

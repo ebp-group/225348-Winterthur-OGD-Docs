@@ -44,16 +44,4 @@ Aktuelle Neuigkeiten aus der Welt von Open Government Data Winterthur.
 
 ➡️ **[Zum OGD-Blog](/blog)**
 
----
-
-:::info[Laufende Weiterentwicklung]
-Dieses Handbuch wird kontinuierlich:
-
-- aktualisiert  
-- verbessert  
-- um neue Beispiele, Tools und Prozesse ergänzt  
-
-Feedback ist jederzeit willkommen.
-:::
-
 
