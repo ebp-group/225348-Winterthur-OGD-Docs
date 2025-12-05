@@ -76,8 +76,7 @@ flowchart TB
     dUpdate -- Nein --> stAnswer
     pAkt --> stAnswer
 
-    classDef Class_01 fill:#ffffff,stroke:#000,color:#000;
-```
+    classDef default fill:#ffffff,stroke:#000,color:#000,stroke-width:1px;
 
 ### Fehler melden
 
