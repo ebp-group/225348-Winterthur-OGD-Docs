@@ -7,7 +7,8 @@ sidebar_position: 3
 ```mermaid
 ---
 config:
-  layout: dagre
+  layout: elk
+  look: neo
 ---
 flowchart TB
  subgraph S["OGD-Angebot"]
@@ -34,11 +35,12 @@ flowchart TB
   (Data Owner)"] -- pflegt, stellt bereit --> ucMD
     rA -- bereitet auf, stellt bereit --> ucD
     rF -- berät, unterstützt --- rA
+
      rN:::role
      rF:::role
      rA:::role
     classDef role stroke-width:0px
-
+    style S fill:#ffffff,stroke:#000,color:#000;
 ```
 
 
