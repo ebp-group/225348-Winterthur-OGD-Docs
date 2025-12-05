@@ -10,64 +10,43 @@ config:
   layout: elk
   look: neo
 ---
-flowchart TB
-
-%% ------------------------------
-%% SUBGRAPH mit angepasstem Titel
-%% ------------------------------
-subgraph S["<b><span style='font-size:18px'>OGD-Angebot</span></b>"]
+flowchart LR
+ subgraph S["<b><span style=font-size:26px>OGD-Angebot</span></b>"]
     direction TB
-        ucApp(["Anwendungen"])
-        ucDP(["Datenportal"])
-        ucMD(["Metadata"])
-        ucD(["Daten"])
-        ucQA(["Fragen, Anfragen zu Daten"])
-        ucFB(["Fehlermeldungen, Feedback"])
-end
+        ucApp["Anwendungen"]
+        ucDP["Datenportal"]
+        ucMD["Metadata"]
+        ucD["Daten"]
+        ucQA["Fragen, Anfragen zu Daten"]
+        ucFB["Fehlermeldungen, Feedback"]
+  end
+    ucDP -.-> ucMD
+    ucMD -.-> ucD
+    rN["👤 Daten-Nutzende"] -- nutzt --> ucDP
+    ucDP ~~~ rF["👤 FS Daten"] & rF
+    rN -- erstellt --> ucApp
+    rN -- findet, sichtet --> ucMD
+    rN -- sichtet, bezieht, nutzt --> ucD
+    ucApp -- nutzt --> ucD
+    rN -- meldet --> ucQA
+    rN -- gibt --> ucFB
+    rF -- verantwortet, betreibt --> ucDP
+    rA["👤 OGD-Ansprechperson<br>Data Owner"] -- pflegt, stellt bereit --> ucMD
+    rA -- bereitet auf, stellt bereit --> ucD
+    rF -- berät, unterstützt --- rA
 
-%% ------------------------------
-%% Beziehungen
-%% ------------------------------
-ucDP -.-> ucMD
-ucMD -.-> ucD
-
-rN["👤 Daten-Nutzende"] -- nutzt --> ucDP
-ucDP ~~~ rF["👤 FS Daten"] & rF
-
-rN -- erstellt --> ucApp
-rN -- findet, sichtet --> ucMD
-rN -- sichtet, bezieht, nutzt --> ucD
-ucApp -- nutzt --> ucD
-
-rN -- meldet --> ucQA
-rN -- gibt --> ucFB
-
-rF -- verantwortet, betreibt --> ucDP
-
-rA["👤 OGD-Ansprechperson<br/>(Data Owner)"] -- pflegt, stellt bereit --> ucMD
-rA -- bereitet auf, stellt bereit --> ucD
-
-rF -- berät, unterstützt --- rA
-
-%% ------------------------------
-%% Styles
-%% ------------------------------
-classDef role stroke-width:1px,stroke:#000,fill:#fff,color:#000;
-
-%% Alle Standard-Knoten überschreiben
-style ucApp fill:#ffffff,stroke:#000,color:#000;
-style ucDP fill:#ffffff,stroke:#000,color:#000;
-style ucMD fill:#ffffff,stroke:#000,color:#000;
-style ucD fill:#ffffff,stroke:#000,color:#000;
-style ucQA fill:#ffffff,stroke:#000,color:#000;
-style ucFB fill:#ffffff,stroke:#000,color:#000;
-
-style rN fill:#ffffff,stroke:#000,color:#000;
-style rF fill:#ffffff,stroke:#000,color:#000;
-style rA fill:#ffffff,stroke:#000,color:#000;
-
-%% Subgraph Rahmen
-style S stroke:#000,fill:#fff,color:#000;
+    ucD@{ shape: rect}
+    classDef role stroke-width:1px,stroke:#000,fill:#fff,color:#000
+    style ucApp fill:#ffffff,stroke:#000,color:#000
+    style ucDP fill:#ffffff,stroke:#000,color:#000
+    style ucMD fill:#ffffff,stroke:#000,color:#000
+    style ucD fill:#ffffff,stroke:#000,color:#000
+    style ucQA fill:#ffffff,stroke:#000,color:#000
+    style ucFB fill:#ffffff,stroke:#000,color:#000
+    style rN fill:#ffffff,stroke:#000,color:#000
+    style rF fill:#ffffff,stroke:#000,color:#000
+    style rA fill:#ffffff,stroke:#000,color:#000
+    style S stroke:#000,fill:#fff,color:#000
 
 ```
 

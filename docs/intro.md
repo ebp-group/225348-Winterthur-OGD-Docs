@@ -30,26 +30,12 @@ Für alle Personen, die Daten im OGD-Katalog veröffentlichen möchten.
 
 ➡️ **[Zum OGD-Handbuch](/ogd-handbuch)**
 
-**Enthält:**
-
-- Rollen, Verantwortlichkeiten und Prozesse  
-- Publikationsabläufe (inkl. Qualität, Metadaten, Abnahmen)  
-- Umgang mit Anfragen und Fehlermeldungen  
-- Werkzeuge und Best Practices  
-
 ---
 
 ### **2. Datenschutz-Hilfsmittel**  
 Leitfaden zur datenschutzkonformen Aufbereitung und Veröffentlichung von Verwaltungsdaten.
 
 ➡️ **[Zu den Datenschutz-Hilfsmitteln](/datenschutz-hilfsmittel)**
-
-**Enthält:**
-
-- Einschätzung von Personenbezug  
-- Rechtsgrundlagen & Schutzbedarfe  
-- Methoden zur Anonymisierung / Aggregation  
-- Entscheidungsbäume und Checklisten  
 
 ---
 
@@ -58,14 +44,9 @@ Aktuelle Neuigkeiten aus der Welt von Open Government Data Winterthur.
 
 ➡️ **[Zum OGD-Blog](/blog)**
 
-**Enthält:**
+---
 
-- Updates zum OGD-Katalog  
-- Hinweise auf neue Datensätze  
-- Projektberichte und Anwendungsfälle  
-- Events & interne Informationen  
-
-:::info[Laufende Weiterentwicklung
+:::info[Laufende Weiterentwicklung]
 Dieses Handbuch wird kontinuierlich:
 
 - aktualisiert  
@@ -75,6 +56,4 @@ Dieses Handbuch wird kontinuierlich:
 Feedback ist jederzeit willkommen.
 :::
 
-
----
 
