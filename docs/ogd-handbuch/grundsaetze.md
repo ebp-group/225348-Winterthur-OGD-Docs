@@ -19,7 +19,7 @@ Offene Verwaltungsdaten
 : Offene Verwaltungsdaten sind Daten der öffentlichen Hand, die gemäss OGD-Prinzipien – d.h. unter anderem unter Berücksichtigung von Datenschutz und potenziell weiteren Schutzbedürfnissen – allen ohne Einschränkungen zur freien Nutzung, Weiterverwendung und Weiterverbreitung zugänglich gemacht werden.
 
 Dateneigner
-: Der Dateneigner ist im Kontext von OGD diejenige Verwaltungseinheit der Stadtverwaltung Winterthur welche gemäss den anwend-baren gesetzlichen Bestimmungen für ein Set von Daten verantwortlich ist.
+: Der Dateneigner ist im Kontext von OGD diejenige Verwaltungseinheit der Stadtverwaltung Winterthur welche gemäss den anwendbaren gesetzlichen Bestimmungen für ein Set von Daten verantwortlich ist.
 
 Datenverwaltende (Data Stewards), Metadatenverwaltende (Data Custodian), OGD-Ansprechperson, OGD-Leiter (Data Guide)
 : Diese Begriffe bezeichnen Rollen im Datenmanagement bzw. in der Umsetzung von OGD. Sie werden im [Abschnitt über Prozessbeteiligte Akteure und Rollen](./akteure) genauer beschrieben.
@@ -29,7 +29,7 @@ Datenverwaltende (Data Stewards), Metadatenverwaltende (Data Custodian), OGD-Ans
 Bei der Konzeption und der Umsetzung von OGD in der Stadt Winterthur lebt die Stadtverwaltung die folgenden Werte und Grundhaltungen
 
 Open by Default und Pragmatismus
-: Die offenen Verwaltungsdaten werden gemäss dem Paradigma «Open by Default» bereitgestellt. Die be-schränkten Mittel werden möglichst effektiv eingesetzt. Beispielsweise er-folgt die Veröffentlichung von Daten nicht durchgehend aktiv, sondern teilweise reaktiv (d.h. für die Publikation geeignete Daten werden erst auf Anfrage publiziert).
+: Die offenen Verwaltungsdaten werden gemäss dem Paradigma «Open by Default» bereitgestellt. Die beschränkten Mittel werden möglichst effektiv eingesetzt. Beispielsweise er-folgt die Veröffentlichung von Daten nicht durchgehend aktiv, sondern teilweise reaktiv (d.h. für die Publikation geeignete Daten werden erst auf Anfrage publiziert).
 
 Transparenz und Integrität
 : Die bereitgestellten offenen Verwaltungsdaten sollen verlässlich, aktuell und von guter Qualität sowie gut nutzbar sein. Das OGD-Angebot in Form des Datenportals soll stabil verfügbar sein. Dank der Veröffentlichung von Daten unter Beachtung dieser Anforderungen schafft die Stadtverwaltung Vertrauen.

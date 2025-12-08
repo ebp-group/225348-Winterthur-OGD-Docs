@@ -53,6 +53,7 @@ Datenkonformität
 Datenkonformitätsprüfungen
 Datenlieferung
 Datenmanagement
+Datennutzende
 Datennutzenden
 Datennutzung
 Datenportal
@@ -81,6 +82,7 @@ DWH
 Echtzeitdaten
 Einbezug
 Einkommensklasse
+Einstiegspunkt
 Einzelangaben
 Einzelwerte
 Entity
@@ -117,6 +119,7 @@ Guidelines
 Hackathons
 Haftungsausschluss
 Handlungsfeld
+Hauptbereiche
 Identifikationsansatz
 Identifikationsnummern
 Identifikationsrisiken
@@ -194,6 +197,7 @@ Persönlichkeitsrechte
 PII
 Pilotbetrieb
 Pivot
+Planungs
 Plausibilitätsprüfung
 PoC
 Posts
@@ -280,6 +284,7 @@ vorgängig
 vorgängiger
 Warehouse
 Weiterverbreitung
+Weiterverwendung
 Wertebereiche
 Wohnungsregister
 Workflow
