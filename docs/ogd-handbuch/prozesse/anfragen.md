@@ -50,7 +50,7 @@ flowchart TB
 ### Anfrage stellen
 
 Anfragen können über sämtliche Kontaktmöglichkeiten zum OGD-Kompetenzzentrum gemeldet werden.
-Gegenüber den Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (__Single Point of Contact__) auf und triagiert die Anfragen nach Zuständigkeit und Dringlichkeit.
+Gegenüber den Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (_Single Point of Contact_) auf und triagiert die Anfragen nach Zuständigkeit und Dringlichkeit.
 
 ### Antwort auf Anfrage formulieren 
 
@@ -122,7 +122,7 @@ Fehler können über sämtliche Kontaktmöglichkeiten dem OGD-Kompetenzzentrum g
 
 ### Fehler analysieren
 
-Gegenüber Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (__Single Point of Contact__)auf und triagiert Fehlermeldungen nach Zuständigkeit und Dringlichkeit.
+Gegenüber Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (_Single Point of Contact_)auf und triagiert Fehlermeldungen nach Zuständigkeit und Dringlichkeit.
 Das OGD-Kompetenzzentrum versucht nachzuvollziehen, welcher Fehler in welchem Teilprozess vorgefallen ist. Falls der Fehler nicht im Publikationsprozess aufgetreten ist, müssen Fehlermeldungen an die zuständigen Data Owner delegiert und von diesen analysiert und gegebenenfalls behoben werden.
 
 ### Fehlerbehebung
