@@ -49,7 +49,7 @@ matrix:
         close: '(?P=open)'
       # Ignore text between inline italics
       - open: '\_'
-        close: '\_.*$'
+        close: '\_'
       # Ignore admonitions
       - open: '::(tip|warning|info|danger)'
         close: '\n'
