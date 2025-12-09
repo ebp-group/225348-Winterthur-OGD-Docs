@@ -36,7 +36,7 @@ matrix:
       - a.footnote-backref
   - pyspelling.filters.context:
       context_visible_first: true
-      escapes: '\\[\\`~_\*]'
+      escapes: '\\[\\`~_]'
       delimiters:
       # Ignore multiline content between fences (fences can have 3 or more back ticks)
       # ```
@@ -48,11 +48,8 @@ matrix:
       - open: '(?P<open>`+)'
         close: '(?P=open)'
       # Ignore text between inline italics
-      - open: '[\_]{1}'
-        close: '[\_]{1}'
-      # Ignore text between inline asterisks
-      - open: '\*+'
-        close: '\*+'
+      - open: '_'
+        close: '_'
       # Ignore admonitions
       - open: '::(tip|warning|info|danger)'
         close: '\n'
