@@ -51,8 +51,8 @@ matrix:
       - open: '(?P<open>€+)'
         close: '(?P=open)'
       # Ignore text between inline italics
-      - open: '_'
-        close: '_'
+      - open: '(?P<open>_+)'
+        close: '(?P=open)'
       # Ignore admonitions
       - open: '::(tip|warning|info|danger)'
         close: '\n'
