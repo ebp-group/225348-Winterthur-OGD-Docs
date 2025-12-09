@@ -48,7 +48,7 @@ matrix:
       - open: '(?P<open>`+)'
         close: '(?P=open)'
       # Ignore text between inline italics
-      - open: '(?P<open>[_]{1})'
+      - open: '(?P<open>[\_]{1})'
         close: '(?P=open)'
       # Ignore text between inline asterisks
       - open: '\*+'
