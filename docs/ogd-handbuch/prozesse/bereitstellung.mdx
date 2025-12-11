@@ -113,17 +113,37 @@ config:
   layout: elk
 ---
 flowchart TB
-    stInhalt(["Inhaltliche Datensatzdefinition"]) ---> stLi(["Lieferkanal definieren"])
-    stLi ---> stAuf(["Aufbereitung der Daten als offene Verwaltungsdaten"])
-    stAuf ---> stMeta(["Aufbereitung von Metadaten"])
-    stMeta ---> stDQ(["Sicherstellen der Datenqualität"])
-    stDQ ---> dDQ{"Datenqualität i.O.?"}
-    dDQ -- Ja --> stDeploy(["Datenlieferung"])
+    stInhalt["Inhaltliche Datensatzdefinition"] ---> stLi["Lieferkanal definieren"]
+    stLi ---> stAuf["Aufbereitung der Daten als offene Verwaltungsdaten"]
+    stAuf ---> stMeta["Aufbereitung von Metadaten"]
+    stMeta ---> stDQ["Sicherstellen der Datenqualität"]
+    stDQ ---> dDQ["Datenqualität i.O.?"]
+    dDQ -- Ja --> stDeploy["Datenlieferung"]
     dDQ -- Nein --> stAuf
-    stDeploy ---> pInit[["Qualitätssicherung und Freigabe"]]
-    
-```
+    stDeploy ---> pInit["Qualitätssicherung und Freigabe"]
 
+    stInhalt@{ shape: rect}
+    stLi@{ shape: rect}
+    stAuf@{ shape: rect}
+    stMeta@{ shape: rect}
+    stDQ@{ shape: rect}
+    dDQ@{ shape: rect}
+    stDeploy@{ shape: rect}
+    pInit@{ shape: rect}
+     pInit:::neutral
+     stInhalt:::neutral
+      stLi:::neutral
+      stAuf:::neutral
+      stMeta:::neutral
+      stDQ:::neutral
+      dDQ:::neutral
+      stDeploy:::ok
+      
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000
+    classDef stop fill:#ffebee,stroke:#000,color:#000
+    classDef neutral fill:#ffffff,stroke:#000,color:#000
+
+```
 ### Inhaltliche Datensatzdefinition
 
 Konkrete inhaltliche Bestimmung der Inhalte, des Umfangs und der Struktur des zu veröffentlichen Datensatzes, meist in Absprache mit dem OGD Kompetenzzentrum. 
@@ -192,16 +212,43 @@ config:
   layout: elk
 ---
 flowchart TB
-    dErr{"Sind die Daten fehlerhaft?"} -- Ja --> stKorr(["Korrektur der Daten oder Metadaten"])
-    dErr-- Nein --> stNachD(["Nachführen der Daten"])
-    stNachD ---> stNachMD(["Nachführen der Metadaten"])
-    stNachMD ---> stDQ(["Sicherstellen der Datenqualität"])
-    stKorr ---> stDQ
-    stDQ ---> dDQ{"Datenqualität i.O.?"}
-    dDQ -- Ja --> stDeploy(["Datenlieferung"])
+    dErr["Sind die Daten fehlerhaft?"] -- Ja --> stKorr["Korrektur der Daten oder Metadaten"]
+    dErr -- Nein --> stNachD["Nachführen der Daten"]
+    stNachD ---> stNachMD["Nachführen der Metadaten"]
+    stNachMD ---> stDQ["Sicherstellen der Datenqualität"]
+    stKorr -- Ja ---> stDQ
+    stDQ ---> dDQ["Datenqualität ausreichend?"]
+    dDQ -- Ja --> stDeploy["Datenlieferung"]
     dDQ -- Nein --> stKorr
-    stDeploy ---> pInit[["Qualitätssicherung und Freigabe"]]
-    
+    stDeploy ---> pInit["Qualitätssicherung und Freigabe"]
+    dR["dR"]
+    stKoord["stKoord"]
+    stId["stId"]
+    stInfo["stInfo"]
+    stRA["stRA"]
+    stPrio["stPrio"]
+
+    dErr@{ shape: rect}
+    stKorr@{ shape: rect}
+    stNachD@{ shape: rect}
+    stNachMD@{ shape: rect}
+    stDQ@{ shape: rect}
+    dDQ@{ shape: rect}
+    stDeploy@{ shape: rect}
+    pInit@{ shape: rect}
+    dR@{ shape: rect}
+     dErr:::neutral
+     stKorr:::neutral
+     stNachD:::stop
+     stNachMD:::neutral
+     stDQ:::ok
+     stDeploy:::ok
+     pInit:::neutral
+     dR:::neutral
+
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000
+    classDef stop fill:#ffebee,stroke:#000,color:#000
+    classDef neutral fill:#ffffff,stroke:#000,color:#000
 ```
 
 ### Korrektur der Daten oder Metadaten
@@ -242,12 +289,25 @@ Wenn alle Qualitätskriterien erfüllt sind, gibt das Kompetenzzentrum den Daten
 ```mermaid
 ---
 config:
-  layout: elk
+  layout: dagre
 ---
 flowchart TB
-    sDataKonf(["Prüfung der Datenkonformität]) --> dKonf{"Datenkonformität i.O.?"}
-    dKonf -- Ja --> pPub[["Publikation"]]
-    dKonf -- Nein --> pAkt[["Datenaktualisierung"]]
+    sDataKonf["Prüfung der Datenkonformität"] --> dKonf["Datenkonformität i.O.?"]
+    dKonf -- Ja --> pPub["Publikation"]
+    dKonf -- Nein --> pAkt["Datenaktualisierung"]
+
+    sDataKonf@{ shape: rect}
+    dKonf@{ shape: rect}
+    pPub@{ shape: rect}
+    pAkt@{ shape: rect}
+     sDataKonf:::neutral
+     dKonf:::neutral
+     pPub:::ok
+     pAkt:::stop
+
+    classDef ok fill:#e8f5e9,stroke:#000,color:#000
+    classDef stop fill:#ffebee,stroke:#000,color:#000
+    classDef neutral fill:#ffffff,stroke:#000,color:#000
 ```
 
 ### Prüfen der Datenkonformität
