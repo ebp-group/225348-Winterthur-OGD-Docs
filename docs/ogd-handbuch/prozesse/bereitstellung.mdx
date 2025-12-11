@@ -221,12 +221,6 @@ flowchart TB
     dDQ -- Ja --> stDeploy["Datenlieferung"]
     dDQ -- Nein --> stKorr
     stDeploy ---> pInit["Qualitätssicherung und Freigabe"]
-    dR["dR"]
-    stKoord["stKoord"]
-    stId["stId"]
-    stInfo["stInfo"]
-    stRA["stRA"]
-    stPrio["stPrio"]
 
     dErr@{ shape: rect}
     stKorr@{ shape: rect}
