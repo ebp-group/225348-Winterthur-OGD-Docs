@@ -50,11 +50,11 @@ flowchart TB
 ### Anfrage stellen
 
 Anfragen können über sämtliche Kontaktmöglichkeiten zum OGD-Kompetenzzentrum gemeldet werden.
-Gegenüber den Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (_Single Point of Contact_, `Taaast`, `Conteeect` _Coantaaact_)(`Sangle all birds?` €€this is a emphazis€€ €bold haaaaalo€) auf und triagiert die Anfragen nach Zuständigkeit und Dringlichkeit.
+Gegenüber den Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (_Single Point of Contact_) auf und triagiert die Anfragen nach Zuständigkeit und Dringlichkeit.
 
 ### Antwort auf Anfrage formulieren 
 
-Wenn möglich wird die Anfrage direkt vom OGD-Kompetenzzentrum beantwortet. 
+Wenn möglich wird die Anfrage direkt vom OGD-Kompetenzzentrum beantwortet.
 
 ### Feedback für Daten-Nutzende formulieren
 
