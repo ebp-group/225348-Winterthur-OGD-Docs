@@ -24,9 +24,9 @@ flowchart TB
     dPreviewOK -- Ja --> stKomm
     dPreviewOK -- Nein --> pAkt["Datenaktualisierung"]
 
-    dNeu@{ shape: rect}
-    dPreviewOK@{ shape: rect}
-    pAkt@{ shape: rect}
+    dNeu@{ shape: decision}
+    dPreviewOK@{ shape: decision}
+    pAkt@{ shape: decision}
      stAufb:::neutral
      stBereit:::neutral
      dNeu:::neutral
