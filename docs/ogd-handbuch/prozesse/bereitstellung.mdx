@@ -26,7 +26,7 @@ flowchart TB
     stRA ---> stPrio
     stPrio ---> pInit["Initiale Datenaufbereitung"]
 
-    dR@{ shape: rect}
+    dR@{ shape: decision}
      stKoord:::neutral
      stId:::neutral
      stInfo:::neutral
@@ -127,9 +127,9 @@ flowchart TB
     stAuf@{ shape: rect}
     stMeta@{ shape: rect}
     stDQ@{ shape: rect}
-    dDQ@{ shape: rect}
+    dDQ@{ shape: decision}
     stDeploy@{ shape: rect}
-    pInit@{ shape: rect}
+    pInit@{ shape: subproc}
      pInit:::neutral
      stInhalt:::neutral
       stLi:::neutral
@@ -222,14 +222,14 @@ flowchart TB
     dDQ -- Nein --> stKorr
     stDeploy ---> pInit["Qualitätssicherung und Freigabe"]
 
-    dErr@{ shape: rect}
+    dErr@{ shape: decision}
     stKorr@{ shape: rect}
     stNachD@{ shape: rect}
     stNachMD@{ shape: rect}
     stDQ@{ shape: rect}
-    dDQ@{ shape: rect}
+    dDQ@{ shape: decision}
     stDeploy@{ shape: rect}
-    pInit@{ shape: rect}
+    pInit@{ shape: subproc}
       dErr:::neutral
       stKorr:::neutral
       stNachD:::stop
