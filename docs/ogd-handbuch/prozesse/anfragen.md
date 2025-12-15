@@ -28,11 +28,11 @@ flowchart TB
     pAuswahl ---> stFeedback
     stFeedback ---> stAnswer
     stAsk@{ shape: rect}
-    dInde@{ shape: rect}
+    dInde@{ shape: decision}
     stForm@{ shape: rect}
     stAnswer@{ shape: rect}
-    dPub@{ shape: rect}
-    pAuswahl@{ shape: rect}
+    dPub@{ shape: decision}
+    pAuswahl@{ shape: subproc}
     stFeedback@{ shape: rect}
       pAuswahl:::ok
       stForm:::ok
@@ -97,11 +97,11 @@ flowchart TB
 
     stAsk@{ shape: rect}
     stAnalyse@{ shape: rect}
-    dPub@{ shape: rect}
+    dPub@{ shape: decision}
     stFix@{ shape: rect}
     stAnalyse2@{ shape: rect}
     stAnswer@{ shape: rect}
-    dUpdate@{ shape: rect}
+    dUpdate@{ shape: decision}
      stAsk:::neutral
      stAnalyse:::neutral
      dPub:::neutral
