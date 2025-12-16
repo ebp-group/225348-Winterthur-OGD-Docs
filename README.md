@@ -8,6 +8,18 @@ OGD Dokumentation für die Stadt Winterthur
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
+## Spellcheck
+
+This website uses a GitHub Action to run a German spellchecker.
+
+If new words must be added to the wordlist, please add them to `.github/wordlist_de.txt`, one word per line.
+
+For parts that do not need a spellcheck, you can disable the spell check using the `nospell` CSS class, example:
+
+```html
+Gegenüber den Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (<span class="nospell">_Single Point of Contact_</span>) auf und triagiert die Anfragen nach Zuständigkeit und Dringlichkeit.
+```
+
 ## Entwicklung
 
 ### Installation
