@@ -17,7 +17,7 @@ If new words must be added to the wordlist, please add them to `.github/wordlist
 For parts that do not need a spellcheck, you can disable the spell check using the `nospell` CSS class, example:
 
 ```html
-Gegenüber den Daten-Nutzenden tritt das OGD-Kompetenzzentrum als SPOC (<span class="nospell">_Single Point of Contact_</span>) auf und triagiert die Anfragen nach Zuständigkeit und Dringlichkeit.
+Das OGD-Kompetenzzentrum tritt als SPOC (<span class="nospell">_Single Point of Contact_</span>) auf.
 ```
 
 ## Entwicklung
