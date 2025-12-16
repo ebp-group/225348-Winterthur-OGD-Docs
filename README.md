@@ -20,6 +20,19 @@ For parts that do not need a spellcheck, you can disable the spell check using t
 Das OGD-Kompetenzzentrum tritt als SPOC (<span class="nospell">_Single Point of Contact_</span>) auf.
 ```
 
+Or even for whole sections:
+
+```html
+Die Veröffentlichungsprinzipien[^1] sind die Grundlage für die Publikation von OGD.
+
+<div class="nospell">
+
+[^1]: Veröffentlichungsprinzipien: [Ten Principles for opening up Government Information (Sunlight Foundation)](https://sunlightfoundation.com/policy/documents/ten-open-data-principles/)
+
+</div>
+
+```
+
 ## Entwicklung
 
 ### Installation
