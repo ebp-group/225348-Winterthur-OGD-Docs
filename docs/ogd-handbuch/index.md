@@ -18,9 +18,9 @@ Allgemeine Hinweis zur Publikation von OGD finden sich auch in den [«Leitlinien
 
 :::danger[TODO]
 
-* Update Referenz zu Schutzbedürfnisse
 * Glossar prüfen (Data Owner, Abteilungen)
 * Neben dem IDG auch noch den Stadtratsbeschluss bzw. Erlass erwähnen
+* Verweise prüfen, fehlen noch Links auf wichtige Ressourcen?
 
 :::
 
@@ -66,4 +66,5 @@ Sie sind nach Möglichkeit (zum Beispiel wo entsprechende Standards bestehen) gu
 
 Die Fachstelle Daten unterstützt Dateneigner der Stadtverwaltung bei der Erfassung, Prüfung, Priorisierung und Publikation der eigenen Daten mit entsprechenden Hilfestellungen und Grundlagen.
 Sie leistet nach innen und nach aussen Vermittlungsarbeit im Bereich offener Verwaltungsdaten und sie koordiniert partnerschaftlich die OGD-Umsetzung in der Stadtverwaltung. Die Fachstelle Daten stellt sicher, dass sich das OGD-Angebot von Winterthur an den gängigen Best Practices und Standards orientiert.
+
 Dabei setzt sie im Thema OGD nicht neue Akzente, sondern setzt auf Vorarbeiten und bewährte Grundlagen anderer Behörden und Organisationen.
