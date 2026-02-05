@@ -10,7 +10,7 @@ import {
 
 const config: Config = {
   title: "Winterthur OGD Docs",
-  tagline: "Dinosaurs are cool",
+  tagline: "Dieses Handbuch unterstützt Personen und Organisationen dabei, Verwaltungsdaten einfach, verständlich und rechtskonform als Open Government Data (OGD) zu veröffentlichen.",
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
